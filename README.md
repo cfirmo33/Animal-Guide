@@ -14,7 +14,4 @@
     <li>Email e Senha</li>
     <li>Conta do Google</li>
     </ul>
-    <p>Para executar o código no próprio computador será necessário criar os arquivos JSON
-    do Firebase e do Google Cloud e, ainda, autenticar o aplicativo nas plataformas; caso contrário ele não irá funcionar.</p>
-    <p>Esses arquivos não foram anexados junto ao código pois o plano no qual utilizo possui um limite de requisições, tanto para o Firebase quanto para o Google Cloud. Então, para testar o aplicativo, será necessário gerir os arquivos .json no Firebase e Google Cloud, e depois, incluir no diretório "app".</p>
 </b>
