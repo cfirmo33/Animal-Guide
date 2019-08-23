@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".registers.RegisterVeterinaryActivity">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageUserVeterinary"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/include" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTextNameLastNameVeterinary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="32dp"
+            android:textColorHint="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageUserVeterinary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextNameLastNameVeterinary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/name_last_name"
+                android:inputType="textPersonName|text|textAutoComplete|textAutoCorrect"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTextEmailRegisterVeterinary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:textColorHint="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputTextNameLastNameVeterinary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmailRegisterVeterinary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/email_login"
+                android:inputType="textEmailAddress|textAutoCorrect|textAutoComplete"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTextPasswordRegisterVeterinary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:textColorHint="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputTextEmailRegisterVeterinary"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPasswordEye">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPasswordRegisterVeterinary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/password_login"
+                android:inputType="textPassword"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonRegisterVeterinary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="registerVeterinary"
+            android:text="@string/register_owner"
+            android:textColor="#FFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputTextPasswordRegisterVeterinary"
+            app:layout_constraintVertical_bias="0.0"
+            tools:targetApi="lollipop" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonTakePhotosVeterinary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openCameraVeterinario"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="@+id/imageUserVeterinary"
+            app:layout_constraintEnd_toEndOf="@+id/imageUserVeterinary"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="@+id/imageUserVeterinary"
+            app:layout_constraintTop_toTopOf="@+id/imageUserVeterinary"
+            app:layout_constraintVertical_bias="0.97"
+            app:srcCompat="@drawable/ic_take_photos_owner"
+            tools:ignore="VectorDrawableCompat"
+            tools:targetApi="lollipop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

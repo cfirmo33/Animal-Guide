@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name" translatable="false">Animal Guide</string>
+
+    <!-- Login Activity Strings -->
+    <string name="guide_subtitle_header" translatable="false">Guide</string>
+    <string name="guia_certo_para_seu_pet_text_header">O Guia certo para seu Pet</string>
+    <string name="email_login" translatable="false">Email</string>
+    <string name="forgot_password_login">Esqueceu a senha?</string>
+    <string name="button_access">Entrar</string>
+    <string name="login_google_button">Entrar com o Google</string>
+    <string name="create_account_login">Não tem conta? Cadastre-se</string>
+    <string name="terms_of_app_login">Utilizando o app, você concorda com os Termos de uso e com a Política de Privacidade.</string>
+    <string name="password_login">Senha</string>
+    <!-- Choose Activity Strings -->
+    <string name="text_choose_user_activity">Olá, Seja Bem Vindo. O Animal Guide foi desenvolvido para ajudar você e outros usuários. Então, antes de prosseguir, escolha o tipo de usuário que você utilizará no aplicativo.</string>
+    <string name="owner_pet_text">Dono(a) de Pet</string>
+    <string name="student_veterinary_text">Veterinário Universitário(a)</string>
+    <string name="veterinary_text">Veterinário(a)</string>
+    <string name="ong_text">ONG para Animais</string>
+    <!-- RegisterOwner Activity Strings -->
+    <string name="name_last_name">Nome e Sobrenome</string>
+    <string name="clear_fields_owner">Limpar Campos</string>
+    <string name="register_owner">Cadastre-se</string>
+    <string name="title_toolbar_owner">Cadastro do Dono</string>
+    <string name="exception_save_user_owner_database" translatable="false">Erro ao salvar usuário no Banco de Dados:</string>
+    <!-- RegisterStudent Activity Strings -->
+    <string name="name_college_student">Nome da Faculdade</string>
+    <string name="title_toolbar_student">Cadastro Universitário</string>
+    <!-- RegisterVeterinary Activity Strings -->
+    <string name="name_college_veterinary">Faculdade onde se formou</string>
+    <string name="title_toolbar_veterinary">Cadastro Veterinário</string>
+    <!-- RegisterONG Activity Strings -->
+    <string name="name_ong">Nome da ONG</string>
+    <string name="title_toolbar_ongs">Cadastro ONG</string>
+    <!-- String Exceptions to Register User Pet Owner -->
+    <string name="exception_name_last_name_register_owner">Insira seu Nome e Sobrenome</string>
+    <string name="message_toast_exception_register_owner">Preencha o campo com os dados Solicitados</string>
+    <string name="exception_email_register_owner">Insira seu Email</string>
+    <string name="exception_password_register_owner">Insira sua Senha</string>
+    <string name="exception_photo_user_owner">Erro ao inserir foto de perfil:</string>
+    <string name="title_alert_permissions_register_owner">Permissões Negadas</string>
+    <string name="button_confirm_alert_register_owner">Confirmar</string>
+    <string name="message_alert_register_owner">Para realizar seu cadastro de maneira correta é necessário aceitar as permissões exigidas pelo aplicativo.</string>
+    <string name="exception_password_register">Insira uma senha contendo letras e números</string>
+    <string name="exception_email_register">Por favor, insira um e-mail válido!</string>
+    <string name="exception_email_exists_register">Esse email já foi cadastrado, favor inserir outro e-mail!</string>
+    <string name="exception_web_register">Verifique sua conexão com a internet e tente novamente!</string>
+    <string name="exception_register_user">Erro ao efetuar cadastro:</string>
+    <string name="text_progress_bar_register_owner">Cadastrando…</string>
+    <string name="message_toast_sucess_register_user">Cadastro realizado com Sucesso! Para finalizá-lo confirme sua conta no link enviado para o Email que você inseriu ao se cadastrar.</string>
+    <string name="error_save_photo_firebase_register">Erro ao salvar Foto no Firebase:</string>
+    <string name="exception_storage_firebase_register">Erro ao acessar FirebaseStorage:</string>
+    <string name="title_alert_dialog_insert_photo_register">Inserir Foto</string>
+    <string name="message_alert_dialog_insert_photo_register">Deseja finalizar seu cadastro sem inserir uma Foto?</string>
+    <string name="button_positive_alert_dialog_insert_photo_register">Sim</string>
+    <string name="button_negative_alert_dialog_insert_photo_register">Não</string>
+    <!-- AlertDialog Customized Strings -->
+    <string name="title_alert_dialog_customized">Selecionar foto de Perfil</string>
+    <string name="btn_open_gallery_dialog">Abrir Galeria</string>
+    <string name="btn_open_camera_dialog">Abrir Câmera</string>
+    <string name="btn_cancel_dialog">Cancelar</string>
+    <string name="sucess_insert_photo_camera">Imagem inserida com Sucesso!</string>
+    <!-- String Exceptions to Register U0ser ONG -->
+    <string name="exception_password_register_ong">Insira o nome da ONG</string>
+    <!-- String Dialog Login Google -->
+    <string name="loading_login_google">Verificando Dados</string>
+    <!-- String Exceptions Class CheckDatabaseFirebase -->
+    <string name="exception_get_type_account">Erro ao pegar tipo da Conta do Usuário no Banco de Dados</string>
+    <string name="exception_acess_firebase_class_get_type_account" translatable="false">Erro ao acessar FirebaseDatabase:</string>
+    <!-- String Exceptions SignIn Google -->
+    <string name="exception_signIn_google">Erro ao conectar-se com o Google:</string>
+    <string name="exception_auth_google_signIn">Erro ao autenticar-se no sistema com sua conta do Google: </string>
+    <string name="exception_connect_servidor_google">Erro ao conectar-se com os servidores do Google:</string>
+    <!-- String Google Cloud -->
+    <string name="id_google_cloud_client" translatable="false">643957408603-l3295qt28cihkd696p7h8gf3nl3vadhd.apps.googleusercontent.com</string>
+    <!-- ForgotPassword Activity Strings -->
+    <string name="text_forgot_password">Insira no campo abaixo o email de cadastro associado à sua conta no Animal Guide.</string>
+    <string name="text_email_forgot_password">Email registrado no Animal Guide</string>
+    <string name="title_toolbar_forgot_password">Esqueci minha Senha</string>
+    <string name="text_check_email_forgot_password">Favor verificar sua caixa de emails.\nVocê receberá instruções para gerar\numa nova senha.</string>
+    <string name="btn_text_send_solicitation_forgor_password">Enviar Solicitação</string>
+</resources>
