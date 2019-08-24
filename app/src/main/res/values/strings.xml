@@ -79,4 +79,9 @@
     <string name="title_toolbar_forgot_password">Esqueci minha Senha</string>
     <string name="text_check_email_forgot_password">Favor verificar sua caixa de emails.\nVocê receberá instruções para gerar\numa nova senha.</string>
     <string name="btn_text_send_solicitation_forgor_password">Enviar Solicitação</string>
+    <string name="text_forgot_password_empty">Insira seu Email</string>
+    <string name="message_toast_forgot_password">Insira seu email para poder redefinir sua Senha.</string>
+    <string name="messase_toast_exception_forgot_password">Ocorreu um erro ao tentar enviar o link para seu Email:</string>
+    <string name="title_alert_forgot_password">Aviso</string>
+    <string name="message_alert_forgot_password">Acesse seu E-mail, siga as instruções e sua senha será alterada.</string>
 </resources>

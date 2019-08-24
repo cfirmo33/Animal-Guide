@@ -62,4 +62,9 @@
     <string name="title_toolbar_forgot_password" translatable="false">Forgot my Password</string>
     <string name="text_check_email_forgot_password" translatable="false">Please check your email box. You will be instructed to generate a new password.</string>
     <string name="btn_text_send_solicitation_forgor_password" translatable="false">Send Request</string>
+    <string name="text_forgot_password_empty" translatable="false">Enter your Email</string>
+    <string name="message_toast_forgot_password" translatable="false">Enter your email address to reset your Password.</string>
+    <string name="messase_toast_exception_forgot_password" translatable="false">An error occurred while trying to send the link to your Email:</string>
+    <string name="title_alert_forgot_password" translatable="false">Notice</string>
+    <string name="message_alert_forgot_password" translatable="false">Access your Email, follow the instructions and your password will be changed.</string>
 </resources>

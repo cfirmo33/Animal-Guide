@@ -4,41 +4,7 @@
             "outputFile": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml",
             "map": [
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/1ed2f5265d9394fe2f85076550a2a5da/jetified-play-services-basement-17.0.0/res/values-th/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "187",
-                        "endOffsets": "434"
-                    },
-                    "to": {
-                        "startLines": "54",
-                        "startColumns": "4",
-                        "startOffsets": "5446",
-                        "endColumns": "187",
-                        "endOffsets": "5629"
-                    }
-                },
-                {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/7b8dfcbcd5e1094d64169803cd9ade7d/jetified-facebook-android-sdk-4.14.1/res/values-th/values-th.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,219,334,470,573,642,711,773,845,922,1017,1094,1171,1259,1362,1424,1488,1609",
-                        "endColumns": "163,114,135,102,68,68,61,71,76,94,76,76,87,102,61,63,120,58",
-                        "endOffsets": "214,329,465,568,637,706,768,840,917,1012,1089,1166,1254,1357,1419,1483,1604,1663"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,64",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2764,2928,3043,3179,3282,3351,3420,3482,3554,3631,3726,3803,3880,3968,4071,4133,4197,6931",
-                        "endColumns": "163,114,135,102,68,68,61,71,76,94,76,76,87,102,61,63,120,58",
-                        "endOffsets": "2923,3038,3174,3277,3346,3415,3477,3549,3626,3721,3798,3875,3963,4066,4128,4192,4313,6985"
-                    }
-                },
-                {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/3a489f299f0b320b9e6b0910daea8782/places-2.0.0/res/values-th/values.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/9fc8dd79d93edd3b0a2ff3b2b51259b4/places-2.0.0/res/values-th/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -55,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/2ca40eb5fb4a61e7cadca418ff59f151/core-1.0.2/res/values-th/values-th.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "74",
-                        "startColumns": "4",
-                        "startOffsets": "7620",
-                        "endColumns": "100",
-                        "endOffsets": "7716"
-                    }
-                },
-                {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/749cf35ef07f7ad3c2ad1216dd32225f/appcompat-1.0.2/res/values-th/values-th.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/6d0da781aa28f2c1230fd37a0a313ca9/appcompat-1.0.2/res/values-th/values-th.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -89,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/34ef7ea3aa053c8964e32291e9d96811/play-services-base-17.0.0/res/values-th/values.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/762d0d6b278642cec54c5f394d4d18e7/core-1.0.2/res/values-th/values-th.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "74",
+                        "startColumns": "4",
+                        "startOffsets": "7620",
+                        "endColumns": "100",
+                        "endOffsets": "7716"
+                    }
+                },
+                {
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/6d052841cdf15a58036c1308ecc1a444/play-services-base-17.0.0/res/values-th/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -103,6 +69,40 @@
                         "startOffsets": "4318,4426,4605,4730,4839,5034,5160,5309,5634,5837,5944,6122,6246,6445,6626,6720,6818",
                         "endColumns": "107,178,124,108,194,125,148,136,202,106,177,123,198,180,93,97,112",
                         "endOffsets": "4421,4600,4725,4834,5029,5155,5304,5441,5832,5939,6117,6241,6440,6621,6715,6813,6926"
+                    }
+                },
+                {
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/c0eb351843f5c3ee1f3be6afdef5c234/jetified-play-services-basement-17.0.0/res/values-th/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "187",
+                        "endOffsets": "434"
+                    },
+                    "to": {
+                        "startLines": "54",
+                        "startColumns": "4",
+                        "startOffsets": "5446",
+                        "endColumns": "187",
+                        "endOffsets": "5629"
+                    }
+                },
+                {
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/res/values-th/values-th.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,219,334,470,573,642,711,773,845,922,1017,1094,1171,1259,1362,1424,1488,1609",
+                        "endColumns": "163,114,135,102,68,68,61,71,76,94,76,76,87,102,61,63,120,58",
+                        "endOffsets": "214,329,465,568,637,706,768,840,917,1012,1089,1166,1254,1357,1419,1483,1604,1663"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,64",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2764,2928,3043,3179,3282,3351,3420,3482,3554,3631,3726,3803,3880,3968,4071,4133,4197,6931",
+                        "endColumns": "163,114,135,102,68,68,61,71,76,94,76,76,87,102,61,63,120,58",
+                        "endOffsets": "2923,3038,3174,3277,3346,3415,3477,3549,3626,3721,3798,3875,3963,4066,4128,4192,4313,6985"
                     }
                 }
             ]
