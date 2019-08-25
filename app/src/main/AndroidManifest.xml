@@ -11,6 +11,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" />
 
     <application
         android:allowBackup="true"
@@ -18,24 +21,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".activitys.main_activitys.ONGMainActivity"></activity>
+        <activity android:name=".activitys.main_activitys.StudentMainActivity" />
+        <activity android:name=".activitys.main_activitys.VeterinaryMainActivity" />
+        <activity android:name=".activitys.login.AccountsActivity" />
         <activity
-            android:name=".activitys.ForgotPasswordActivity"
-            android:parentActivityName=".activitys.LoginActivity" />
-        <activity android:name=".activitys.MainActivity" />
+            android:name=".activitys.password.ForgotPasswordActivity"
+            android:parentActivityName=".activitys.login.LoginActivity" />
+        <activity android:name=".activitys.main_activitys.OwnerMainActivity" />
         <activity
             android:name=".registers.RegisterONGActivity"
-            android:parentActivityName=".activitys.ChooseActivity" />
+            android:parentActivityName=".activitys.login.ChooseActivity" />
         <activity
             android:name=".registers.RegisterVeterinaryActivity"
-            android:parentActivityName=".activitys.ChooseActivity" />
+            android:parentActivityName=".activitys.login.ChooseActivity" />
         <activity
             android:name=".registers.RegisterStudentActivity"
-            android:parentActivityName=".activitys.ChooseActivity" />
+            android:parentActivityName=".activitys.login.ChooseActivity" />
         <activity
             android:name=".registers.RegisterOwnerActivity"
-            android:parentActivityName=".activitys.ChooseActivity" />
-        <activity android:name=".activitys.ChooseActivity" />
-        <activity android:name=".activitys.LoginActivity">
+            android:parentActivityName=".activitys.login.ChooseActivity" />
+        <activity android:name=".activitys.login.ChooseActivity" />
+        <activity android:name=".activitys.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -20,7 +20,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.activitys.MainActivity;
+import com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 import com.marcelo.animalguide.firebase.UserFirebase;
@@ -68,7 +68,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
     private String getEmail;
     private String getProvedor;
     private String typeUser;
-    private String accountGoogle = "Sim";
+    private String accountGoogle = "Não";
     private static final int SELECAO_CAMERA = 100;
     private static final int SELECAO_GALERIA = 200;
 
@@ -209,10 +209,10 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
                 if (accountGoogle.equals("Sim"))
                 {
                     userGoogle.saveDatabase("registered_users");
-                    startActivity(new Intent(activity, MainActivity.class));
+                    startActivity(new Intent(activity, OwnerMainActivity.class));
                     finish();
                 }
-                else
+                else if (accountGoogle.equals("Não"))
                 {
                     registerUserEmailAndPassword();
                 }
@@ -289,7 +289,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
                                 {
                                     dialog.cancel();
                                     userGoogle.saveDatabase("registered_users");
-                                    startActivity(new Intent(activity, MainActivity.class));
+                                    startActivity(new Intent(activity, OwnerMainActivity.class));
                                     finish();
                                 }
                             }
@@ -367,7 +367,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
         {
             dialog.cancel();
             userClass.saveDatabase("registered_users");
-            startActivity(new Intent(activity, MainActivity.class));
+            startActivity(new Intent(activity, OwnerMainActivity.class));
             finish();
         }
         catch (Exception e)

@@ -37,24 +37,28 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity" />
+        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity" />
+        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity" />
+        <activity android:name="com.marcelo.animalguide.activitys.login.AccountsActivity" />
         <activity
-            android:name="com.marcelo.animalguide.activitys.ForgotPasswordActivity"
-            android:parentActivityName="com.marcelo.animalguide.activitys.LoginActivity" />
-        <activity android:name="com.marcelo.animalguide.activitys.MainActivity" />
+            android:name="com.marcelo.animalguide.activitys.password.ForgotPasswordActivity"
+            android:parentActivityName="com.marcelo.animalguide.activitys.login.LoginActivity" />
+        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity" />
         <activity
             android:name="com.marcelo.animalguide.registers.RegisterONGActivity"
-            android:parentActivityName="com.marcelo.animalguide.activitys.ChooseActivity" />
+            android:parentActivityName="com.marcelo.animalguide.activitys.login.ChooseActivity" />
         <activity
             android:name="com.marcelo.animalguide.registers.RegisterVeterinaryActivity"
-            android:parentActivityName="com.marcelo.animalguide.activitys.ChooseActivity" />
+            android:parentActivityName="com.marcelo.animalguide.activitys.login.ChooseActivity" />
         <activity
             android:name="com.marcelo.animalguide.registers.RegisterStudentActivity"
-            android:parentActivityName="com.marcelo.animalguide.activitys.ChooseActivity" />
+            android:parentActivityName="com.marcelo.animalguide.activitys.login.ChooseActivity" />
         <activity
             android:name="com.marcelo.animalguide.registers.RegisterOwnerActivity"
-            android:parentActivityName="com.marcelo.animalguide.activitys.ChooseActivity" />
-        <activity android:name="com.marcelo.animalguide.activitys.ChooseActivity" />
-        <activity android:name="com.marcelo.animalguide.activitys.LoginActivity" >
+            android:parentActivityName="com.marcelo.animalguide.activitys.login.ChooseActivity" />
+        <activity android:name="com.marcelo.animalguide.activitys.login.ChooseActivity" />
+        <activity android:name="com.marcelo.animalguide.activitys.login.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

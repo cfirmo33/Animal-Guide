@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <string name="app_name">Animal Guide</string>
-    <string name="terms_of_app_login" translatable="false">By using the app, you agree to the Terms of Use and the Privacy Policy.</string>
     <string name="guia_certo_para_seu_pet_text_header" translatable="false">The Right Guide For Your Pet</string>
     <string name="login_google_button" translatable="false">Sign in with Google</string>
     <string name="forgot_password_login" translatable="false">Forgot Password?</string>
@@ -67,4 +67,9 @@
     <string name="messase_toast_exception_forgot_password" translatable="false">An error occurred while trying to send the link to your Email:</string>
     <string name="title_alert_forgot_password" translatable="false">Notice</string>
     <string name="message_alert_forgot_password" translatable="false">Access your Email, follow the instructions and your password will be changed.</string>
+    <string name="exception_login_user_not_exist" translatable="false">User not found Check your data and try again.</string>
+    <string name="exception_email_password_login" translatable="false">Incorrect email or password.</string>
+    <string name="error_login" translatable="false">Unable to login to the system:</string>
+    <string name="text_view_alert_dialog_login" translatable="false">Logging In</string>
+
 </resources>

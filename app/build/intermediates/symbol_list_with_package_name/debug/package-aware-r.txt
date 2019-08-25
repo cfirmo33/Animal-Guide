@@ -1955,6 +1955,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView2
+id textView3
+id textView4
 id textViewCheckEmail
 id textViewCreateAccount
 id textViewForgotPassword
@@ -2049,14 +2052,18 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_accounts
 layout activity_choose
 layout activity_forgot_password
 layout activity_login
-layout activity_main
+layout activity_ong_main
+layout activity_owner_main
 layout activity_register_ong
 layout activity_register_owner
 layout activity_register_student
 layout activity_register_veterinary
+layout activity_student_main
+layout activity_veterinary_main
 layout adt_layout_hint
 layout adt_layout_toast
 layout auth_method_picker_layout
@@ -2241,6 +2248,7 @@ string email_account_creation_error
 string email_hint
 string email_login
 string error_email_does_not_exist
+string error_login
 string error_save_photo_firebase_register
 string error_user_collision
 string error_weak_password
@@ -2248,9 +2256,11 @@ string exception_acess_firebase_class_get_type_account
 string exception_auth_google_signIn
 string exception_connect_servidor_google
 string exception_email_exists_register
+string exception_email_password_login
 string exception_email_register
 string exception_email_register_owner
 string exception_get_type_account
+string exception_login_user_not_exist
 string exception_name_last_name_register_owner
 string exception_password_register
 string exception_password_register_ong
@@ -2341,7 +2351,6 @@ string sign_in_with_google
 string status_bar_notification_info_overflow
 string student_veterinary_text
 string sucess_insert_photo_camera
-string terms_of_app_login
 string terms_of_service
 string text_check_email_forgot_password
 string text_choose_user_activity
@@ -2349,6 +2358,7 @@ string text_email_forgot_password
 string text_forgot_password
 string text_forgot_password_empty
 string text_progress_bar_register_owner
+string text_view_alert_dialog_login
 string title_alert_dialog_customized
 string title_alert_dialog_insert_photo_register
 string title_alert_forgot_password

@@ -9,8 +9,11 @@
     <string name="button_access">Entrar</string>
     <string name="login_google_button">Entrar com o Google</string>
     <string name="create_account_login">Não tem conta? Cadastre-se</string>
-    <string name="terms_of_app_login">Utilizando o app, você concorda com os Termos de uso e com a Política de Privacidade.</string>
     <string name="password_login">Senha</string>
+    <string name="exception_login_user_not_exist">Usuário não encontrado. Verifique seus dados e tente novamente.</string>
+    <string name="exception_email_password_login">Email ou Senha incorretos.</string>
+    <string name="error_login">Não foi possiver realizar seu Login no sistema:</string>
+    <string name="text_view_alert_dialog_login">Efetuando Login</string>
     <!-- Choose Activity Strings -->
     <string name="text_choose_user_activity">Olá, Seja Bem Vindo. O Animal Guide foi desenvolvido para ajudar você e outros usuários. Então, antes de prosseguir, escolha o tipo de usuário que você utilizará no aplicativo.</string>
     <string name="owner_pet_text">Dono(a) de Pet</string>
