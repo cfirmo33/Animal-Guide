@@ -1,7 +1,7 @@
 <b> 
     Animal Guide - O Guia certo para seu Pet
     <hr>
-    <p>Este aplicativo é um projeto pessoal meu, onde eu irei desenvolver um Aplicativo que facilite o cuidado para com os Pets,e  pretendo deixar todo código fonte disponibilizado aqui.</p><br>
+    <p>Este aplicativo é um projeto pessoal meu, onde eu irei desenvolver um Aplicativo que facilite o cuidado para com os Pets,e todo código fonte ficará disponibilizado aqui.</p><br>
     <p>O mesmo está sendo desenvolvido utilizando a Linguagem de Programação <b>Java</b>
     voltada para o Android e, usufruindo dos recursos oferecidos pelas plataformas do Google:</p>
     <ul>
