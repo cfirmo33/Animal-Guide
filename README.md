@@ -14,8 +14,9 @@
     <li>Cadastro com:</li>
     <li>Email e Senha</li>
     <li>Conta do Google</li>
-    <p>Login utilizando:</p>
     <ul>
+    <p>Login utilizando:</p>
+     <ul>
     <li>Email e Senha</li>
     <li>Conta do Google</li>
     </ul>
