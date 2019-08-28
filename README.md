@@ -20,6 +20,6 @@
     <li>Email e Senha</li>
     <li>Conta do Google</li>
     </ul>
-    <p>Também alterar sua senha caso tenha esquecido a que foi inserida ao se cadastrar na plataforma.</p>
+    <p>Também alterar sua senha caso tenha esquecido da mesma ao se cadastrar na plataforma.</p>
      <p>Para executar o código no próprio computador será necessário criar os arquivos JSON
     do Firebase e do Google Cloud e, ainda, autenticar o aplicativo nas plataformas; caso contrário ele não irá funcionar.</p>
