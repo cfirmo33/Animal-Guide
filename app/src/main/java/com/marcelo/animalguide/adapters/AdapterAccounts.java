@@ -51,117 +51,104 @@ public class AdapterAccounts extends RecyclerView.Adapter<AdapterAccounts.MyView
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, int position)
     {
-        if (typeUser.equals("Pet Owner"))
+        switch (typeUser)
         {
-            holder.email.setText(getEmailBundle);
-            holder.typeUser.setText(R.string.owner_pet_text);
+            case "Pet Owner":
+                holder.email.setText(getEmailBundle);
+                holder.typeUser.setText(R.string.owner_pet_text);
 
-            idPhotos = EncryptionSHA1.encryptionString(getEmailBundle);
+                idPhotos = EncryptionSHA1.encryptionString(getEmailBundle);
 
-            imageReference = storageReference
-                    .child("Cadastro do Usuário")
-                    .child(Objects.requireNonNull(idPhotos))
-                    .child("photo.png");
+                imageReference = storageReference.child("Cadastro do Usuário").child(Objects.requireNonNull(idPhotos)).child("photo.png");
 
-            imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
-            {
-                @Override
-                public void onSuccess(Uri uri)
+                imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
                 {
-                    if (uri != null)
+                    @Override
+                    public void onSuccess(Uri uri)
                     {
-                        Picasso.get().load(uri).into(holder.imageUser);
+                        if (uri != null)
+                        {
+                            Picasso.get().load(uri).into(holder.imageUser);
+                        }
+                        else
+                        {
+                            holder.imageUser.setImageResource(R.drawable.photo_profile);
+                        }
                     }
-                    else
-                    {
-                        holder.imageUser.setImageResource(R.drawable.photo_profile);
-                    }
-                }
-            });
-        }
-        else if (typeUser.equals("Student"))
-        {
-            holder.email.setText(getEmailBundle);
-            holder.typeUser.setText(R.string.type_user_student_adapter_accounts);
+                });
+                break;
+            case "Student":
+                holder.email.setText(getEmailBundle);
+                holder.typeUser.setText(R.string.type_user_student_adapter_accounts);
 
-            idPhotos = EncryptionSHA1.encryptionString(getEmailBundle);
+                idPhotos = EncryptionSHA1.encryptionString(getEmailBundle);
 
-            imageReference = storageReference
-                    .child("Cadastro do Usuário")
-                    .child(Objects.requireNonNull(idPhotos))
-                    .child("photo.png");
+                imageReference = storageReference.child("Cadastro do Usuário").child(Objects.requireNonNull(idPhotos)).child("photo.png");
 
-            imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
-            {
-                @Override
-                public void onSuccess(Uri uri)
+                imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
                 {
-                    if (uri != null)
+                    @Override
+                    public void onSuccess(Uri uri)
                     {
-                        Picasso.get().load(uri).into(holder.imageUser);
+                        if (uri != null)
+                        {
+                            Picasso.get().load(uri).into(holder.imageUser);
+                        }
+                        else
+                        {
+                            holder.imageUser.setImageResource(R.drawable.photo_profile);
+                        }
                     }
-                    else
-                    {
-                        holder.imageUser.setImageResource(R.drawable.photo_profile);
-                    }
-                }
-            });
-        }
-        else if (typeUser.equals("Veterinary"))
-        {
-            holder.email.setText(getEmailBundle);
-            holder.typeUser.setText(R.string.veterinary_text);
+                });
+                break;
+            case "Veterinary":
+                holder.email.setText(getEmailBundle);
+                holder.typeUser.setText(R.string.veterinary_text);
 
-            idPhotos = EncryptionSHA1.encryptionString(getEmailBundle);
+                idPhotos = EncryptionSHA1.encryptionString(getEmailBundle);
 
-            imageReference = storageReference
-                    .child("Cadastro do Usuário")
-                    .child(Objects.requireNonNull(idPhotos))
-                    .child("photo.png");
+                imageReference = storageReference.child("Cadastro do Usuário").child(Objects.requireNonNull(idPhotos)).child("photo.png");
 
-            imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
-            {
-                @Override
-                public void onSuccess(Uri uri)
+                imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
                 {
-                    if (uri != null)
+                    @Override
+                    public void onSuccess(Uri uri)
                     {
-                        Picasso.get().load(uri).into(holder.imageUser);
+                        if (uri != null)
+                        {
+                            Picasso.get().load(uri).into(holder.imageUser);
+                        }
+                        else
+                        {
+                            holder.imageUser.setImageResource(R.drawable.photo_profile);
+                        }
                     }
-                    else
-                    {
-                        holder.imageUser.setImageResource(R.drawable.photo_profile);
-                    }
-                }
-            });
-        }
-        else if (typeUser.equals("ONG"))
-        {
-            holder.email.setText(getEmailBundle);
-            holder.typeUser.setText(R.string.type_user_ong_adapter_accounts);
+                });
+                break;
+            case "ONG":
+                holder.email.setText(getEmailBundle);
+                holder.typeUser.setText(R.string.type_user_ong_adapter_accounts);
 
-            idPhotos = EncryptionSHA1.encryptionString(getEmailBundle);
+                idPhotos = EncryptionSHA1.encryptionString(getEmailBundle);
 
-            imageReference = storageReference
-                    .child("Cadastro do Usuário")
-                    .child(Objects.requireNonNull(idPhotos))
-                    .child("photo.png");
+                imageReference = storageReference.child("Cadastro do Usuário").child(Objects.requireNonNull(idPhotos)).child("photo.png");
 
-            imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
-            {
-                @Override
-                public void onSuccess(Uri uri)
+                imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
                 {
-                    if (uri != null)
+                    @Override
+                    public void onSuccess(Uri uri)
                     {
-                        Picasso.get().load(uri).into(holder.imageUser);
+                        if (uri != null)
+                        {
+                            Picasso.get().load(uri).into(holder.imageUser);
+                        }
+                        else
+                        {
+                            holder.imageUser.setImageResource(R.drawable.photo_profile);
+                        }
                     }
-                    else
-                    {
-                        holder.imageUser.setImageResource(R.drawable.photo_profile);
-                    }
-                }
-            });
+                });
+                break;
         }
         holder.email.setEnabled(false);
     }

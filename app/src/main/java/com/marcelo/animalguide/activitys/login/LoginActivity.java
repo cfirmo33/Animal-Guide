@@ -73,7 +73,6 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     {
         editTextEmail = findViewById(R.id.editTextEmailLogin);
         editTextPassword = findViewById(R.id.editTextPasswordLogin);
-
         initializeGoogleSign();
     }
 
