@@ -51,8 +51,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     private Activity activity = this;
     private String exception;
     private String getTypeAccount;
-    private String nameGoogle;
-    private String emailGoogle;
+    private String nameGoogle, emailGoogle;
 
     private EditText editTextEmail, editTextPassword;
     private AlertDialog dialogLoading;

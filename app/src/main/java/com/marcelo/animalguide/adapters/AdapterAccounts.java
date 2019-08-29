@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -13,14 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.storage.StorageReference;
 import com.marcelo.animalguide.R;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 import com.marcelo.animalguide.models.classes.UserClass;
-import com.marcelo.animalguide.models.classes.UserGoogle;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -176,13 +172,13 @@ public class AdapterAccounts extends RecyclerView.Adapter<AdapterAccounts.MyView
         return listUsers.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder
+    class MyViewHolder extends RecyclerView.ViewHolder
     {
         private EditText email;
         private TextView typeUser;
         private CircleImageView imageUser;
 
-        public MyViewHolder(@NonNull View itemView)
+        MyViewHolder(@NonNull View itemView)
         {
             super(itemView);
 

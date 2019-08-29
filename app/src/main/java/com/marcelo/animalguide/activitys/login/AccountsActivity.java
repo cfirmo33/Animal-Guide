@@ -22,7 +22,6 @@ import com.marcelo.animalguide.adapters.AdapterAccounts;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 import com.marcelo.animalguide.models.classes.UserClass;
-import com.marcelo.animalguide.models.classes.UserGoogle;
 import com.marcelo.animalguide.models.message_toast.MessagesToast;
 
 import java.util.ArrayList;

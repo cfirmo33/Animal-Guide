@@ -22,7 +22,7 @@
     <p>Login utilizando:</p>
     <ul>
     <li>Email e Senha</li>
-    <li>Conta do Google</li>
+    <li>Conta do Google.</li>
     </ul>
     <p>Também é possível realizar a alteração da senha, caso tenha esquecido a que foi inserida ao se cadastrar na plataforma.</p>
      <p>Para executar o código no próprio computador será necessário criar os arquivos JSON
