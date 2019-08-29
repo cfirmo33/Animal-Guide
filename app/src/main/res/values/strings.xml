@@ -87,4 +87,12 @@
     <string name="messase_toast_exception_forgot_password">Ocorreu um erro ao tentar enviar o link para seu Email:</string>
     <string name="title_alert_forgot_password">Aviso</string>
     <string name="message_alert_forgot_password">Acesse seu E-mail, siga as instruções e sua senha será alterada.</string>
+    <!-- Accounts Activity Strings -->
+    <string name="text_button_account_changed">Entrar com outra conta</string>
+    <string name="text_button_register_account">Cadastre-se</string>
+    <string name="text_button_enter_account">Entrar</string>
+    <string name="text_button_remove_account">Remover</string>
+    <string name="erro_retriveing_accounts_system">Erro ao recuperar contas salvas no aplicativo:</string>
+    <string name="type_user_student_adapter_accounts">Estudante</string>
+    <string name="type_user_ong_adapter_accounts">Dono(a) de ONGs</string>
 </resources>

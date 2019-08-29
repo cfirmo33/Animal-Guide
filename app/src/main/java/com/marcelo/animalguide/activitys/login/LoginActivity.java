@@ -238,7 +238,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                                     break;
                             }
                         }
-                        catch (Exception e)
+                        catch (NullPointerException e)
                         {
                             Intent intent = new Intent(activity, ChooseActivity.class);
                             intent.putExtra("getName", nameGoogle);

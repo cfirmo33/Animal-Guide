@@ -156,6 +156,7 @@ public class RegisterONGActivity extends AppCompatActivity
                 userONG.setEmail(editTextEmailUser.getText().toString());
                 userONG.setPassword(editTextPasswordUser.getText().toString());
                 userONG.setProvedor("Email");
+                userONG.setSaveLogin(false);
                 if (imagem == null)
                 {
                     createAlertDialog();
@@ -192,6 +193,7 @@ public class RegisterONGActivity extends AppCompatActivity
                 userGoogle.setEmailGoogle(getEmail);
                 userGoogle.setNameONG(editTextNameONG.getText().toString());
                 userGoogle.setProvedor(getProvedor);
+                userGoogle.setSaveLogin(false);
 
                 if (imagem == null)
                 {
@@ -254,7 +256,9 @@ public class RegisterONGActivity extends AppCompatActivity
         idUser = EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString());
 
         /* Structure of photos in FirebaseStorage **/
-        StorageReference imagemRef = imageReference.child("Cadastro do Usuário").child(idUser).child("photo.png");
+        StorageReference imagemRef = imageReference.child("Cadastro do Usuário")
+                .child(idUser)
+                .child("photo.png");
 
         UploadTask uploadTask = imagemRef.putBytes(dadosImagem);
         uploadTask.addOnFailureListener(new OnFailureListener()

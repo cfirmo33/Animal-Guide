@@ -15,6 +15,7 @@ public class UserGoogle
     private String provedor;
     private String urlPhoto;
     private String saveAccount;
+    private Boolean saveLogin;
     private DatabaseReference databaseReference = ServicesFirebase.getFirebaseDatabase();
 
     public UserGoogle()
@@ -108,5 +109,15 @@ public class UserGoogle
     public void setSaveAccount(String saveAccount)
     {
         this.saveAccount = saveAccount;
+    }
+
+    public Boolean getSaveLogin()
+    {
+        return saveLogin;
+    }
+
+    public void setSaveLogin(Boolean saveLogin)
+    {
+        this.saveLogin = saveLogin;
     }
 }

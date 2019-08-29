@@ -11,6 +11,7 @@
     <string name="button_positive_alert_dialog_insert_photo_register" translatable="false">Yes</string>
     <string name="clear_fields_owner" translatable="false">Clear Fields</string>
     <string name="create_account_login" translatable="false">No account yet? Register</string>
+    <string name="erro_retriveing_accounts_system" translatable="false">Error retrieving accounts saved in app:</string>
     <string name="error_login" translatable="false">Unable to login to the system:</string>
     <string name="error_save_photo_firebase_register" translatable="false">Error saving Photo in Firebase:</string>
     <string name="exception_acess_firebase_class_get_type_account">Error accessing FirebaseDatabase:</string>
@@ -53,6 +54,10 @@
     <string name="register_owner" translatable="false">Register</string>
     <string name="student_veterinary_text" translatable="false">Student Associate degree (a)</string>
     <string name="sucess_insert_photo_camera" translatable="false">Image inserted successfully!</string>
+    <string name="text_button_account_changed" translatable="false">Sign in with another account</string>
+    <string name="text_button_enter_account" translatable="false">Login</string>
+    <string name="text_button_register_account" translatable="false">Register</string>
+    <string name="text_button_remove_account" translatable="false">Delete</string>
     <string name="text_check_email_forgot_password" translatable="false">Please check your email box. You will be instructed to generate a new password.</string>
     <string name="text_choose_user_activity" translatable="false">Hello welcome. The Animal Guide is designed to help you and other users. Then, before proceeding, choose the type of user you will use in the application.</string>
     <string name="text_email_forgot_password" translatable="false">Registered Email at Animal Guide</string>
@@ -69,5 +74,7 @@
     <string name="title_toolbar_owner" translatable="false">Owner Registration</string>
     <string name="title_toolbar_student" translatable="false">University Registration</string>
     <string name="title_toolbar_veterinary" translatable="false">Veterinary Registration</string>
+    <string name="type_user_ong_adapter_accounts" translatable="false">NGO Owner</string>
+    <string name="type_user_student_adapter_accounts" translatable="false">Student</string>
     <string name="veterinary_text" translatable="false">Vet(a)</string>
 </resources>

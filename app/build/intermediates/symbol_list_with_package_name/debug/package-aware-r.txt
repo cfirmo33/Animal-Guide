@@ -1699,15 +1699,19 @@ id btn_holder
 id button
 id buttonCameraDialog
 id buttonCancelDialog
+id buttonChangeAccount
+id buttonEnterAccount
 id buttonGaleriaDialog
 id buttonGoogleLogin
 id buttonLoginEmail
 id buttonPanel
 id buttonRecoveryPassword
+id buttonRegister
 id buttonRegisterONG
 id buttonRegisterOwner
 id buttonRegisterStudent
 id buttonRegisterVeterinary
+id buttonRemoveAccount
 id button_create
 id button_done
 id button_ok
@@ -1752,6 +1756,7 @@ id direct
 id disableHome
 id display_always
 id do_delete
+id editTextAdapterEmailAccountsUser
 id editTextEmailForgotPassword
 id editTextEmailLogin
 id editTextEmailRegisterONG
@@ -1808,10 +1813,12 @@ id imageUserONG
 id imageUserOwner
 id imageUserStudent
 id imageUserVeterinary
+id imageViewAdapterAccountsUser
 id imageViewIconLogin
 id include
 id info
 id inline
+id inputTextAdapterEmailAccountsUser
 id inputTextEmailForgotPassword
 id inputTextEmailLogin
 id inputTextEmailRegisterONG
@@ -1839,6 +1846,9 @@ id left
 id light
 id line1
 id line3
+id linearLayoutButtons
+id linearLayoutObjects
+id linearLayoutPhotoAccount
 id listMode
 id list_item
 id logo
@@ -1896,6 +1906,7 @@ id progress_bar
 id progress_circular
 id progress_horizontal
 id radio
+id recyclerViewAccounts
 id right
 id right_icon
 id right_side
@@ -1954,10 +1965,10 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id textView2
 id textView3
 id textView4
+id textViewAdapterTypeAccount
 id textViewCheckEmail
 id textViewCreateAccount
 id textViewForgotPassword
@@ -1966,6 +1977,7 @@ id textViewOwnerPet
 id textViewSelectPhotoProfile
 id textViewStudent
 id textViewTextGuide
+id textViewTitleAccounts
 id textViewTitleChooseUser
 id textViewTitleForgorPassword
 id textViewTitleLoading
@@ -2094,6 +2106,7 @@ layout email_hint_container_layout
 layout forgot_password_layout
 layout idp_button_facebook
 layout idp_button_google
+layout layout_recycler_accouns
 layout loading
 layout messenger_button_send_blue_large
 layout messenger_button_send_blue_round
@@ -2247,6 +2260,7 @@ string do_delete
 string email_account_creation_error
 string email_hint
 string email_login
+string erro_retriveing_accounts_system
 string error_email_does_not_exist
 string error_login
 string error_save_photo_firebase_register
@@ -2352,6 +2366,10 @@ string status_bar_notification_info_overflow
 string student_veterinary_text
 string sucess_insert_photo_camera
 string terms_of_service
+string text_button_account_changed
+string text_button_enter_account
+string text_button_register_account
+string text_button_remove_account
 string text_check_email_forgot_password
 string text_choose_user_activity
 string text_email_forgot_password
@@ -2376,6 +2394,8 @@ string title_toolbar_veterinary
 string title_welcome_back_idp_prompt
 string title_welcome_back_password_prompt
 string trouble_signing_in
+string type_user_ong_adapter_accounts
+string type_user_student_adapter_accounts
 string veterinary_text
 string welcome_back
 string welcome_back_idp_header

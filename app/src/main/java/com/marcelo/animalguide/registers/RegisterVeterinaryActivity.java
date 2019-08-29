@@ -151,6 +151,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
                 userClass.setEmail(editTextEmailUser.getText().toString());
                 userClass.setPassword(editTextPasswordUser.getText().toString());
                 userClass.setProvedor("Email");
+                userClass.setSaveLogin(false);
                 if (imagem == null)
                 {
                     createAlertDialog();
@@ -181,6 +182,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
                 userGoogle.setNameGoogle(getNome);
                 userGoogle.setEmailGoogle(getEmail);
                 userGoogle.setProvedor(getProvedor);
+                userGoogle.setSaveLogin(false);
 
                 if (imagem == null)
                 {

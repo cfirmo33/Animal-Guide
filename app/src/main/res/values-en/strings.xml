@@ -71,5 +71,12 @@
     <string name="exception_email_password_login" translatable="false">Incorrect email or password.</string>
     <string name="error_login" translatable="false">Unable to login to the system:</string>
     <string name="text_view_alert_dialog_login" translatable="false">Logging In</string>
+    <string name="text_button_account_changed" translatable="false">Sign in with another account</string>
+    <string name="text_button_register_account" translatable="false">Register</string>
+    <string name="text_button_enter_account" translatable="false">Login</string>
+    <string name="text_button_remove_account" translatable="false">Delete</string>
+    <string name="erro_retriveing_accounts_system" translatable="false">Error retrieving accounts saved in app:</string>
+    <string name="type_user_student_adapter_accounts" translatable="false">Student</string>
+    <string name="type_user_ong_adapter_accounts" translatable="false">NGO Owner</string>
 
 </resources>

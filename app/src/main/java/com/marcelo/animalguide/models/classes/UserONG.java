@@ -14,6 +14,7 @@ public class UserONG
     private String password;
     private String nameONG;
     private String provedor;
+    private Boolean saveLogin;
     private DatabaseReference databaseReference = ServicesFirebase.getFirebaseDatabase();
 
     public UserONG()
@@ -98,5 +99,15 @@ public class UserONG
     public void setProvedor(String provedor)
     {
         this.provedor = provedor;
+    }
+
+    public Boolean getSaveLogin()
+    {
+        return saveLogin;
+    }
+
+    public void setSaveLogin(Boolean saveLogin)
+    {
+        this.saveLogin = saveLogin;
     }
 }

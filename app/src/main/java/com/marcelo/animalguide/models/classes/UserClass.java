@@ -13,6 +13,7 @@ public class UserClass
     private String email;
     private String password;
     private String provedor;
+    private Boolean saveLogin;
     private DatabaseReference databaseReference = ServicesFirebase.getFirebaseDatabase();
 
     public UserClass ()
@@ -22,7 +23,9 @@ public class UserClass
 
     public void saveDatabase(String node)
     {
-        DatabaseReference userReference = databaseReference.child(node).child(getIdUser());
+        DatabaseReference userReference = databaseReference
+                .child(node)
+                .child(getIdUser());
 
         userReference.setValue(this);
     }
@@ -87,5 +90,15 @@ public class UserClass
     public void setProvedor(String provedor)
     {
         this.provedor = provedor;
+    }
+
+    public Boolean getSaveLogin()
+    {
+        return saveLogin;
+    }
+
+    public void setSaveLogin(Boolean saveLogin)
+    {
+        this.saveLogin = saveLogin;
     }
 }

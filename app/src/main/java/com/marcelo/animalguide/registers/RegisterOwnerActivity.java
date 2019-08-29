@@ -151,6 +151,7 @@ public class RegisterOwnerActivity extends AppCompatActivity
                 userClass.setEmail(editTextEmailUser.getText().toString());
                 userClass.setPassword(editTextPasswordUser.getText().toString());
                 userClass.setProvedor("Email");
+                userClass.setSaveLogin(false);
                 if (imagem == null)
                 {
                     createAlertDialog();
@@ -181,6 +182,7 @@ public class RegisterOwnerActivity extends AppCompatActivity
                 userGoogle.setNameGoogle(getNome);
                 userGoogle.setEmailGoogle(getEmail);
                 userGoogle.setProvedor(getProvedor);
+                userGoogle.setSaveLogin(false);
 
                 if (imagem == null)
                 {
@@ -270,8 +272,7 @@ public class RegisterOwnerActivity extends AppCompatActivity
                     {
                         imageReference = imageReference
                                 .child("Cadastro do Usuário")
-                                .child(idUser)
-                                .child("photo.png");
+                                .child(idUser).child("photo.png");
 
                         imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
                         {
@@ -309,53 +310,52 @@ public class RegisterOwnerActivity extends AppCompatActivity
     {
         createDialogLoading();
 
-        authentication.createUserWithEmailAndPassword(userClass.getEmail(), userClass.getPassword())
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
+        authentication.createUserWithEmailAndPassword(userClass.getEmail(), userClass.getPassword()).addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
+        {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task)
+            {
+                if (task.isSuccessful())
                 {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task)
+                    disableObjects();
+
+                    if (imagem != null)
                     {
-                        if (task.isSuccessful())
-                        {
-                            disableObjects();
-
-                            if (imagem != null)
-                            {
-                                saveImageFirebaseStorage();
-                            }
-
-                            saveDatabaseAccountEmail();
-
-                            UserFirebase.updateNameUser(userClass.getName());
-                        }
-                        else
-                        {
-                            dialog.cancel();
-                            try
-                            {
-                                throw Objects.requireNonNull(task.getException());
-                            }
-                            catch (FirebaseAuthWeakPasswordException e)
-                            {
-                                exception = getString(R.string.exception_password_register);
-                            }
-                            catch (FirebaseAuthInvalidCredentialsException e)
-                            {
-                                exception = getString(R.string.exception_email_register);
-                            }
-                            catch (FirebaseAuthUserCollisionException e)
-                            {
-                                exception = getString(R.string.exception_email_exists_register);
-                            }
-                            catch (Exception e)
-                            {
-                                exception = getString(R.string.exception_register_user) + e.getMessage();
-                                e.printStackTrace();
-                            }
-                            MessagesToast.createMessageError(exception, activity);
-                        }
+                        saveImageFirebaseStorage();
                     }
-                });
+
+                    saveDatabaseAccountEmail();
+
+                    UserFirebase.updateNameUser(userClass.getName());
+                }
+                else
+                {
+                    dialog.cancel();
+                    try
+                    {
+                        throw Objects.requireNonNull(task.getException());
+                    }
+                    catch (FirebaseAuthWeakPasswordException e)
+                    {
+                        exception = getString(R.string.exception_password_register);
+                    }
+                    catch (FirebaseAuthInvalidCredentialsException e)
+                    {
+                        exception = getString(R.string.exception_email_register);
+                    }
+                    catch (FirebaseAuthUserCollisionException e)
+                    {
+                        exception = getString(R.string.exception_email_exists_register);
+                    }
+                    catch (Exception e)
+                    {
+                        exception = getString(R.string.exception_register_user) + e.getMessage();
+                        e.printStackTrace();
+                    }
+                    MessagesToast.createMessageError(exception, activity);
+                }
+            }
+        });
     }
 
     private void saveDatabaseAccountEmail()
