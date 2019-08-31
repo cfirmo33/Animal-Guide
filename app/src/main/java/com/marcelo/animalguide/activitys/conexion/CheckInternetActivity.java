@@ -17,7 +17,6 @@ import java.util.Objects;
 
 public class CheckInternetActivity extends AppCompatActivity
 {
-    private boolean conex;
     private Activity activity = this;
 
     @Override
@@ -32,6 +31,7 @@ public class CheckInternetActivity extends AppCompatActivity
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = Objects.requireNonNull(cm).getActiveNetworkInfo();
 
+        boolean conex;
         if (netInfo != null && netInfo.isConnected())
         {
             conex = true;

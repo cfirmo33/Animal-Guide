@@ -453,7 +453,6 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
                 dialogPhotos.dismiss();
             }
         });
-
         btnCamera.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -462,7 +461,6 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
                 openDeviceCamera();
             }
         });
-
         btnGaleria.setOnClickListener(new View.OnClickListener()
         {
             @Override

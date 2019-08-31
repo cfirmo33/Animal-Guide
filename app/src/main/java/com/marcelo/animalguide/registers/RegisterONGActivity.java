@@ -465,7 +465,6 @@ public class RegisterONGActivity extends AppCompatActivity
                 dialogPhotos.dismiss();
             }
         });
-
         btnCamera.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -474,7 +473,6 @@ public class RegisterONGActivity extends AppCompatActivity
                 openDeviceCamera();
             }
         });
-
         btnGaleria.setOnClickListener(new View.OnClickListener()
         {
             @Override

@@ -450,7 +450,6 @@ public class RegisterStudentActivity extends AppCompatActivity
                 dialogPhotos.dismiss();
             }
         });
-
         btnCamera.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -459,7 +458,6 @@ public class RegisterStudentActivity extends AppCompatActivity
                 openDeviceCamera();
             }
         });
-
         btnGaleria.setOnClickListener(new View.OnClickListener()
         {
             @Override
