@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/ic_home"
+        android:icon="@drawable/ic_feed_navigation_bottom_24dp"
+        android:title="@string/title_ic_feed_menu_navigation_bottom"/>
+
+    <item android:id="@+id/ic_search"
+        android:icon="@drawable/ic_search_navigation_bottom_24dp"
+        android:title="@string/title_ic_pesquisar_menu_navigation_bottom"/>
+
+    <item android:id="@+id/ic_mapa"
+        android:icon="@drawable/ic_map_navigation_bottom_24dp"
+        android:title="@string/title_ic_maps_menu_navigation_bottom"/>
+
+    <item android:id="@+id/ic_like"
+        android:icon="@drawable/ic_notications_navigation_bottom_24dp"
+        android:title="@string/title_ic_likes_menu_navigation_bottom"/>
+
+    <item android:id="@+id/ic_pets"
+        android:icon="@drawable/ic_pets_navigation_bottom_24dp"
+        android:title="@string/title_ic_pets_menu_navigation_bottom"/>
+
+</menu>

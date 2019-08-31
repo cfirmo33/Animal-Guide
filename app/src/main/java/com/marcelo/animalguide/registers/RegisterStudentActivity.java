@@ -25,7 +25,7 @@ import android.widget.EditText;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity;
+import com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 import com.marcelo.animalguide.firebase.UserFirebase;
@@ -266,7 +266,7 @@ public class RegisterStudentActivity extends AppCompatActivity
                 if (accountGoogle.equals("Sim"))
                 {
                     userGoogle.saveDatabase("registered_users");
-                    startActivity(new Intent(activity, OwnerMainActivity.class));
+                    startActivity(new Intent(activity, StudentMainActivity.class));
                     finish();
                 }
                 else
@@ -340,7 +340,7 @@ public class RegisterStudentActivity extends AppCompatActivity
                                 {
                                     dialog.cancel();
                                     userGoogle.saveDatabase("registered_users");
-                                    startActivity(new Intent(activity, OwnerMainActivity.class));
+                                    startActivity(new Intent(activity, StudentMainActivity.class));
                                     finish();
                                 }
                             }
@@ -416,7 +416,7 @@ public class RegisterStudentActivity extends AppCompatActivity
         {
             dialog.cancel();
             userClass.saveDatabase("registered_users");
-            startActivity(new Intent(activity, OwnerMainActivity.class));
+            startActivity(new Intent(activity, StudentMainActivity.class));
             finish();
         }
         catch (Exception e)

@@ -670,6 +670,7 @@ color colorAccent
 color colorPasswordEye
 color colorPrimary
 color colorPrimaryDark
+color colorWhite
 color com_facebook_blue
 color com_facebook_button_background_color
 color com_facebook_button_background_color_disabled
@@ -1152,6 +1153,7 @@ color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color text_color_dark
+color toolbar
 color tooltip_background_dark
 color tooltip_background_light
 color white_transparent
@@ -1589,10 +1591,15 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_check_internet
 drawable ic_email_white_18dp
+drawable ic_feed_navigation_bottom_24dp
+drawable ic_map_navigation_bottom_24dp
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_network_wifi_24dp
+drawable ic_notications_navigation_bottom_24dp
+drawable ic_pets_navigation_bottom_24dp
+drawable ic_search_navigation_bottom_24dp
 drawable ic_send_30dp
 drawable ic_take_photos_owner
 drawable ic_visibility_black_24dp
@@ -1715,6 +1722,7 @@ id buttonRemoveAccount
 id button_create
 id button_done
 id button_ok
+id buttonsNavigations
 id cancel_action
 id cancel_button
 id center
@@ -1809,6 +1817,11 @@ id header_text
 id home
 id homeAsUp
 id hybrid
+id ic_home
+id ic_like
+id ic_mapa
+id ic_pets
+id ic_search
 id icon
 id icon_group
 id icon_only
@@ -1869,6 +1882,9 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id name
 id name_layout
+id navigation_bottom_ong
+id navigation_bottom_owner
+id navigation_bottom_student
 id navigation_header_container
 id never
 id never_display
@@ -1972,8 +1988,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView2
-id textView3
-id textView4
 id textViewAdapterTypeAccount
 id textViewAvisoCheckInternet
 id textViewCheckEmail
@@ -1999,6 +2013,9 @@ id titleDividerNoCustom
 id title_template
 id toggle_visibility
 id toolbarMain
+id toolbarONG
+id toolbarOwner
+id toolbarStudent
 id top
 id topPanel
 id touch_outside
@@ -2013,6 +2030,9 @@ id unknown
 id unlabeled
 id up
 id useLogo
+id viewPagerONG
+id viewPagerOwner
+id viewPagerStudent
 id view_offset_helper
 id visible
 id welcome_back_idp_button
@@ -2076,8 +2096,8 @@ layout activity_check_internet
 layout activity_choose
 layout activity_forgot_password
 layout activity_login
+layout activity_main_owner
 layout activity_ong_main
-layout activity_owner_main
 layout activity_register_ong
 layout activity_register_owner
 layout activity_register_student
@@ -2087,6 +2107,7 @@ layout activity_veterinary_main
 layout adt_layout_hint
 layout adt_layout_toast
 layout auth_method_picker_layout
+layout bottom_navigation
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout com_facebook_activity_layout
@@ -2158,6 +2179,7 @@ layout support_simple_spinner_dropdown_item
 layout toolbar
 layout welcome_back_idp_prompt_layout
 layout welcome_back_password_prompt_layout
+menu menu_bottom_navigation
 raw places_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -2394,6 +2416,11 @@ string title_alert_dialog_insert_photo_register
 string title_alert_forgot_password
 string title_alert_permissions_register_owner
 string title_confirm_recover_password_activity
+string title_ic_feed_menu_navigation_bottom
+string title_ic_likes_menu_navigation_bottom
+string title_ic_maps_menu_navigation_bottom
+string title_ic_pesquisar_menu_navigation_bottom
+string title_ic_pets_menu_navigation_bottom
 string title_recover_password_activity
 string title_register_email_activity
 string title_sign_in_activity

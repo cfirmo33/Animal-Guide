@@ -25,7 +25,7 @@ import android.widget.EditText;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity;
+import com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 import com.marcelo.animalguide.firebase.UserFirebase;
@@ -267,7 +267,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
                 if (accountGoogle.equals("Sim"))
                 {
                     userGoogle.saveDatabase("registered_users");
-                    startActivity(new Intent(activity, OwnerMainActivity.class));
+                    startActivity(new Intent(activity, VeterinaryMainActivity.class));
                     finish();
                 }
                 else if (accountGoogle.equals("Não"))
@@ -341,7 +341,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
                                 {
                                     dialog.cancel();
                                     userGoogle.saveDatabase("registered_users");
-                                    startActivity(new Intent(activity, OwnerMainActivity.class));
+                                    startActivity(new Intent(activity, VeterinaryMainActivity.class));
                                     finish();
                                 }
                             }
@@ -419,7 +419,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
         {
             dialog.cancel();
             userClass.saveDatabase("registered_users");
-            startActivity(new Intent(activity, OwnerMainActivity.class));
+            startActivity(new Intent(activity, VeterinaryMainActivity.class));
             finish();
         }
         catch (Exception e)

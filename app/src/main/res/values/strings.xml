@@ -101,4 +101,10 @@
     <!-- Strings SnackBar Check Internet -->
     <string name="text_snack_bar_login_check_internet">Não há acesso a internet. Por favor, verifique sua conexão e tente realizar login novamente.</string>
     <string name="text_snack_bar_register_check_internet">Não há acesso a internet. Por favor, verifique sua conexão e tente se cadastrar novamente.</string>
+    <!-- Strings Menu Navigation Bottom -->
+    <string name="title_ic_feed_menu_navigation_bottom" translatable="false">Feed</string>
+    <string name="title_ic_pesquisar_menu_navigation_bottom">Pesquisar</string>
+    <string name="title_ic_maps_menu_navigation_bottom">Mapa</string>
+    <string name="title_ic_likes_menu_navigation_bottom">Notificações</string>
+    <string name="title_ic_pets_menu_navigation_bottom" translatable="false">Pets</string>
 </resources>

@@ -185,7 +185,6 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     {
         editTextEmail.setEnabled(true);
         editTextPassword.setEnabled(true);
-        dialogLoading.cancel();
     }
 
     private void authenticateUser()

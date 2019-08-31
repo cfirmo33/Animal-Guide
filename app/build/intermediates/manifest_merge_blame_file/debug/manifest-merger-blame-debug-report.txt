@@ -59,83 +59,83 @@
 28-->[com.google.android.gms:play-services-measurement:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d569b5962572f37e6c868a3d8e1514e2/play-services-measurement-17.1.0/AndroidManifest.xml:26:22-107
 29
 30    <application
-30-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:16:5-51:19
+30-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:18:5-53:19
 31        android:name="androidx.multidex.MultiDexApplication"
 32        android:allowBackup="true"
-32-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:17:9-35
+32-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:19:9-35
 33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 33-->[androidx.core:core:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/762d0d6b278642cec54c5f394d4d18e7/core-1.0.2/AndroidManifest.xml:22:18-86
 34        android:debuggable="true"
 35        android:label="@string/app_name"
-35-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:18:9-41
+35-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:20:9-41
 36        android:supportsRtl="true"
-36-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:19:9-35
+36-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:21:9-35
 37        android:testOnly="true"
 38        android:theme="@style/AppTheme" >
-38-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:20:9-40
-39        <activity android:name="com.marcelo.animalguide.activitys.conexion.CheckInternetActivity" />
-39-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:22:9-78
-39-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:22:19-75
-40        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity" />
-40-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:23:9-78
-40-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:23:19-75
-41        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity" />
-41-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:9-82
-41-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:19-79
-42        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity" />
-42-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:25:9-85
-42-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:25:19-82
-43        <activity android:name="com.marcelo.animalguide.activitys.login.AccountsActivity" />
-43-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:9-70
-43-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:19-67
-44        <activity
-44-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:9-29:75
-45            android:name="com.marcelo.animalguide.activitys.password.ForgotPasswordActivity"
-45-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:13-70
-46            android:parentActivityName="com.marcelo.animalguide.activitys.login.LoginActivity" />
-46-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:29:13-72
-47        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity" />
-47-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:9-80
-47-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:19-77
+38-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:22:9-40
+39        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity" />
+39-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:9-80
+39-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:19-77
+40        <activity android:name="com.marcelo.animalguide.activitys.conexion.CheckInternetActivity" />
+40-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:25:9-78
+40-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:25:19-75
+41        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity" />
+41-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:9-78
+41-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:19-75
+42        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity" />
+42-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:9-82
+42-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:19-79
+43        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity" />
+43-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:9-85
+43-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:19-82
+44        <activity android:name="com.marcelo.animalguide.activitys.login.AccountsActivity" />
+44-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:29:9-70
+44-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:29:19-67
+45        <activity
+45-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:9-32:75
+46            android:name="com.marcelo.animalguide.activitys.password.ForgotPasswordActivity"
+46-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:13-70
+47            android:parentActivityName="com.marcelo.animalguide.activitys.login.LoginActivity" />
+47-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:32:13-72
 48        <activity
-48-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:9-33:76
+48-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:33:9-35:76
 49            android:name="com.marcelo.animalguide.registers.RegisterONGActivity"
-49-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:32:13-58
+49-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:34:13-58
 50            android:parentActivityName="com.marcelo.animalguide.activitys.login.ChooseActivity" />
-50-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:33:13-73
+50-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:35:13-73
 51        <activity
-51-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:34:9-36:76
+51-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:36:9-38:76
 52            android:name="com.marcelo.animalguide.registers.RegisterVeterinaryActivity"
-52-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:35:13-65
+52-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:37:13-65
 53            android:parentActivityName="com.marcelo.animalguide.activitys.login.ChooseActivity" />
-53-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:36:13-73
+53-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:38:13-73
 54        <activity
-54-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:37:9-39:76
+54-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:39:9-41:76
 55            android:name="com.marcelo.animalguide.registers.RegisterStudentActivity"
-55-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:38:13-62
+55-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:40:13-62
 56            android:parentActivityName="com.marcelo.animalguide.activitys.login.ChooseActivity" />
-56-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:39:13-73
+56-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:41:13-73
 57        <activity
-57-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:40:9-42:76
+57-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:42:9-44:76
 58            android:name="com.marcelo.animalguide.registers.RegisterOwnerActivity"
-58-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:41:13-60
+58-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:43:13-60
 59            android:parentActivityName="com.marcelo.animalguide.activitys.login.ChooseActivity" />
-59-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:42:13-73
+59-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:44:13-73
 60        <activity android:name="com.marcelo.animalguide.activitys.login.ChooseActivity" />
-60-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:43:9-68
-60-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:43:19-65
+60-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:45:9-68
+60-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:45:19-65
 61        <activity android:name="com.marcelo.animalguide.activitys.login.LoginActivity" >
-61-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:44:9-50:20
-61-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:44:19-64
+61-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:46:9-52:20
+61-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:46:19-64
 62            <intent-filter>
-62-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:45:13-49:29
+62-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:47:13-51:29
 63                <action android:name="android.intent.action.MAIN" />
-63-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:46:17-69
-63-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:46:25-66
+63-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:48:17-69
+63-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:48:25-66
 64
 65                <category android:name="android.intent.category.LAUNCHER" />
-65-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:48:17-77
-65-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:48:27-74
+65-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:50:17-77
+65-->/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:50:27-74
 66            </intent-filter>
 67        </activity>
 68

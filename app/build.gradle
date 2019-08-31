@@ -62,5 +62,9 @@ dependencies {
 
     //Lib Toasts Customized
     implementation 'com.pranavpandey.android:dynamic-toasts:2.3.0'
+
+    //Lib Navigation Bottom
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    implementation "com.android.support:design:29.2.0"
 }
 apply plugin: 'com.google.gms.google-services'

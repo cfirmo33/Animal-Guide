@@ -11,7 +11,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" />
 
     <application
         android:allowBackup="true"
@@ -19,6 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".activitys.main_activitys.OwnerMainActivity" />
         <activity android:name=".activitys.conexion.CheckInternetActivity" />
         <activity android:name=".activitys.main_activitys.ONGMainActivity" />
         <activity android:name=".activitys.main_activitys.StudentMainActivity" />
@@ -27,7 +30,6 @@
         <activity
             android:name=".activitys.password.ForgotPasswordActivity"
             android:parentActivityName=".activitys.login.LoginActivity" />
-        <activity android:name=".activitys.main_activitys.OwnerMainActivity" />
         <activity
             android:name=".registers.RegisterONGActivity"
             android:parentActivityName=".activitys.login.ChooseActivity" />

@@ -36,6 +36,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity" />
         <activity android:name="com.marcelo.animalguide.activitys.conexion.CheckInternetActivity" />
         <activity android:name="com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity" />
         <activity android:name="com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity" />
@@ -44,7 +45,6 @@
         <activity
             android:name="com.marcelo.animalguide.activitys.password.ForgotPasswordActivity"
             android:parentActivityName="com.marcelo.animalguide.activitys.login.LoginActivity" />
-        <activity android:name="com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity" />
         <activity
             android:name="com.marcelo.animalguide.registers.RegisterONGActivity"
             android:parentActivityName="com.marcelo.animalguide.activitys.login.ChooseActivity" />

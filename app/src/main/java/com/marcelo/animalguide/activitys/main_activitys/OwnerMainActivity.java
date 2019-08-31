@@ -6,15 +6,13 @@ import android.os.Bundle;
 
 import com.marcelo.animalguide.R;
 
-
 public class OwnerMainActivity extends AppCompatActivity
 {
 
     @Override
-    protected void onCreate (Bundle savedInstanceState)
+    protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_owner_main);
-
+        setContentView(R.layout.activity_main_owner);
     }
 }
