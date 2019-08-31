@@ -14,6 +14,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageViewCameraToolbarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_camera_toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/viewPagerOwner"
+        app:layout_constraintStart_toStartOf="@+id/toolbarOwner"
+        app:layout_constraintTop_toTopOf="@+id/toolbarOwner"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textViewTitleToolbarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="casual"
+        android:text="@string/app_name"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarOwner"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCameraToolbarMain"
+        app:layout_constraintTop_toTopOf="@+id/toolbarOwner" />
+
     <FrameLayout
         android:id="@+id/viewPagerOwner"
         android:layout_width="match_parent"
@@ -22,7 +50,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarOwner"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0" >
+
+    </FrameLayout>
 
     <include
         android:id="@+id/navigation_bottom_owner"

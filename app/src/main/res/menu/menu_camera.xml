@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/ic_camera_navigation_bottom"
+        android:icon="@drawable/ic_take_photos_owner"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+
+</menu>

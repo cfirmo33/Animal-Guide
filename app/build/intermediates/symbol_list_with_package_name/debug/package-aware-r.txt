@@ -1589,6 +1589,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_camera_toolbar
 drawable ic_check_internet
 drawable ic_email_white_18dp
 drawable ic_feed_navigation_bottom_24dp
@@ -1599,6 +1600,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_network_wifi_24dp
 drawable ic_notications_navigation_bottom_24dp
 drawable ic_pets_navigation_bottom_24dp
+drawable ic_search_black_24dp
 drawable ic_search_navigation_bottom_24dp
 drawable ic_send_30dp
 drawable ic_take_photos_owner
@@ -1817,6 +1819,7 @@ id header_text
 id home
 id homeAsUp
 id hybrid
+id ic_camera_navigation_bottom
 id ic_home
 id ic_like
 id ic_mapa
@@ -1832,6 +1835,7 @@ id imageUserOwner
 id imageUserStudent
 id imageUserVeterinary
 id imageViewAdapterAccountsUser
+id imageViewCameraToolbarMain
 id imageViewCheckInternet
 id imageViewIconLogin
 id include
@@ -2002,6 +2006,7 @@ id textViewTitleAccounts
 id textViewTitleChooseUser
 id textViewTitleForgorPassword
 id textViewTitleLoading
+id textViewTitleToolbarMain
 id textViewVeterinary
 id text_input_password_toggle
 id textinput_counter
@@ -2182,6 +2187,7 @@ layout toolbar
 layout welcome_back_idp_prompt_layout
 layout welcome_back_password_prompt_layout
 menu menu_bottom_navigation
+menu menu_camera
 raw places_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description

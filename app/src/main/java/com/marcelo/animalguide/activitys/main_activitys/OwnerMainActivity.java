@@ -1,8 +1,8 @@
 package com.marcelo.animalguide.activitys.main_activitys;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.marcelo.animalguide.R;
 

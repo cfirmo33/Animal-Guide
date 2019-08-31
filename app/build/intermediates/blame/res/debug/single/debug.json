@@ -1,13 +1,5 @@
 [
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_map_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_map_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_feed_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_feed_navigation_bottom_24dp.png"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-v24_icon_app.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable-v24/icon_app.png"
     },
@@ -16,80 +8,36 @@
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_accounts.xml"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_send_30dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_send_30dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_map_navigation_bottom_24dp.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_map_navigation_bottom_24dp.xml"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_notications_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_notications_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_layout_recycler_accouns.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/layout_recycler_accouns.xml"
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_search_black_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_search_black_24dp.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_send_30dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_send_30dp.png"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_pets_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_pets_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_pets_navigation_bottom_24dp.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_pets_navigation_bottom_24dp.xml"
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/menu_menu_camera.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/menu/menu_camera.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable_rounded_button.xml.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable/rounded_button.xml"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-v24_photo_profile.jpg.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable-v24/photo_profile.jpg"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_search_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_search_navigation_bottom_24dp.png"
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_camera_toolbar.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_camera_toolbar.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_notications_navigation_bottom_24dp.xml.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_notications_navigation_bottom_24dp.xml"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-v24_user_vet.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable-v24/user_vet.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_dialog_customized_photos.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/dialog_customized_photos.xml"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_search_navigation_bottom_24dp.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_search_navigation_bottom_24dp.xml"
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_search_black_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_search_black_24dp.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_notications_navigation_bottom_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_notications_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_veterinary_main.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_veterinary_main.xml"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_main_owner.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_main_owner.xml"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/menu_menu_bottom_navigation.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/menu/menu_bottom_navigation.xml"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout-v21_toolbar.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout-v21/toolbar.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_map_navigation_bottom_24dp.png.flat",
@@ -100,8 +48,8 @@
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_search_navigation_bottom_24dp.png"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_search_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_search_navigation_bottom_24dp.png"
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_search_black_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_search_black_24dp.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_pets_navigation_bottom_24dp.png.flat",
@@ -120,40 +68,20 @@
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_network_wifi_24dp.png"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_pets_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_pets_navigation_bottom_24dp.png"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_take_photos_owner.xml.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_take_photos_owner.xml"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_notications_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_notications_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_pets_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_pets_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_network_wifi_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_network_wifi_24dp.png"
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_camera_toolbar.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_camera_toolbar.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_pets_navigation_bottom_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_pets_navigation_bottom_24dp.png"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-v24_user_ong.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable-v24/user_ong.png"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_network_wifi_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_network_wifi_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_feed_navigation_bottom_24dp.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_feed_navigation_bottom_24dp.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_bottom_navigation.xml.flat",
@@ -164,20 +92,16 @@
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_register_owner.xml"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_search_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_search_navigation_bottom_24dp.png"
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_camera_toolbar.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_camera_toolbar.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_search_black_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_search_black_24dp.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_feed_navigation_bottom_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_feed_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_student_main.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_student_main.xml"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable_ic_check_internet.jpg.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable/ic_check_internet.jpg"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_send_30dp.png.flat",
@@ -192,44 +116,16 @@
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_network_wifi_24dp.png"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_register_student.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_register_student.xml"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_feed_navigation_bottom_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_feed_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_network_wifi_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_network_wifi_24dp.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_network_wifi_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_network_wifi_24dp.png"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_feed_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_feed_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-v24_user_student.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable-v24/user_student.png"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_forgot_password.xml.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_forgot_password.xml"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_check_internet.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_check_internet.xml"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_loading.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/loading.xml"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_map_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_map_navigation_bottom_24dp.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_notications_navigation_bottom_24dp.png.flat",
@@ -248,14 +144,6 @@
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_notications_navigation_bottom_24dp.png"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_take_photos_owner.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_take_photos_owner.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_feed_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_feed_navigation_bottom_24dp.png"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_feed_navigation_bottom_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_feed_navigation_bottom_24dp.png"
     },
@@ -264,20 +152,8 @@
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_send_30dp.xml"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_ong_main.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_ong_main.xml"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_map_navigation_bottom_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_map_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_map_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_map_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_take_photos_owner.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_take_photos_owner.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_choose.xml.flat",
@@ -288,24 +164,8 @@
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_map_navigation_bottom_24dp.png"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_toolbar.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/toolbar.xml"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_send_30dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_send_30dp.png"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_take_photos_owner.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_take_photos_owner.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_search_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_search_navigation_bottom_24dp.png"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_take_photos_owner.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_take_photos_owner.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_register_veterinary.xml.flat",
@@ -320,19 +180,219 @@
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_take_photos_owner.png"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_network_wifi_24dp.xml.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_network_wifi_24dp.xml"
-    },
-    {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_pets_navigation_bottom_24dp.png.flat",
-        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_pets_navigation_bottom_24dp.png"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_notications_navigation_bottom_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_notications_navigation_bottom_24dp.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_take_photos_owner.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_take_photos_owner.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_map_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_map_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_feed_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_feed_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_search_black_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_search_black_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_camera_toolbar.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_camera_toolbar.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_send_30dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_send_30dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_map_navigation_bottom_24dp.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_map_navigation_bottom_24dp.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_layout_recycler_accouns.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/layout_recycler_accouns.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_notications_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_notications_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_pets_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_pets_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_pets_navigation_bottom_24dp.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_pets_navigation_bottom_24dp.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-v24_photo_profile.jpg.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable-v24/photo_profile.jpg"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_search_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_search_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-v24_user_vet.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable-v24/user_vet.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_dialog_customized_photos.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/dialog_customized_photos.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_search_navigation_bottom_24dp.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_search_navigation_bottom_24dp.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_camera_toolbar.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_camera_toolbar.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_veterinary_main.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_veterinary_main.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_main_owner.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_main_owner.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/menu_menu_bottom_navigation.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/menu/menu_bottom_navigation.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_search_black_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_search_black_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout-v21_toolbar.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout-v21/toolbar.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_search_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_search_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_pets_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_pets_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_camera_toolbar.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_camera_toolbar.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_notications_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_notications_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_pets_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_pets_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_network_wifi_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_network_wifi_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-v24_user_ong.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable-v24/user_ong.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_feed_navigation_bottom_24dp.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_feed_navigation_bottom_24dp.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_search_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_search_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_student_main.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_student_main.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable_ic_check_internet.jpg.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable/ic_check_internet.jpg"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_register_student.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_register_student.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_network_wifi_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_network_wifi_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_feed_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_feed_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-v24_user_student.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/drawable-v24/user_student.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_check_internet.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_check_internet.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_search_black_24dp.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_search_black_24dp.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_loading.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/loading.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_map_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_map_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_take_photos_owner.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_take_photos_owner.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_feed_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_feed_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_ong_main.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/activity_ong_main.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_map_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_map_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_take_photos_owner.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_take_photos_owner.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_toolbar.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/toolbar.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_send_30dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_send_30dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_search_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_search_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_take_photos_owner.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_take_photos_owner.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_camera_toolbar.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_camera_toolbar.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_pets_navigation_bottom_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_pets_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_network_wifi_24dp.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_network_wifi_24dp.xml"
     }
 ]
