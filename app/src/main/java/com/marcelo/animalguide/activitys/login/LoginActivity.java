@@ -56,8 +56,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     private static final int GOOGLE_SIGN = 300;
     private Activity activity = this;
     private String exception;
-    private String getTypeAccount;
-    private String nameGoogle, emailGoogle;
+    private String nameGoogle, emailGoogle, getTypeAccount;
     private Boolean check;
 
     private EditText editTextEmail, editTextPassword;

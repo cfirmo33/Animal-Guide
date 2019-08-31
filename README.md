@@ -22,7 +22,7 @@
     <li>Email e Senha</li>
     <li>Conta do Google</li>
     </ul>
-    <p>Também é possível realizar a alteração da senha, caso tenha esquecido a que foi inserida ao se cadastrar na plataforma.</p>
+    <p>Também é possível realizar a alteração da senha, caso tenha esquecido a que foi inserida ao se cadastrar na plataforma. E também avisar quando o dispositivo estiver sem acesso a Internet.</p>
     <p>Para executar o código no próprio computador será necessário criar os arquivos JSON
     do Firebase e do Google Cloud e, ainda, autenticar o aplicativo nas plataformas; caso contrário ele não irá funcionar.</p>
     <p>Esses arquivos não foram anexados junto ao código pois o plano no qual utilizo possui um limite de requisições, tanto para o Firebase quanto para o Google Cloud. Então, para testar o aplicativo, será necessário gerir os arquivos .json no Firebase e Google Cloud, e depois, incluir no diretório "app".</p>

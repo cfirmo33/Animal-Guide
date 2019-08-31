@@ -1885,6 +1885,7 @@ id name_layout
 id navigation_bottom_ong
 id navigation_bottom_owner
 id navigation_bottom_student
+id navigation_bottom_veterinary
 id navigation_header_container
 id never
 id never_display
@@ -1987,7 +1988,6 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView2
 id textViewAdapterTypeAccount
 id textViewAvisoCheckInternet
 id textViewCheckEmail
@@ -2016,6 +2016,7 @@ id toolbarMain
 id toolbarONG
 id toolbarOwner
 id toolbarStudent
+id toolbarVeterinary
 id top
 id topPanel
 id touch_outside
@@ -2033,6 +2034,7 @@ id useLogo
 id viewPagerONG
 id viewPagerOwner
 id viewPagerStudent
+id viewPagerVeterinary
 id view_offset_helper
 id visible
 id welcome_back_idp_button
