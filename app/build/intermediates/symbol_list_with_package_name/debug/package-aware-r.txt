@@ -1533,7 +1533,6 @@ drawable btn_google_signin_light_disabled
 drawable btn_google_signin_light_focus
 drawable btn_google_signin_light_normal
 drawable btn_google_signin_light_pressed
-drawable check_email
 drawable com_facebook_auth_dialog_background
 drawable com_facebook_auth_dialog_cancel_background
 drawable com_facebook_auth_dialog_header_background
@@ -1586,14 +1585,14 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable dog
-drawable gat
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_check_internet
 drawable ic_email_white_18dp
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_network_wifi_24dp
 drawable ic_send_30dp
 drawable ic_take_photos_owner
 drawable ic_visibility_black_24dp
@@ -1700,6 +1699,7 @@ id button
 id buttonCameraDialog
 id buttonCancelDialog
 id buttonChangeAccount
+id buttonCheckInternet
 id buttonEnterAccount
 id buttonGaleriaDialog
 id buttonGoogleLogin
@@ -1736,6 +1736,11 @@ id com_facebook_tooltip_bubble_view_bottom_pointer
 id com_facebook_tooltip_bubble_view_text_body
 id com_facebook_tooltip_bubble_view_top_pointer
 id confirmation_code
+id constraintLayoutLogin
+id constraintLayoutONG
+id constraintLayoutOwner
+id constraintLayoutStudent
+id constraintLayoutVeterinary
 id container
 id content
 id contentPanel
@@ -1814,6 +1819,7 @@ id imageUserOwner
 id imageUserStudent
 id imageUserVeterinary
 id imageViewAdapterAccountsUser
+id imageViewCheckInternet
 id imageViewIconLogin
 id include
 id info
@@ -1969,6 +1975,7 @@ id textView2
 id textView3
 id textView4
 id textViewAdapterTypeAccount
+id textViewAvisoCheckInternet
 id textViewCheckEmail
 id textViewCreateAccount
 id textViewForgotPassword
@@ -2065,6 +2072,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accounts
+layout activity_check_internet
 layout activity_choose
 layout activity_forgot_password
 layout activity_login
@@ -2366,7 +2374,9 @@ string status_bar_notification_info_overflow
 string student_veterinary_text
 string sucess_insert_photo_camera
 string terms_of_service
+string text_aviso_check_internet
 string text_button_account_changed
+string text_button_check_internet
 string text_button_enter_account
 string text_button_register_account
 string text_button_remove_account
@@ -2376,6 +2386,8 @@ string text_email_forgot_password
 string text_forgot_password
 string text_forgot_password_empty
 string text_progress_bar_register_owner
+string text_snack_bar_login_check_internet
+string text_snack_bar_register_check_internet
 string text_view_alert_dialog_login
 string title_alert_dialog_customized
 string title_alert_dialog_insert_photo_register

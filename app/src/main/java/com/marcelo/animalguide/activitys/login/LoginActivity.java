@@ -2,7 +2,10 @@ package com.marcelo.animalguide.activitys.login;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -22,6 +26,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -33,6 +38,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 import com.marcelo.animalguide.R;
+import com.marcelo.animalguide.activitys.conexion.CheckInternetActivity;
 import com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity;
 import com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity;
 import com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity;
@@ -52,13 +58,22 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     private String exception;
     private String getTypeAccount;
     private String nameGoogle, emailGoogle;
+    private Boolean check;
 
     private EditText editTextEmail, editTextPassword;
     private AlertDialog dialogLoading;
+    private ConstraintLayout constraintLayout;
 
     private FirebaseAuth auth = ServicesFirebase.getFirebaseAuth();
     private GoogleApiClient googleApiClient;
     private GoogleSignInResult result;
+
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+        checkConection();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -69,11 +84,40 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         initializeComponents();
     }
 
+    private boolean checkConection()
+    {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = Objects.requireNonNull(cm).getActiveNetworkInfo();
+        boolean getStatusInternet;
+
+        if (netInfo != null && netInfo.isConnected())
+        {
+            getStatusInternet = true;
+        }
+        else
+        {
+            getStatusInternet = false;
+        }
+
+        return getStatusInternet;
+    }
+
     private void initializeComponents()
     {
         editTextEmail = findViewById(R.id.editTextEmailLogin);
         editTextPassword = findViewById(R.id.editTextPasswordLogin);
-        initializeGoogleSign();
+        constraintLayout = findViewById(R.id.constraintLayoutLogin);
+
+        check = checkConection();
+
+        if (!check)
+        {
+            startActivity(new Intent(activity, CheckInternetActivity.class));
+        }
+        else
+        {
+            initializeGoogleSign();
+        }
     }
 
     private void initializeGoogleSign()
@@ -111,8 +155,22 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         }
         else
         {
-            authenticateUser();
+            check = checkConection();
+
+            if (checkConection())
+            {
+                authenticateUser();
+            }
+            else
+            {
+                createSnackBar();
+            }
         }
+    }
+
+    private void createSnackBar()
+    {
+        Snackbar.make(constraintLayout, R.string.text_snack_bar_login_check_internet, Snackbar.LENGTH_LONG).show();
     }
 
     private void disableObjects()
@@ -173,9 +231,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         {
             String encryptionEmail = EncryptionSHA1.encryptionString(emailUser);
 
-            DatabaseReference usuarioRef = ServicesFirebase.getFirebaseDatabase()
-                    .child("registered_users")
-                    .child(Objects.requireNonNull(encryptionEmail));
+            DatabaseReference usuarioRef = ServicesFirebase.getFirebaseDatabase().child("registered_users").child(Objects.requireNonNull(encryptionEmail));
 
             usuarioRef.addValueEventListener(new ValueEventListener()
             {
@@ -289,13 +345,22 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
             @Override
             public void onComplete(@NonNull Task<AuthResult> task)
             {
-                if (task.isSuccessful())
+                check = checkConection();
+
+                if (checkConection())
                 {
-                    handleResult(result);
+                    if (task.isSuccessful())
+                    {
+                        handleResult(result);
+                    }
+                    else
+                    {
+                        MessagesToast.createMessageError(getString(R.string.exception_auth_google_signIn) + task, activity);
+                    }
                 }
                 else
                 {
-                    MessagesToast.createMessageError(getString(R.string.exception_auth_google_signIn) + task, activity);
+                    createSnackBar();
                 }
             }
         });

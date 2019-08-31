@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-54:12
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-53:12
 MERGED from [androidx.multidex:multidex:2.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/bb00c29a1cae836c1b3f96abcf39f4bd/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3848c4551510680409f2732c5f300404/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [com.firebaseui:firebase-ui-auth:0.6.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/bf384056f7b39a397b9b24e079486b46/jetified-firebase-ui-auth-0.6.0/AndroidManifest.xml:2:1-85:12
@@ -13,10 +13,10 @@ MERGED from [com.google.android.libraries.places:places:2.0.0] /home/marcelo/.gr
 MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ef8849cf467bc5f7ed5f1c4ff64ce0ea/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d0da781aa28f2c1230fd37a0a313ca9/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-core:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eaf19e70a71f630f2dd4134270ed758d/firebase-core-17.1.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/53380fd41fd94fe340cf020b0caa9385/play-services-auth-17.0.0/AndroidManifest.xml:17:1-39:12
-MERGED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:15:1-38:12
-MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-analytics:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0aadaac3291b62e181057f8ff34cf115/firebase-analytics-17.1.0/AndroidManifest.xml:2:1-9:12
 MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a2f7719fe503b7d64ec81bbef49f4b42/circleimageview-3.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:21:1-39:12
@@ -34,17 +34,17 @@ MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] /home/marcel
 MERGED from [com.google.android.gms:play-services-measurement-api:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/de8e0d3fff0c8e9b65617a7cf2819f79/play-services-measurement-api-17.1.0/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eae9d65a61335ad87da8d0ba15ee09f3/firebase-iid-19.0.0/AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ad6f1d96daa93410818cdb382b197ba7/firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d052841cdf15a58036c1308ecc1a444/play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.firebase:firebase-common:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6a3bac32b194b4a173da93d9a9f02b47/firebase-common-18.0.0/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/cd26acc7826eb018e9c20e0251cf5e13/play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c89e627e9040733c0e53bfa27aa94d9b/firebase-common-19.0.0/AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/477d85af4bb2f7d5ffbd7e1327f7cd28/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-measurement:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d569b5962572f37e6c868a3d8e1514e2/play-services-measurement-17.1.0/AndroidManifest.xml:17:1-55:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a4459e3f514e90fb916aa13c73a5fb24/play-services-measurement-sdk-17.1.0/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ab913055579d32d0bf0fb8cda267113/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/559c02f7da73509606744234eae83634/play-services-measurement-impl-17.1.0/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/11a3bb6db50d8f552892be9a50120698/play-services-measurement-sdk-api-17.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.android.gms:play-services-measurement-base:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/faf86e0c0f6a0bd1c49b1be2305ceff4/play-services-measurement-base-17.1.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/11ab77a6ddc826cd10dfbd2fa58fbbd0/play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4a0c076606c74dba1e808176a9d3a6b4/firebase-measurement-connector-18.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ab913055579d32d0bf0fb8cda267113/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4cb6e8316e19792c212dbadb2a5d1569/play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c0eb351843f5c3ee1f3be6afdef5c234/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/84e38f0630f67267e96f4ef638600424/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -83,22 +83,22 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/marcelo/.gr
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0dee3c1b67e8959a255fc0cfbc077108/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/51f9416ea80ae173f8b4cc886c035730/firebase-database-collection-17.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.android.volley:volley:1.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ab4e8085314b009de268561208249715/jetified-volley-1.1.1/AndroidManifest.xml:2:1-11:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-53:12
 	package
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:4:5-38
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-54:12
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-53:12
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-54:12
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-53:12
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:11-69
@@ -116,10 +116,10 @@ ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:8:22-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:26:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f5dc889e8f34820e1397144f89940f1d/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f5dc889e8f34820e1397144f89940f1d/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/de8e0d3fff0c8e9b65617a7cf2819f79/play-services-measurement-api-17.1.0/AndroidManifest.xml:23:5-79
@@ -138,10 +138,10 @@ uses-permission#android.permission.INTERNET
 ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:10:5-67
 MERGED from [com.google.android.libraries.places:places:2.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9fc8dd79d93edd3b0a2ff3b2b51259b4/places-2.0.0/AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.libraries.places:places:2.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9fc8dd79d93edd3b0a2ff3b2b51259b4/places-2.0.0/AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:27:5-67
-MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:27:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f5dc889e8f34820e1397144f89940f1d/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f5dc889e8f34820e1397144f89940f1d/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/de8e0d3fff0c8e9b65617a7cf2819f79/play-services-measurement-api-17.1.0/AndroidManifest.xml:22:5-67
@@ -169,13 +169,13 @@ ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/
 	android:name
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:13:22-62
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:14:5-16:31
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:14:5-95
 	tools:node
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:16:9-28
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:14:73-92
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:15:9-59
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:14:22-72
 application
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:18:5-52:19
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:16:5-51:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3848c4551510680409f2732c5f300404/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3848c4551510680409f2732c5f300404/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [com.firebaseui:firebase-ui-auth:0.6.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/bf384056f7b39a397b9b24e079486b46/jetified-firebase-ui-auth-0.6.0/AndroidManifest.xml:12:5-83:19
@@ -188,14 +188,14 @@ MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/c
 MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ef8849cf467bc5f7ed5f1c4ff64ce0ea/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-core:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eaf19e70a71f630f2dd4134270ed758d/firebase-core-17.1.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eaf19e70a71f630f2dd4134270ed758d/firebase-core-17.1.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:23:5-40:19
-MERGED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/53380fd41fd94fe340cf020b0caa9385/play-services-auth-17.0.0/AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/53380fd41fd94fe340cf020b0caa9385/play-services-auth-17.0.0/AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:29:5-37:19
-MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.firebase:firebase-analytics:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0aadaac3291b62e181057f8ff34cf115/firebase-analytics-17.1.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0aadaac3291b62e181057f8ff34cf115/firebase-analytics-17.1.0/AndroidManifest.xml:7:5-20
 MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a2f7719fe503b7d64ec81bbef49f4b42/circleimageview-3.0.0/AndroidManifest.xml:9:5-20
@@ -222,18 +222,16 @@ MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/marcelo/.gradle/cach
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eae9d65a61335ad87da8d0ba15ee09f3/firebase-iid-19.0.0/AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ad6f1d96daa93410818cdb382b197ba7/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ad6f1d96daa93410818cdb382b197ba7/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d052841cdf15a58036c1308ecc1a444/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d052841cdf15a58036c1308ecc1a444/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.firebase:firebase-common:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6a3bac32b194b4a173da93d9a9f02b47/firebase-common-18.0.0/AndroidManifest.xml:11:5-17:19
-MERGED from [com.google.firebase:firebase-common:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6a3bac32b194b4a173da93d9a9f02b47/firebase-common-18.0.0/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/cd26acc7826eb018e9c20e0251cf5e13/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/cd26acc7826eb018e9c20e0251cf5e13/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c89e627e9040733c0e53bfa27aa94d9b/firebase-common-19.0.0/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c89e627e9040733c0e53bfa27aa94d9b/firebase-common-19.0.0/AndroidManifest.xml:11:5-17:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/477d85af4bb2f7d5ffbd7e1327f7cd28/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/477d85af4bb2f7d5ffbd7e1327f7cd28/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-measurement:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d569b5962572f37e6c868a3d8e1514e2/play-services-measurement-17.1.0/AndroidManifest.xml:28:5-53:19
 MERGED from [com.google.android.gms:play-services-measurement:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d569b5962572f37e6c868a3d8e1514e2/play-services-measurement-17.1.0/AndroidManifest.xml:28:5-53:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a4459e3f514e90fb916aa13c73a5fb24/play-services-measurement-sdk-17.1.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a4459e3f514e90fb916aa13c73a5fb24/play-services-measurement-sdk-17.1.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ab913055579d32d0bf0fb8cda267113/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ab913055579d32d0bf0fb8cda267113/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/559c02f7da73509606744234eae83634/play-services-measurement-impl-17.1.0/AndroidManifest.xml:28:5-38:19
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/559c02f7da73509606744234eae83634/play-services-measurement-impl-17.1.0/AndroidManifest.xml:28:5-38:19
 MERGED from [com.google.android.gms:play-services-measurement-base:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/faf86e0c0f6a0bd1c49b1be2305ceff4/play-services-measurement-base-17.1.0/AndroidManifest.xml:7:5-20
@@ -242,6 +240,8 @@ MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/marcelo/.g
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/11ab77a6ddc826cd10dfbd2fa58fbbd0/play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4a0c076606c74dba1e808176a9d3a6b4/firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4a0c076606c74dba1e808176a9d3a6b4/firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ab913055579d32d0bf0fb8cda267113/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ab913055579d32d0bf0fb8cda267113/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4cb6e8316e19792c212dbadb2a5d1569/play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4cb6e8316e19792c212dbadb2a5d1569/play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c0eb351843f5c3ee1f3be6afdef5c234/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
@@ -257,83 +257,87 @@ MERGED from [com.android.volley:volley:1.1.1] /home/marcelo/.gradle/caches/trans
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/762d0d6b278642cec54c5f394d4d18e7/core-1.0.2/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:21:9-35
-	android:label
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:20:9-41
-	tools:ignore
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:23:9-60
-	android:allowBackup
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:19:9-35
+	android:label
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:18:9-41
+	tools:ignore
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:21:9-60
+	android:allowBackup
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:22:9-40
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:20:9-40
+activity#com.marcelo.animalguide.activitys.conexion.CheckInternetActivity
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:22:9-78
+	android:name
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:22:19-75
 activity#com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:9-87
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:23:9-78
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:19-75
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:23:19-75
 activity#com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:25:9-82
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:9-82
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:25:19-79
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:19-79
 activity#com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:9-85
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:25:9-85
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:19-82
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:25:19-82
 activity#com.marcelo.animalguide.activitys.login.AccountsActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:9-70
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:9-70
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:19-67
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:19-67
 activity#com.marcelo.animalguide.activitys.password.ForgotPasswordActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:9-30:75
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:9-29:75
 	android:parentActivityName
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:13-72
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:29:13-72
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:29:13-70
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:13-70
 activity#com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:9-80
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:9-80
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:19-77
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:19-77
 activity#com.marcelo.animalguide.registers.RegisterONGActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:32:9-34:76
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:9-33:76
 	android:parentActivityName
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:34:13-73
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:33:13-73
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:33:13-58
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:32:13-58
 activity#com.marcelo.animalguide.registers.RegisterVeterinaryActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:35:9-37:76
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:34:9-36:76
 	android:parentActivityName
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:37:13-73
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:36:13-73
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:36:13-65
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:35:13-65
 activity#com.marcelo.animalguide.registers.RegisterStudentActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:38:9-40:76
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:37:9-39:76
 	android:parentActivityName
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:40:13-73
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:39:13-73
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:39:13-62
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:38:13-62
 activity#com.marcelo.animalguide.registers.RegisterOwnerActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:41:9-43:76
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:40:9-42:76
 	android:parentActivityName
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:43:13-73
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:42:13-73
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:42:13-60
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:41:13-60
 activity#com.marcelo.animalguide.activitys.login.ChooseActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:44:9-68
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:43:9-68
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:44:19-65
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:43:19-65
 activity#com.marcelo.animalguide.activitys.login.LoginActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:45:9-51:20
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:44:9-50:20
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:45:19-64
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:44:19-64
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:46:13-50:29
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:45:13-49:29
 action#android.intent.action.MAIN
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:47:17-69
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:46:17-69
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:47:25-66
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:46:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:49:17-77
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:48:17-77
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:49:27-74
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:48:27-74
 uses-sdk
 INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
@@ -356,14 +360,14 @@ MERGED from [androidx.appcompat:appcompat:1.0.2] /home/marcelo/.gradle/caches/tr
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d0da781aa28f2c1230fd37a0a313ca9/appcompat-1.0.2/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-core:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eaf19e70a71f630f2dd4134270ed758d/firebase-core-17.1.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eaf19e70a71f630f2dd4134270ed758d/firebase-core-17.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/53380fd41fd94fe340cf020b0caa9385/play-services-auth-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/53380fd41fd94fe340cf020b0caa9385/play-services-auth-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-analytics:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0aadaac3291b62e181057f8ff34cf115/firebase-analytics-17.1.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0aadaac3291b62e181057f8ff34cf115/firebase-analytics-17.1.0/AndroidManifest.xml:5:5-44
 MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a2f7719fe503b7d64ec81bbef49f4b42/circleimageview-3.0.0/AndroidManifest.xml:5:5-7:41
@@ -398,18 +402,16 @@ MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/marcelo/.gradle/cach
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eae9d65a61335ad87da8d0ba15ee09f3/firebase-iid-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ad6f1d96daa93410818cdb382b197ba7/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ad6f1d96daa93410818cdb382b197ba7/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d052841cdf15a58036c1308ecc1a444/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d052841cdf15a58036c1308ecc1a444/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-common:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6a3bac32b194b4a173da93d9a9f02b47/firebase-common-18.0.0/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-common:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6a3bac32b194b4a173da93d9a9f02b47/firebase-common-18.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/cd26acc7826eb018e9c20e0251cf5e13/play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/cd26acc7826eb018e9c20e0251cf5e13/play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c89e627e9040733c0e53bfa27aa94d9b/firebase-common-19.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c89e627e9040733c0e53bfa27aa94d9b/firebase-common-19.0.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/477d85af4bb2f7d5ffbd7e1327f7cd28/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/477d85af4bb2f7d5ffbd7e1327f7cd28/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d569b5962572f37e6c868a3d8e1514e2/play-services-measurement-17.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d569b5962572f37e6c868a3d8e1514e2/play-services-measurement-17.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a4459e3f514e90fb916aa13c73a5fb24/play-services-measurement-sdk-17.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a4459e3f514e90fb916aa13c73a5fb24/play-services-measurement-sdk-17.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ab913055579d32d0bf0fb8cda267113/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ab913055579d32d0bf0fb8cda267113/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/559c02f7da73509606744234eae83634/play-services-measurement-impl-17.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/559c02f7da73509606744234eae83634/play-services-measurement-impl-17.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/11a3bb6db50d8f552892be9a50120698/play-services-measurement-sdk-api-17.1.0/AndroidManifest.xml:20:5-44
@@ -420,6 +422,8 @@ MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/marcelo/.g
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/11ab77a6ddc826cd10dfbd2fa58fbbd0/play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4a0c076606c74dba1e808176a9d3a6b4/firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4a0c076606c74dba1e808176a9d3a6b4/firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ab913055579d32d0bf0fb8cda267113/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ab913055579d32d0bf0fb8cda267113/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4cb6e8316e19792c212dbadb2a5d1569/play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4cb6e8316e19792c212dbadb2a5d1569/play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c0eb351843f5c3ee1f3be6afdef5c234/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
@@ -674,41 +678,41 @@ ADDED from [com.google.android.libraries.places:places:2.0.0] /home/marcelo/.gra
 	android:name
 		ADDED from [com.google.android.libraries.places:places:2.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9fc8dd79d93edd3b0a2ff3b2b51259b4/places-2.0.0/AndroidManifest.xml:17:13-91
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
-ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:24:9-31:50
+ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:26:13-46
+		ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:26:13-46
 	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:28:13-44
+		ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:28:13-44
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:27:13-36
+		ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:27:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:29:13-102
+		ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:29:13-102
 	android:theme
-		ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:30:13-72
+		ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:30:13-72
 	tools:replace
-		ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:31:13-47
+		ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:31:13-47
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:25:13-85
+		ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:25:13-85
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:33:9-39:19
-MERGED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:30:9-36:19
-MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:30:9-36:19
+ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:30:9-36:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/de8e0d3fff0c8e9b65617a7cf2819f79/play-services-measurement-api-17.1.0/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/de8e0d3fff0c8e9b65617a7cf2819f79/play-services-measurement-api-17.1.0/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eae9d65a61335ad87da8d0ba15ee09f3/firebase-iid-19.0.0/AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eae9d65a61335ad87da8d0ba15ee09f3/firebase-iid-19.0.0/AndroidManifest.xml:29:9-35:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:35:13-37
+		ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:34:13-84
+		ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:34:13-84
 meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
-ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:36:13-38:85
+ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:36:13-38:85
 	android:value
-		ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:38:17-82
+		ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:38:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:18.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/99af203a3fc0b8c5582bcaa70ff5cd6c/firebase-auth-18.1.0/AndroidManifest.xml:37:17-109
+		ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:37:17-109
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/53380fd41fd94fe340cf020b0caa9385/play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
@@ -728,17 +732,17 @@ ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/marcelo/.gra
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/53380fd41fd94fe340cf020b0caa9385/play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
-ADDED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:32:13-34:85
+ADDED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:32:13-34:85
 	android:value
-		ADDED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:34:17-82
+		ADDED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:34:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-database:18.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e3faf365cd6af863dc2d6ad99376f736/firebase-database-18.0.1/AndroidManifest.xml:33:17-109
+		ADDED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dd050a1e94d24667ce09255f3a835b9e/firebase-database-19.0.0/AndroidManifest.xml:33:17-109
 meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
-ADDED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:33:13-35:85
+ADDED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:33:13-35:85
 	android:value
-		ADDED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:35:17-82
+		ADDED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:35:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-storage:18.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1511644820637cf040693b856c3529bb/firebase-storage-18.1.1/AndroidManifest.xml:34:17-107
+		ADDED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:34:17-107
 provider#com.squareup.picasso.PicassoProvider
 ADDED from [com.squareup.picasso:picasso:2.71828] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1c29d40499c4a570801692682487877d/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 	android:authorities
@@ -802,23 +806,23 @@ ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/marcelo/.gradle/cache
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eae9d65a61335ad87da8d0ba15ee09f3/firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d052841cdf15a58036c1308ecc1a444/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/cd26acc7826eb018e9c20e0251cf5e13/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d052841cdf15a58036c1308ecc1a444/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/cd26acc7826eb018e9c20e0251cf5e13/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d052841cdf15a58036c1308ecc1a444/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/cd26acc7826eb018e9c20e0251cf5e13/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d052841cdf15a58036c1308ecc1a444/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/cd26acc7826eb018e9c20e0251cf5e13/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6a3bac32b194b4a173da93d9a9f02b47/firebase-common-18.0.0/AndroidManifest.xml:12:9-16:39
+ADDED from [com.google.firebase:firebase-common:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c89e627e9040733c0e53bfa27aa94d9b/firebase-common-19.0.0/AndroidManifest.xml:12:9-16:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6a3bac32b194b4a173da93d9a9f02b47/firebase-common-18.0.0/AndroidManifest.xml:14:13-72
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c89e627e9040733c0e53bfa27aa94d9b/firebase-common-19.0.0/AndroidManifest.xml:14:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6a3bac32b194b4a173da93d9a9f02b47/firebase-common-18.0.0/AndroidManifest.xml:15:13-37
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c89e627e9040733c0e53bfa27aa94d9b/firebase-common-19.0.0/AndroidManifest.xml:15:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6a3bac32b194b4a173da93d9a9f02b47/firebase-common-18.0.0/AndroidManifest.xml:16:13-36
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c89e627e9040733c0e53bfa27aa94d9b/firebase-common-19.0.0/AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:18.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6a3bac32b194b4a173da93d9a9f02b47/firebase-common-18.0.0/AndroidManifest.xml:13:13-77
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c89e627e9040733c0e53bfa27aa94d9b/firebase-common-19.0.0/AndroidManifest.xml:13:13-77
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 ADDED from [com.google.android.gms:play-services-measurement:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d569b5962572f37e6c868a3d8e1514e2/play-services-measurement-17.1.0/AndroidManifest.xml:26:5-110
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/559c02f7da73509606744234eae83634/play-services-measurement-impl-17.1.0/AndroidManifest.xml:26:5-110

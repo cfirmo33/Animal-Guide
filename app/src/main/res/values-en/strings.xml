@@ -78,5 +78,8 @@
     <string name="erro_retriveing_accounts_system" translatable="false">Error retrieving accounts saved in app:</string>
     <string name="type_user_student_adapter_accounts" translatable="false">Student</string>
     <string name="type_user_ong_adapter_accounts" translatable="false">NGO Owner</string>
-
+    <string name="text_button_check_internet" translatable="false">Try again</string>
+    <string name="text_aviso_check_internet" translatable="false">It looks like your device has no internet access. Please check your connection and try again.</string>
+    <string name="text_snack_bar_login_check_internet" translatable="false">There is no internet access. Please check your connection and try logging in again.</string>
+    <string name="text_snack_bar_register_check_internet" translatable="false">There is no internet access. Please check your connection and try signing up again.</string>
 </resources>

@@ -4,13 +4,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -19,6 +23,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.marcelo.animalguide.R;
 import com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
@@ -49,6 +54,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class RegisterStudentActivity extends AppCompatActivity
 {
     private EditText editTextNameUser, editTextEmailUser, editTextPasswordUser;
+    private ConstraintLayout constraintLayout;
     private TextInputLayout inputTextPasswordRegisterStudent;
     private CircleImageView circleImageViewStudent;
     private Button btnRegisterStudent;
@@ -69,8 +75,16 @@ public class RegisterStudentActivity extends AppCompatActivity
     private String getProvedor;
     private String typeUser;
     private String accountGoogle = "Não";
+    private Boolean check;
     private static final int SELECAO_CAMERA = 100;
     private static final int SELECAO_GALERIA = 200;
+
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+        checkConection();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -84,6 +98,7 @@ public class RegisterStudentActivity extends AppCompatActivity
 
     public void initializeObjects()
     {
+        constraintLayout = findViewById(R.id.constraintLayoutStudent);
         inputTextPasswordRegisterStudent = findViewById(R.id.inputTextPasswordRegisterStudent);
         editTextNameUser = findViewById(R.id.editTextNameLastNameStudent);
         editTextEmailUser = findViewById(R.id.editTextEmailRegisterStudent);
@@ -95,6 +110,24 @@ public class RegisterStudentActivity extends AppCompatActivity
         toolbar.setTitle(getString(R.string.title_toolbar_student));
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+    }
+
+    private boolean checkConection()
+    {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = Objects.requireNonNull(cm).getActiveNetworkInfo();
+        boolean getStatusInternet;
+
+        if (netInfo != null && netInfo.isConnected())
+        {
+            getStatusInternet = true;
+        }
+        else
+        {
+            getStatusInternet = false;
+        }
+
+        return getStatusInternet;
     }
 
     private void getDataBundle()
@@ -146,18 +179,27 @@ public class RegisterStudentActivity extends AppCompatActivity
             }
             else
             {
-                userClass.setName(editTextNameUser.getText().toString());
-                userClass.setEmail(editTextEmailUser.getText().toString());
-                userClass.setPassword(editTextPasswordUser.getText().toString());
-                userClass.setProvedor("Email");
-                userClass.setSaveLogin(false);
-                if (imagem == null)
+                check = checkConection();
+
+                if (checkConection())
                 {
-                    createAlertDialog();
+                    userClass.setName(editTextNameUser.getText().toString());
+                    userClass.setEmail(editTextEmailUser.getText().toString());
+                    userClass.setPassword(editTextPasswordUser.getText().toString());
+                    userClass.setProvedor("Email");
+                    userClass.setSaveLogin(false);
+                    if (imagem == null)
+                    {
+                        createAlertDialog();
+                    }
+                    else
+                    {
+                        registerUserEmailAndPassword();
+                    }
                 }
                 else
                 {
-                    registerUserEmailAndPassword();
+                    createSnackBar();
                 }
             }
         }
@@ -175,25 +217,39 @@ public class RegisterStudentActivity extends AppCompatActivity
             }
             else
             {
-                typeUser = "Student";
-                userGoogle.setTypeUser(typeUser);
-                userGoogle.setIdUser(getEmail);
-                userGoogle.setNameGoogle(getNome);
-                userGoogle.setEmailGoogle(getEmail);
-                userGoogle.setProvedor(getProvedor);
-                userGoogle.setSaveLogin(false);
+                check = checkConection();
 
-                if (imagem == null)
+                if (checkConection())
                 {
-                    createAlertDialog();
+                    typeUser = "Student";
+                    userGoogle.setTypeUser(typeUser);
+                    userGoogle.setIdUser(getEmail);
+                    userGoogle.setNameGoogle(getNome);
+                    userGoogle.setEmailGoogle(getEmail);
+                    userGoogle.setProvedor(getProvedor);
+                    userGoogle.setSaveLogin(false);
+
+                    if (imagem == null)
+                    {
+                        createAlertDialog();
+                    }
+                    else
+                    {
+                        createDialogLoading();
+                        saveImageFirebaseStorage();
+                    }
                 }
                 else
                 {
-                    createDialogLoading();
-                    saveImageFirebaseStorage();
+                    createSnackBar();
                 }
             }
         }
+    }
+
+    private void createSnackBar()
+    {
+        Snackbar.make(constraintLayout, R.string.text_snack_bar_register_check_internet, Snackbar.LENGTH_LONG).show();
     }
 
     public void createAlertDialog()
@@ -244,10 +300,7 @@ public class RegisterStudentActivity extends AppCompatActivity
         idUser = EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString());
 
         /* Structure of photos in FirebaseStorage **/
-        StorageReference imagemRef = imageReference
-                .child("Cadastro do Usuário")
-                .child(idUser)
-                .child("photo.png");
+        StorageReference imagemRef = imageReference.child("Cadastro do Usuário").child(idUser).child("photo.png");
 
         UploadTask uploadTask = imagemRef.putBytes(dadosImagem);
         uploadTask.addOnFailureListener(new OnFailureListener()
@@ -269,10 +322,7 @@ public class RegisterStudentActivity extends AppCompatActivity
                     @Override
                     public void onSuccess(Uri uri)
                     {
-                        imageReference = imageReference
-                                .child("Cadastro do Usuário")
-                                .child(idUser)
-                                .child("photo.png");
+                        imageReference = imageReference.child("Cadastro do Usuário").child(idUser).child("photo.png");
 
                         imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
                         {

@@ -95,4 +95,10 @@
     <string name="erro_retriveing_accounts_system">Erro ao recuperar contas salvas no aplicativo:</string>
     <string name="type_user_student_adapter_accounts">Estudante</string>
     <string name="type_user_ong_adapter_accounts">Dono(a) de ONGs</string>
+    <!-- CheckInternet Activity Strings -->
+    <string name="text_aviso_check_internet">Parece que seu dispositivo está sem acesso à internet. Por favor, verifique sua conexão e tente novamente.</string>
+    <string name="text_button_check_internet">Tentar Novamente</string>
+    <!-- Strings SnackBar Check Internet -->
+    <string name="text_snack_bar_login_check_internet">Não há acesso a internet. Por favor, verifique sua conexão e tente realizar login novamente.</string>
+    <string name="text_snack_bar_register_check_internet">Não há acesso a internet. Por favor, verifique sua conexão e tente se cadastrar novamente.</string>
 </resources>
