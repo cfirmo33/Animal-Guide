@@ -1709,6 +1709,7 @@ id buttonCameraDialog
 id buttonCancelDialog
 id buttonChangeAccount
 id buttonCheckInternet
+id buttonCheckInternetFragment
 id buttonEnterAccount
 id buttonGaleriaDialog
 id buttonGoogleLogin
@@ -2140,6 +2141,7 @@ layout design_text_input_password_icon
 layout dialog_customized_photos
 layout email_hint_container_layout
 layout forgot_password_layout
+layout fragment_check_internet
 layout idp_button_facebook
 layout idp_button_google
 layout layout_recycler_accouns

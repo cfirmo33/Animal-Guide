@@ -13,6 +13,8 @@ MERGED from [com.google.android.libraries.places:places:2.0.0] /home/marcelo/.gr
 MERGED from [com.github.ittianyu:BottomNavigationViewEx:2.0.4] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f3acf19d3756a7a47bbaaf786aceda87/jetified-BottomNavigationViewEx-2.0.4/AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ef8849cf467bc5f7ed5f1c4ff64ce0ea/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d0da781aa28f2c1230fd37a0a313ca9/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:21:1-39:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/84e38f0630f67267e96f4ef638600424/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-core:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eaf19e70a71f630f2dd4134270ed758d/firebase-core-17.1.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/53380fd41fd94fe340cf020b0caa9385/play-services-auth-17.0.0/AndroidManifest.xml:17:1-39:12
@@ -20,7 +22,6 @@ MERGED from [com.google.firebase:firebase-database:19.0.0] /home/marcelo/.gradle
 MERGED from [com.google.firebase:firebase-storage:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/fe0d8849786f44a1dc3f08aeef180bd1/firebase-storage-19.0.0/AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-analytics:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0aadaac3291b62e181057f8ff34cf115/firebase-analytics-17.1.0/AndroidManifest.xml:2:1-9:12
 MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a2f7719fe503b7d64ec81bbef49f4b42/circleimageview-3.0.0/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:21:1-39:12
 MERGED from [androidx.cardview:cardview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/efd8751eefd4c701ddfdbf144847bfcc/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9abaa0f54adfed4b5ac3b0de9cc8af16/jetified-glide-4.9.0/AndroidManifest.xml:2:1-12:12
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1c29d40499c4a570801692682487877d/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
@@ -48,15 +49,15 @@ MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/ma
 MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ab913055579d32d0bf0fb8cda267113/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4cb6e8316e19792c212dbadb2a5d1569/play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c0eb351843f5c3ee1f3be6afdef5c234/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/84e38f0630f67267e96f4ef638600424/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/302532623b61a54e2d4a51cdcca00e6d/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.palette:palette:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a0e80934dbe5005e77db5e0f7795925f/palette-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/20b69b8b6575b6832ca5ba938d5dcfec/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b7ecd23408af061fc4c5f2a3a8532f33/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.browser:browser:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b110188c3d2f746c263f7329a6b84476/browser-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eef0ca4016c0a5cd611148a2b6a37a3b/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.palette:palette:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a0e80934dbe5005e77db5e0f7795925f/palette-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/28b13a65db901553c9c7926e00b5087b/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3807a7f101feb99eece5edaccb1919eb/vectordrawable-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d74d329f7d466b7bd8252c923e634118/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/45fcddd4cd0ce6f5c8708dbe019f3813/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ff284076fc0fbb21bb67d72f59a05fb/transition-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.pranavpandey.android:dynamic-utils:2.3.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6620cfeec4208dc1fbde986d81a5cd89/dynamic-utils-2.3.0/AndroidManifest.xml:17:1-26:12
@@ -67,7 +68,6 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/marcelo/.
 MERGED from [androidx.customview:customview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/78c55c1b7047e331e8f1ccf7d9f6ac91/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3c346407ed2463221ac4e8e74ece5a5c/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e22d8ee3f8080fa98ae3ac43cc3160a8/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d74d329f7d466b7bd8252c923e634118/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/762d0d6b278642cec54c5f394d4d18e7/core-1.0.2/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/cb92002e32e507e13a94b71532125137/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6b9d7d52e5cbefce270f43f8e2c6bb6f/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -189,6 +189,8 @@ MERGED from [com.github.ittianyu:BottomNavigationViewEx:2.0.4] /home/marcelo/.gr
 MERGED from [com.github.ittianyu:BottomNavigationViewEx:2.0.4] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f3acf19d3756a7a47bbaaf786aceda87/jetified-BottomNavigationViewEx-2.0.4/AndroidManifest.xml:11:5-12:19
 MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ef8849cf467bc5f7ed5f1c4ff64ce0ea/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ef8849cf467bc5f7ed5f1c4ff64ce0ea/material-1.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:28:5-37:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:28:5-37:19
 MERGED from [com.google.firebase:firebase-core:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eaf19e70a71f630f2dd4134270ed758d/firebase-core-17.1.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eaf19e70a71f630f2dd4134270ed758d/firebase-core-17.1.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:23:5-40:19
@@ -203,8 +205,6 @@ MERGED from [com.google.firebase:firebase-analytics:17.1.0] /home/marcelo/.gradl
 MERGED from [com.google.firebase:firebase-analytics:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0aadaac3291b62e181057f8ff34cf115/firebase-analytics-17.1.0/AndroidManifest.xml:7:5-20
 MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a2f7719fe503b7d64ec81bbef49f4b42/circleimageview-3.0.0/AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a2f7719fe503b7d64ec81bbef49f4b42/circleimageview-3.0.0/AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:28:5-37:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:28:5-37:19
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9abaa0f54adfed4b5ac3b0de9cc8af16/jetified-glide-4.9.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9abaa0f54adfed4b5ac3b0de9cc8af16/jetified-glide-4.9.0/AndroidManifest.xml:10:5-20
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1c29d40499c4a570801692682487877d/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
@@ -363,6 +363,10 @@ MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/c
 MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/ef8849cf467bc5f7ed5f1c4ff64ce0ea/material-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d0da781aa28f2c1230fd37a0a313ca9/appcompat-1.0.2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d0da781aa28f2c1230fd37a0a313ca9/appcompat-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:24:5-26:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/84e38f0630f67267e96f4ef638600424/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/84e38f0630f67267e96f4ef638600424/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-core:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eaf19e70a71f630f2dd4134270ed758d/firebase-core-17.1.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eaf19e70a71f630f2dd4134270ed758d/firebase-core-17.1.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e0f35ae47d407cca6729d694c15c3e8a/firebase-auth-19.0.0/AndroidManifest.xml:21:5-44
@@ -377,8 +381,6 @@ MERGED from [com.google.firebase:firebase-analytics:17.1.0] /home/marcelo/.gradl
 MERGED from [com.google.firebase:firebase-analytics:17.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0aadaac3291b62e181057f8ff34cf115/firebase-analytics-17.1.0/AndroidManifest.xml:5:5-44
 MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a2f7719fe503b7d64ec81bbef49f4b42/circleimageview-3.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a2f7719fe503b7d64ec81bbef49f4b42/circleimageview-3.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:24:5-26:41
 MERGED from [androidx.cardview:cardview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/efd8751eefd4c701ddfdbf144847bfcc/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/efd8751eefd4c701ddfdbf144847bfcc/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9abaa0f54adfed4b5ac3b0de9cc8af16/jetified-glide-4.9.0/AndroidManifest.xml:6:5-8:41
@@ -433,12 +435,8 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/m
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4cb6e8316e19792c212dbadb2a5d1569/play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c0eb351843f5c3ee1f3be6afdef5c234/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c0eb351843f5c3ee1f3be6afdef5c234/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/84e38f0630f67267e96f4ef638600424/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/84e38f0630f67267e96f4ef638600424/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/302532623b61a54e2d4a51cdcca00e6d/fragment-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/302532623b61a54e2d4a51cdcca00e6d/fragment-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.palette:palette:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a0e80934dbe5005e77db5e0f7795925f/palette-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.palette:palette:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a0e80934dbe5005e77db5e0f7795925f/palette-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/20b69b8b6575b6832ca5ba938d5dcfec/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/20b69b8b6575b6832ca5ba938d5dcfec/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b7ecd23408af061fc4c5f2a3a8532f33/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
@@ -447,10 +445,14 @@ MERGED from [androidx.browser:browser:1.0.0] /home/marcelo/.gradle/caches/transf
 MERGED from [androidx.browser:browser:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b110188c3d2f746c263f7329a6b84476/browser-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eef0ca4016c0a5cd611148a2b6a37a3b/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/eef0ca4016c0a5cd611148a2b6a37a3b/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.palette:palette:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a0e80934dbe5005e77db5e0f7795925f/palette-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.palette:palette:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a0e80934dbe5005e77db5e0f7795925f/palette-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/28b13a65db901553c9c7926e00b5087b/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/28b13a65db901553c9c7926e00b5087b/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3807a7f101feb99eece5edaccb1919eb/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3807a7f101feb99eece5edaccb1919eb/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d74d329f7d466b7bd8252c923e634118/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d74d329f7d466b7bd8252c923e634118/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/45fcddd4cd0ce6f5c8708dbe019f3813/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/45fcddd4cd0ce6f5c8708dbe019f3813/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4ff284076fc0fbb21bb67d72f59a05fb/transition-1.0.0/AndroidManifest.xml:20:5-44
@@ -471,8 +473,6 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/marcelo
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3c346407ed2463221ac4e8e74ece5a5c/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e22d8ee3f8080fa98ae3ac43cc3160a8/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/e22d8ee3f8080fa98ae3ac43cc3160a8/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d74d329f7d466b7bd8252c923e634118/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d74d329f7d466b7bd8252c923e634118/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/762d0d6b278642cec54c5f394d4d18e7/core-1.0.2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/762d0d6b278642cec54c5f394d4d18e7/core-1.0.2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/cb92002e32e507e13a94b71532125137/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44

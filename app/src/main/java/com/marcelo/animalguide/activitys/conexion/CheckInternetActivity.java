@@ -9,7 +9,6 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.marcelo.animalguide.R;
 
@@ -26,25 +25,20 @@ public class CheckInternetActivity extends AppCompatActivity
         setContentView(R.layout.activity_check_internet);
     }
 
-    public boolean verificarConex()
+    private void verificarConex()
     {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = Objects.requireNonNull(cm).getActiveNetworkInfo();
 
-        boolean conex;
         if (netInfo != null && netInfo.isConnected())
         {
-            conex = true;
             finish();
         }
         else
         {
-            conex = false;
             finish();
             startActivity(new Intent(activity, CheckInternetActivity.class));
         }
-
-        return conex;
     }
 
     public void verificarConex(View view)
