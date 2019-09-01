@@ -112,6 +112,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         if (!check)
         {
             startActivity(new Intent(activity, CheckInternetActivity.class));
+            finish();
         }
         else
         {
