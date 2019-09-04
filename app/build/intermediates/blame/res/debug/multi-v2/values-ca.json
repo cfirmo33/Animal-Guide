@@ -4,7 +4,7 @@
             "outputFile": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
             "map": [
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/6d0da781aa28f2c1230fd37a0a313ca9/appcompat-1.0.2/res/values-ca/values-ca.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/c65bc72ee7876cdc8d1b1e61771cadcc/appcompat-1.0.2/res/values-ca/values-ca.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/c0eb351843f5c3ee1f3be6afdef5c234/jetified-play-services-basement-17.0.0/res/values-ca/values.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/f66a24fe2f8abdc2453deec5aa8e1339/jetified-play-services-basement-17.0.0/res/values-ca/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/cd26acc7826eb018e9c20e0251cf5e13/play-services-base-17.1.0/res/values-ca/values.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/5e5c1b254c5d5f388f0b63d9effc2f85/play-services-base-17.1.0/res/values-ca/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,24 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/9fc8dd79d93edd3b0a2ff3b2b51259b4/places-2.0.0/res/values-ca/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11",
-                        "startColumns": "0,0,0,0,0,0,0,0",
-                        "startOffsets": "184,258,321,426,488,536,613,705",
-                        "endColumns": "73,62,104,61,47,76,91,58",
-                        "endOffsets": "257,320,425,487,535,612,704,763"
-                    },
-                    "to": {
-                        "startLines": "47,48,49,50,51,52,53,54",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "5571,5649,5716,5825,5891,5943,6024,6120",
-                        "endColumns": "77,66,108,65,51,80,95,62",
-                        "endOffsets": "5644,5711,5820,5886,5938,6019,6115,6178"
-                    }
-                },
-                {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/762d0d6b278642cec54c5f394d4d18e7/core-1.0.2/res/values-ca/values-ca.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/b2a0b28781123ff8899157bf603f087b/core-1.0.2/res/values-ca/values-ca.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -86,6 +69,23 @@
                         "startOffsets": "6264",
                         "endColumns": "100",
                         "endOffsets": "6360"
+                    }
+                },
+                {
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/3a5a6537c0bd5da6b3de47c01a36fa2f/places-2.0.0/res/values-ca/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11",
+                        "startColumns": "0,0,0,0,0,0,0,0",
+                        "startOffsets": "184,258,321,426,488,536,613,705",
+                        "endColumns": "73,62,104,61,47,76,91,58",
+                        "endOffsets": "257,320,425,487,535,612,704,763"
+                    },
+                    "to": {
+                        "startLines": "47,48,49,50,51,52,53,54",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "5571,5649,5716,5825,5891,5943,6024,6120",
+                        "endColumns": "77,66,108,65,51,80,95,62",
+                        "endOffsets": "5644,5711,5820,5886,5938,6019,6115,6178"
                     }
                 }
             ]

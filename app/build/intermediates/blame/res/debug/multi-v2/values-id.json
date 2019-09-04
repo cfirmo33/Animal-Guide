@@ -4,7 +4,7 @@
             "outputFile": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/b894d6873d00c3c678e3c467c616081c/jetified-facebook-android-sdk-4.14.1/res/values-id/values-id.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/6a3857139050052af3fd25cc49648007/jetified-facebook-android-sdk-4.14.1/res/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

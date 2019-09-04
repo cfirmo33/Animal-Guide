@@ -4,41 +4,7 @@
             "outputFile": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
             "map": [
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/cd26acc7826eb018e9c20e0251cf5e13/play-services-base-17.1.0/res/values-ka/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "245,348,529,655,763,976,1108,1256,1389,1621,1727,1913,2039,2259,2424,2516,2603",
-                        "endColumns": "102,180,125,107,212,131,147,132,231,105,185,125,219,164,91,86,100",
-                        "endOffsets": "347,528,654,762,975,1107,1255,1388,1620,1726,1912,2038,2258,2423,2515,2602,2703"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2818,2925,3106,3236,3348,3561,3697,3849,4188,4420,4530,4716,4846,5066,5235,5331,5422",
-                        "endColumns": "106,180,129,111,212,135,151,136,231,109,185,129,219,168,95,90,104",
-                        "endOffsets": "2920,3101,3231,3343,3556,3692,3844,3981,4415,4525,4711,4841,5061,5230,5326,5417,5522"
-                    }
-                },
-                {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/9fc8dd79d93edd3b0a2ff3b2b51259b4/places-2.0.0/res/values-ka/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11",
-                        "startColumns": "0,0,0,0,0,0,0,0",
-                        "startOffsets": "184,260,325,423,485,532,610,695",
-                        "endColumns": "75,64,97,61,46,77,84,52",
-                        "endOffsets": "259,324,422,484,531,609,694,747"
-                    },
-                    "to": {
-                        "startLines": "47,48,49,50,51,52,53,54",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "5527,5607,5676,5778,5844,5895,5977,6066",
-                        "endColumns": "79,68,101,65,50,81,88,56",
-                        "endOffsets": "5602,5671,5773,5839,5890,5972,6061,6118"
-                    }
-                },
-                {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/6d0da781aa28f2c1230fd37a0a313ca9/appcompat-1.0.2/res/values-ka/values-ka.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/c65bc72ee7876cdc8d1b1e61771cadcc/appcompat-1.0.2/res/values-ka/values-ka.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/c0eb351843f5c3ee1f3be6afdef5c234/jetified-play-services-basement-17.0.0/res/values-ka/values.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/3a5a6537c0bd5da6b3de47c01a36fa2f/places-2.0.0/res/values-ka/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11",
+                        "startColumns": "0,0,0,0,0,0,0,0",
+                        "startOffsets": "184,260,325,423,485,532,610,695",
+                        "endColumns": "75,64,97,61,46,77,84,52",
+                        "endOffsets": "259,324,422,484,531,609,694,747"
+                    },
+                    "to": {
+                        "startLines": "47,48,49,50,51,52,53,54",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "5527,5607,5676,5778,5844,5895,5977,6066",
+                        "endColumns": "79,68,101,65,50,81,88,56",
+                        "endOffsets": "5602,5671,5773,5839,5890,5972,6061,6118"
+                    }
+                },
+                {
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/f66a24fe2f8abdc2453deec5aa8e1339/jetified-play-services-basement-17.0.0/res/values-ka/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -72,7 +55,24 @@
                     }
                 },
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/762d0d6b278642cec54c5f394d4d18e7/core-1.0.2/res/values-ka/values-ka.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/5e5c1b254c5d5f388f0b63d9effc2f85/play-services-base-17.1.0/res/values-ka/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,348,529,655,763,976,1108,1256,1389,1621,1727,1913,2039,2259,2424,2516,2603",
+                        "endColumns": "102,180,125,107,212,131,147,132,231,105,185,125,219,164,91,86,100",
+                        "endOffsets": "347,528,654,762,975,1107,1255,1388,1620,1726,1912,2038,2258,2423,2515,2602,2703"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2818,2925,3106,3236,3348,3561,3697,3849,4188,4420,4530,4716,4846,5066,5235,5331,5422",
+                        "endColumns": "106,180,129,111,212,135,151,136,231,109,185,129,219,168,95,90,104",
+                        "endOffsets": "2920,3101,3231,3343,3556,3692,3844,3981,4415,4525,4711,4841,5061,5230,5326,5417,5522"
+                    }
+                },
+                {
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/b2a0b28781123ff8899157bf603f087b/core-1.0.2/res/values-ka/values-ka.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
