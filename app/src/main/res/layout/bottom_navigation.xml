@@ -5,6 +5,7 @@
     android:id="@+id/buttonsNavigations"
     app:itemIconTint="@android:color/black"
     app:itemTextColor="@color/colorAccent"
+    app:elevation="2dp"
     app:menu="@menu/menu_bottom_navigation"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

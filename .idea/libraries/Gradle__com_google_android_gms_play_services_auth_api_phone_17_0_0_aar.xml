@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-auth-api-phone:17.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00c66d8698ed199f8383372577ce3145/play-services-auth-api-phone-17.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00c66d8698ed199f8383372577ce3145/play-services-auth-api-phone-17.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d5cb8b78f9d093933e4b270070b3fa8a/play-services-auth-api-phone-17.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d5cb8b78f9d093933e4b270070b3fa8a/play-services-auth-api-phone-17.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

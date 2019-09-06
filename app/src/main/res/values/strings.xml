@@ -107,5 +107,5 @@
     <string name="title_ic_maps_menu_navigation_bottom">Mapa</string>
     <string name="title_ic_likes_menu_navigation_bottom">Notificações</string>
     <string name="title_ic_pets_menu_navigation_bottom" translatable="false">Pets</string>
-    <string name="title_ic_publicar_menu_navigation_bottom">Publicar</string>
+    <string name="title_ic_menu_navigation_bottom" translatable="false">Menu</string>
 </resources>

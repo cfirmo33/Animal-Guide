@@ -85,5 +85,4 @@
     <string name="title_ic_pesquisar_menu_navigation_bottom" translatable="false">Search</string>
     <string name="title_ic_likes_menu_navigation_bottom" translatable="false">Notifications</string>
     <string name="title_ic_maps_menu_navigation_bottom" translatable="false">Maps</string>
-    <string name="title_ic_publicar_menu_navigation_bottom" translatable="false">Publish</string>
 </resources>

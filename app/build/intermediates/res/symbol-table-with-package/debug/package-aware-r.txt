@@ -15,6 +15,10 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim nav_default_enter_anim
+anim nav_default_exit_anim
+anim nav_default_pop_enter_anim
+anim nav_default_pop_exit_anim
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -27,6 +31,7 @@ animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
 array facebook_permissions
 array google_permissions
+attr action
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -69,6 +74,7 @@ attr allowStacking
 attr alpha
 attr alphabeticModifiers
 attr ambientEnabled
+attr argType
 attr arrowHeadLength
 attr arrowShaftLength
 attr autoCompleteTextViewStyle
@@ -225,7 +231,11 @@ attr counterMaxLength
 attr counterOverflowTextAppearance
 attr counterTextAppearance
 attr customNavigationLayout
+attr data
+attr dataPattern
+attr defaultNavHost
 attr defaultQueryHint
+attr destination
 attr dialogCornerRadius
 attr dialogPreferredPadding
 attr dialogTheme
@@ -245,8 +255,10 @@ attr elevation
 attr emptyVisibility
 attr enforceMaterialTheme
 attr enforceTextAppearance
+attr enterAnim
 attr errorEnabled
 attr errorTextAppearance
+attr exitAnim
 attr expandActivityOverflowButtonDrawable
 attr expanded
 attr expandedTitleGravity
@@ -283,6 +295,7 @@ attr fontWeight
 attr foregroundInsidePadding
 attr gapBetweenBars
 attr goIcon
+attr graph
 attr headerLayout
 attr height
 attr helperText
@@ -333,6 +346,7 @@ attr latLngBoundsNorthEastLatitude
 attr latLngBoundsNorthEastLongitude
 attr latLngBoundsSouthWestLatitude
 attr latLngBoundsSouthWestLongitude
+attr launchSingleTop
 attr layout
 attr layoutManager
 attr layout_anchor
@@ -421,10 +435,12 @@ attr maxImageSize
 attr measureWithLargestChild
 attr menu
 attr multiChoiceItemLayout
+attr navGraph
 attr navigationContentDescription
 attr navigationIcon
 attr navigationMode
 attr navigationViewStyle
+attr nullable
 attr numericModifiers
 attr overlapAnchor
 attr paddingBottomNoButtons
@@ -439,6 +455,10 @@ attr passwordToggleDrawable
 attr passwordToggleEnabled
 attr passwordToggleTint
 attr passwordToggleTintMode
+attr popEnterAnim
+attr popExitAnim
+attr popUpTo
+attr popUpToInclusive
 attr popupMenuStyle
 attr popupTheme
 attr popupWindowStyle
@@ -481,6 +501,7 @@ attr spinnerStyle
 attr splitTrack
 attr srcCompat
 attr stackFromEnd
+attr startDestination
 attr state_above_anchor
 attr state_collapsed
 attr state_collapsible
@@ -593,6 +614,7 @@ attr uiScrollGesturesDuringRotateOrZoom
 attr uiTiltGestures
 attr uiZoomControls
 attr uiZoomGestures
+attr uri
 attr useCompatPadding
 attr useViewLifecycle
 attr viewInflaterClass
@@ -1589,22 +1611,29 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_blog_24dp
 drawable ic_camera_toolbar
 drawable ic_chat
 drawable ic_check_internet
 drawable ic_email_white_18dp
+drawable ic_events_24dp
 drawable ic_feed_navigation_bottom_24dp
+drawable ic_friends_24dp
+drawable ic_help_24dp
+drawable ic_logout_24dp
 drawable ic_map_navigation_bottom_24dp
+drawable ic_menu_navigation_bottom_24dp
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_network_wifi_24dp
 drawable ic_notications_navigation_bottom_24dp
-drawable ic_pets_navigation_bottom_24dp
-drawable ic_search_black_24dp
+drawable ic_pets_24dp
 drawable ic_search_navigation_bottom_24dp
 drawable ic_send_30dp
+drawable ic_settings_24dp
 drawable ic_take_photos_owner
+drawable ic_videos_24dp
 drawable ic_visibility_black_24dp
 drawable ic_visibility_off_black_24dp
 drawable icon_app
@@ -1821,11 +1850,10 @@ id header_text
 id home
 id homeAsUp
 id hybrid
-id ic_camera_navigation_bottom
 id ic_home
 id ic_like
 id ic_mapa
-id ic_pets
+id ic_menu
 id ic_search
 id icon
 id icon_group
@@ -1837,7 +1865,6 @@ id imageUserOwner
 id imageUserStudent
 id imageUserVeterinary
 id imageViewAdapterAccountsUser
-id imageViewCameraToolbarMain
 id imageViewChat
 id imageViewCheckInternet
 id imageViewIconLogin
@@ -1889,6 +1916,7 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id name
 id name_layout
+id nav_controller_view_tag
 id navigation_bottom_ong
 id navigation_bottom_owner
 id navigation_bottom_student
@@ -2009,7 +2037,6 @@ id textViewTitleAccounts
 id textViewTitleChooseUser
 id textViewTitleForgorPassword
 id textViewTitleLoading
-id textViewTitleToolbarMain
 id textViewVeterinary
 id text_input_password_toggle
 id textinput_counter
@@ -2106,8 +2133,8 @@ layout activity_check_internet
 layout activity_choose
 layout activity_forgot_password
 layout activity_login
-layout activity_main_owner
 layout activity_ong_main
+layout activity_owner_main
 layout activity_register_ong
 layout activity_register_owner
 layout activity_register_student
@@ -2191,7 +2218,6 @@ layout toolbar
 layout welcome_back_idp_prompt_layout
 layout welcome_back_password_prompt_layout
 menu menu_bottom_navigation
-menu menu_camera
 raw places_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -2367,6 +2393,8 @@ string name_college_veterinary
 string name_hint
 string name_last_name
 string name_ong
+string nav_app_bar_navigate_up_description
+string nav_app_bar_open_drawer_description
 string next
 string ong_text
 string owner_pet_text
@@ -2431,6 +2459,7 @@ string title_confirm_recover_password_activity
 string title_ic_feed_menu_navigation_bottom
 string title_ic_likes_menu_navigation_bottom
 string title_ic_maps_menu_navigation_bottom
+string title_ic_menu_navigation_bottom
 string title_ic_pesquisar_menu_navigation_bottom
 string title_ic_pets_menu_navigation_bottom
 string title_recover_password_activity
@@ -2459,6 +2488,9 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style AppTheme
+style AppTheme_AppBarOverlay
+style AppTheme_NoActionBar
+style AppTheme_PopupOverlay
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -3025,6 +3057,7 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
+styleable ActivityNavigator android_name action data dataPattern
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
@@ -3063,6 +3096,7 @@ styleable FlowLayout itemSpacing lineSpacing
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
+styleable FragmentNavigator android_name
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable LinearConstraintLayout android_orientation
@@ -3077,7 +3111,14 @@ styleable MaterialComponentsTheme bottomSheetDialogTheme bottomSheetStyle chipGr
 styleable MenuGroup android_enabled android_id android_visible android_menuCategory android_orderInCategory android_checkableBehavior
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
+styleable NavAction android_id destination enterAnim exitAnim launchSingleTop popEnterAnim popExitAnim popUpTo popUpToInclusive
+styleable NavArgument android_name android_defaultValue argType nullable
+styleable NavDeepLink android_autoVerify uri
+styleable NavGraphNavigator startDestination
+styleable NavHostFragment defaultNavHost navGraph
+styleable NavInclude graph
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconTint itemTextAppearance itemTextColor menu
+styleable Navigator android_label android_id
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle

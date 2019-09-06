@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,6 +14,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <include
+        android:id="@+id/navigation_bottom_ong"
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarONG" />
+
     <ImageView
         android:id="@+id/imageViewChat"
         android:layout_width="0dp"
@@ -24,7 +32,7 @@
         android:layout_marginBottom="16dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_chat"
-        app:layout_constraintBottom_toTopOf="@+id/viewPagerONG"
+        app:layout_constraintBottom_toTopOf="@+id/navigation_bottom_ong"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription" />
@@ -33,20 +41,9 @@
         android:id="@+id/viewPagerONG"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/navigation_bottom_ong"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarONG"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <include
-        android:id="@+id/navigation_bottom_ong"
-        layout="@layout/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewPagerONG" />
+        app:layout_constraintTop_toBottomOf="@+id/navigation_bottom_ong" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

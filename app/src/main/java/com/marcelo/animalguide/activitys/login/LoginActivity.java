@@ -275,7 +275,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                             switch (getTypeAccount)
                             {
                                 case "Pet Owner":
-                                    startActivity(new Intent(activity, OwnerMainActivity.class));
+                                    //startActivity(new Intent(activity, OwnerMainActivity.class));
                                     finish();
                                     break;
                                 case "Student":

@@ -4,7 +4,7 @@
             "outputFile": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/c2425b065acd4c4d78a4c6cfd98eb158/material-1.0.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/4141e45cf081a85b30e69d6cd880b858/material-1.0.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/c65bc72ee7876cdc8d1b1e61771cadcc/appcompat-1.0.2/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
