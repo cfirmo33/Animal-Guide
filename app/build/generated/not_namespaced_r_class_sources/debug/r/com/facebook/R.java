@@ -152,20 +152,20 @@ public final class R {
         public static final int com_facebook_tooltip_bubble_view_top_pointer = 0x7f09005e;
         public static final int confirmation_code = 0x7f09005f;
         public static final int display_always = 0x7f090077;
-        public static final int inline = 0x7f0900bd;
-        public static final int large = 0x7f0900d4;
-        public static final int left = 0x7f0900d6;
-        public static final int messenger_send_button = 0x7f0900e3;
-        public static final int never_display = 0x7f0900f2;
-        public static final int normal = 0x7f0900f4;
-        public static final int open_graph = 0x7f0900f8;
-        public static final int page = 0x7f0900fb;
-        public static final int progress_bar = 0x7f090117;
-        public static final int right = 0x7f09011c;
-        public static final int small = 0x7f090139;
-        public static final int standard = 0x7f090146;
-        public static final int top = 0x7f090173;
-        public static final int unknown = 0x7f09017d;
+        public static final int inline = 0x7f0900be;
+        public static final int large = 0x7f0900d5;
+        public static final int left = 0x7f0900d7;
+        public static final int messenger_send_button = 0x7f0900e4;
+        public static final int never_display = 0x7f0900f3;
+        public static final int normal = 0x7f0900f5;
+        public static final int open_graph = 0x7f0900f9;
+        public static final int page = 0x7f0900fc;
+        public static final int progress_bar = 0x7f090118;
+        public static final int right = 0x7f09011d;
+        public static final int small = 0x7f09013a;
+        public static final int standard = 0x7f090147;
+        public static final int top = 0x7f090178;
+        public static final int unknown = 0x7f090182;
     }
     public static final class layout {
         private layout() {}

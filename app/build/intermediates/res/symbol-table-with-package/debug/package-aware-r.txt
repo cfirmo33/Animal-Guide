@@ -1865,6 +1865,7 @@ id imageUserOwner
 id imageUserStudent
 id imageUserVeterinary
 id imageViewAdapterAccountsUser
+id imageViewCameraToolbar
 id imageViewChat
 id imageViewCheckInternet
 id imageViewIconLogin
@@ -2037,6 +2038,10 @@ id textViewTitleAccounts
 id textViewTitleChooseUser
 id textViewTitleForgorPassword
 id textViewTitleLoading
+id textViewTitleToolbarONG
+id textViewTitleToolbarOwner
+id textViewTitleToolbarStudent
+id textViewTitleToolbarVeterinary
 id textViewVeterinary
 id text_input_password_toggle
 id textinput_counter

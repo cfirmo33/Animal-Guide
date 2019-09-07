@@ -92,6 +92,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         if (netInfo != null && netInfo.isConnected())
         {
             getStatusInternet = true;
+
         }
         else
         {
@@ -169,9 +170,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
     private void createSnackBar()
     {
-        Snackbar.make(constraintLayout, R.string.text_snack_bar_login_check_internet,
-                Snackbar.LENGTH_LONG)
-                .show();
+        Snackbar.make(constraintLayout, R.string.text_snack_bar_login_check_internet, Snackbar.LENGTH_LONG).show();
     }
 
     private void disableObjects()

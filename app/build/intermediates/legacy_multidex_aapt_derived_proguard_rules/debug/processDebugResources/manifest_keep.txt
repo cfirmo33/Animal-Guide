@@ -1,4 +1,4 @@
-# Referenced at /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:30
+# Referenced at /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:31
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:30
+# Referenced at /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:31
 -keep class androidx.multidex.MultiDexApplication { <init>(); }

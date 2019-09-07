@@ -128,6 +128,8 @@ androidx/multidex/MultiDexExtractor$ExtractedDex.class
 androidx/multidex/MultiDexExtractor.class
 androidx/multidex/ZipUtil$CentralDirectory.class
 androidx/multidex/ZipUtil.class
+androidx/navigation/NavDestination$ClassType.class
+androidx/navigation/Navigator$Name.class
 androidx/recyclerview/widget/RecyclerView$EdgeEffectFactory$EdgeDirection.class
 androidx/recyclerview/widget/RecyclerView$ItemAnimator$AdapterChanges.class
 androidx/recyclerview/widget/RecyclerView$Orientation.class
