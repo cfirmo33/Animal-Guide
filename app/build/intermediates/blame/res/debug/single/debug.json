@@ -84,12 +84,12 @@
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_events_24dp.png"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_navigation_bottom_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_navigation_bottom_24dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
@@ -396,6 +396,10 @@
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_fragment_search.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/fragment_search.xml"
+    },
+    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_dark.xml.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable/abc_list_selector_holo_dark.xml"
     },
@@ -418,6 +422,10 @@
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_quantum_ic_search_grey600_24.png.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/284afe1e179ff0155563a8189f09cac7/places-2.0.0/res/drawable-xxxhdpi-v4/quantum_ic_search_grey600_24.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_fragment_notification.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/fragment_notification.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_btn_google_dark_normal.9.png.flat",
@@ -564,6 +572,10 @@
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/1c222a2051da4e86706acb7f24cd77d4/jetified-firebase-ui-auth-0.6.0/res/drawable-hdpi-v4/ic_visibility_off_black_24dp.png"
     },
     {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_fragment_feed_ong.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/fragment_feed_ong.xml"
+    },
+    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png"
     },
@@ -634,6 +646,10 @@
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_info_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_info_24dp.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_com_facebook_device_auth_dialog_fragment.xml.flat",
@@ -1588,6 +1604,10 @@
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/a80291ba9377785a78bac47ded2ace53/jetified-facebook-android-sdk-4.14.1/res/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_fragment_google_maps.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/fragment_google_maps.xml"
+    },
+    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_disabled_color_18.png.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/dc92c95833f165718c8660662f9575e0/play-services-base-17.1.0/res/drawable-hdpi-v4/googleg_disabled_color_18.png"
     },
@@ -1670,6 +1690,10 @@
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/dc92c95833f165718c8660662f9575e0/play-services-base-17.1.0/res/drawable-xhdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_fragment_feed_veterinary.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/fragment_feed_veterinary.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_activity_register_owner.xml.flat",
@@ -2000,12 +2024,12 @@
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_light.xml.flat",
-        "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/color/abc_primary_text_disable_only_material_light.xml"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_abc_action_menu_item_layout.xml.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_light.xml.flat",
+        "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_friends_24dp.png.flat",
@@ -2132,16 +2156,16 @@
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/a80291ba9377785a78bac47ded2ace53/jetified-facebook-android-sdk-4.14.1/res/drawable/com_facebook_auth_dialog_header_background.xml"
     },
     {
-        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
-        "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/color-v23/abc_tint_switch_track.xml"
-    },
-    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_light_normal.xml.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/b0d84da76ed42bf9a504ee93b2978826/play-services-auth-17.0.0/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
+        "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/color-v23/abc_tint_switch_track.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_search_navigation_bottom_24dp.png.flat",
@@ -2452,6 +2476,10 @@
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_info_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_info_24dp.png"
+    },
+    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable/abc_seekbar_thumb_material.xml"
     },
@@ -2624,6 +2652,10 @@
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/4141e45cf081a85b30e69d6cd880b858/material-1.0.0/res/animator-v21/design_appbar_state_list_animator.xml"
     },
     {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_info_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-hdpi/ic_info_24dp.png"
+    },
+    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/layout/abc_list_menu_item_icon.xml"
     },
@@ -2784,6 +2816,10 @@
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_info_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_info_24dp.png"
+    },
+    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_custom.xml.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/0438ed5cca5e36085d37ed57af08caff/media-1.0.0/res/layout/notification_template_big_media_custom.xml"
     },
@@ -2810,6 +2846,10 @@
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_btn_google_light_disabled.9.png.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/2d6930665a0cd2a7d406f3e7c8d12974/jetified-google-signin-1.0.0/res/drawable-mdpi-v4/btn_google_light_disabled.9.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/color_color_btn_navigation_bottom.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/color/color_btn_navigation_bottom.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_map_navigation_bottom_24dp.png.flat",
@@ -3056,6 +3096,10 @@
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_info_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-mdpi/ic_info_24dp.png"
+    },
+    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_notications_navigation_bottom_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_notications_navigation_bottom_24dp.png"
     },
@@ -3210,6 +3254,10 @@
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/3da0e19a8222f0c6b721fc5b426bd31f/core-1.0.2/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_fragment_feed_student.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/fragment_feed_student.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -3592,6 +3640,10 @@
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_send_30dp.png"
     },
     {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_info_24dp.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_info_24dp.xml"
+    },
+    {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_settings_24dp.png.flat",
         "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-ldpi/ic_settings_24dp.png"
     },
@@ -3610,6 +3662,10 @@
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_adt_ic_success.png.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/e5dc416f6f5ff0626c7c76696ee411ca/dynamic-toasts-2.3.0/res/drawable-xxhdpi-v4/adt_ic_success.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_fragment_menu_navigation.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/fragment_menu_navigation.xml"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/color_mtrl_bottom_nav_colored_item_tint.xml.flat",
@@ -3782,6 +3838,10 @@
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/color_mtrl_btn_ripple_color.xml.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/4141e45cf081a85b30e69d6cd880b858/material-1.0.0/res/color/mtrl_btn_ripple_color.xml"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_info_24dp.png.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_info_24dp.png"
     },
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -3958,5 +4018,9 @@
     {
         "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "/home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/build/intermediates/res/merged/debug/layout_fragment_feed_owner.xml.flat",
+        "source": "/home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/res/layout/fragment_feed_owner.xml"
     }
 ]

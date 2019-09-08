@@ -29,7 +29,6 @@ import com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 import com.marcelo.animalguide.firebase.UserFirebase;
-import com.marcelo.animalguide.models.classes.UserGoogle;
 import com.marcelo.animalguide.models.message_toast.MessagesToast;
 import com.marcelo.animalguide.models.classes.UserClass;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -61,7 +60,6 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
     private AlertDialog dialog, dialogPhotos;
 
     private UserClass userClass = new UserClass();
-    private UserGoogle userGoogle = new UserGoogle();
     private FirebaseAuth authentication = ServicesFirebase.getFirebaseAuth();
     private StorageReference imageReference = ServicesFirebase.getFirebaseStorage();
 
@@ -223,12 +221,12 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
                 if (checkConection())
                 {
                     typeUser = "Veterinary";
-                    userGoogle.setTypeUser(typeUser);
-                    userGoogle.setIdUser(getEmail);
-                    userGoogle.setNameGoogle(getNome);
-                    userGoogle.setEmailGoogle(getEmail);
-                    userGoogle.setProvedor(getProvedor);
-                    userGoogle.setSaveLogin(false);
+                    userClass.setTypeUser(typeUser);
+                    userClass.setIdUser(getEmail);
+                    userClass.setName(getNome);
+                    userClass.setEmail(getEmail);
+                    userClass.setProvedor(getProvedor);
+                    userClass.setSaveLogin(false);
 
                     if (imagem == null)
                     {
@@ -266,7 +264,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
             {
                 if (accountGoogle.equals("Sim"))
                 {
-                    userGoogle.saveDatabase("registered_users");
+                    userClass.saveDatabase("registered_users");
                     startActivity(new Intent(activity, VeterinaryMainActivity.class));
                     finish();
                 }
@@ -340,7 +338,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity
                                 else
                                 {
                                     dialog.cancel();
-                                    userGoogle.saveDatabase("registered_users");
+                                    userClass.saveDatabase("registered_users");
                                     startActivity(new Intent(activity, VeterinaryMainActivity.class));
                                     finish();
                                 }

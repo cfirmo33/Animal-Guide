@@ -29,9 +29,8 @@ import com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 import com.marcelo.animalguide.firebase.UserFirebase;
-import com.marcelo.animalguide.models.classes.UserGoogle;
+import com.marcelo.animalguide.models.classes.UserClass;
 import com.marcelo.animalguide.models.message_toast.MessagesToast;
-import com.marcelo.animalguide.models.classes.UserONG;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -60,8 +59,7 @@ public class RegisterONGActivity extends AppCompatActivity
     private Button btnRegisterONG;
     private AlertDialog dialog, dialogPhotos;
 
-    private UserONG userONG = new UserONG();
-    private UserGoogle userGoogle = new UserGoogle();
+    private UserClass userClass = new UserClass();
     private FirebaseAuth authentication = ServicesFirebase.getFirebaseAuth();
     private StorageReference imageReference = ServicesFirebase.getFirebaseStorage();
 
@@ -189,11 +187,11 @@ public class RegisterONGActivity extends AppCompatActivity
 
                 if (checkConection())
                 {
-                    userONG.setName(editTextNameUser.getText().toString());
-                    userONG.setEmail(editTextEmailUser.getText().toString());
-                    userONG.setPassword(editTextPasswordUser.getText().toString());
-                    userONG.setProvedor("Email");
-                    userONG.setSaveLogin(false);
+                    userClass.setName(editTextNameUser.getText().toString());
+                    userClass.setEmail(editTextEmailUser.getText().toString());
+                    userClass.setPassword(editTextPasswordUser.getText().toString());
+                    userClass.setProvedor("Email");
+                    userClass.setSaveLogin(false);
                     if (imagem == null)
                     {
                         createAlertDialog();
@@ -233,13 +231,13 @@ public class RegisterONGActivity extends AppCompatActivity
                 if (checkConection())
                 {
                     typeUser = "ONG";
-                    userGoogle.setTypeUser(typeUser);
-                    userGoogle.setIdUser(getEmail);
-                    userGoogle.setNameGoogle(getNome);
-                    userGoogle.setEmailGoogle(getEmail);
-                    userGoogle.setNameONG(editTextNameONG.getText().toString());
-                    userGoogle.setProvedor(getProvedor);
-                    userGoogle.setSaveLogin(false);
+                    userClass.setTypeUser(typeUser);
+                    userClass.setIdUser(getEmail);
+                    userClass.setName(getNome);
+                    userClass.setEmail(getEmail);
+                    userClass.setNameONG(editTextNameONG.getText().toString());
+                    userClass.setProvedor(getProvedor);
+                    userClass.setSaveLogin(false);
 
                     if (imagem == null)
                     {
@@ -277,7 +275,7 @@ public class RegisterONGActivity extends AppCompatActivity
             {
                 if (accountGoogle.equals("Sim"))
                 {
-                    userGoogle.saveDatabase("registered_users");
+                    userClass.saveDatabase("registered_users");
                     startActivity(new Intent(activity, ONGMainActivity.class));
                     finish();
                 }
@@ -344,14 +342,14 @@ public class RegisterONGActivity extends AppCompatActivity
                                 if (accountGoogle.equals("Não"))
                                 {
                                     dialog.cancel();
-                                    UserFirebase.updateNameUser(userONG.getName());
+                                    UserFirebase.updateNameUser(userClass.getName());
                                     updatePhotoUser(uri);
                                     saveDatabaseAccountEmail();
                                 }
                                 else
                                 {
                                     dialog.cancel();
-                                    userGoogle.saveDatabase("registered_users");
+                                    userClass.saveDatabase("registered_users");
                                     startActivity(new Intent(activity, ONGMainActivity.class));
                                     finish();
                                 }
@@ -373,7 +371,10 @@ public class RegisterONGActivity extends AppCompatActivity
     {
         createDialogLoading();
 
-        authentication.createUserWithEmailAndPassword(userONG.getEmail(), userONG.getPassword()).addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
+        authentication.createUserWithEmailAndPassword
+        (
+                userClass.getEmail(),
+                userClass.getPassword()).addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
         {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task)
@@ -389,7 +390,7 @@ public class RegisterONGActivity extends AppCompatActivity
 
                     saveDatabaseAccountEmail();
 
-                    UserFirebase.updateNameUser(userONG.getName());
+                    UserFirebase.updateNameUser(userClass.getName());
                 }
                 else
                 {
@@ -424,12 +425,12 @@ public class RegisterONGActivity extends AppCompatActivity
     public void saveDatabaseAccountEmail()
     {
         typeUser = "ONG";
-        userONG.setTypeUser(typeUser);
-        userONG.setIdONG(userONG.getEmail());
+        userClass.setTypeUser(typeUser);
+        userClass.setIdUser(userClass.getEmail());
         try
         {
             dialog.cancel();
-            userONG.saveDatabase("registered_users");
+            userClass.saveDatabase("registered_users");
             startActivity(new Intent(activity, ONGMainActivity.class));
             finish();
         }

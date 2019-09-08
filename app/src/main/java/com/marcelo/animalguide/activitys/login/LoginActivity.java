@@ -32,6 +32,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -55,8 +56,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 {
     private static final int GOOGLE_SIGN = 300;
     private Activity activity = this;
-    private String exception;
-    private String nameGoogle, emailGoogle, getTypeAccount;
+    private String exception, nameGoogle, emailGoogle, getTypeAccount, typeAccount;
     private Boolean check;
 
     private EditText editTextEmail, editTextPassword;
@@ -64,6 +64,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     private ConstraintLayout constraintLayout;
 
     private FirebaseAuth auth = ServicesFirebase.getFirebaseAuth();
+    private FirebaseUser userFirebase = auth.getCurrentUser();
     private GoogleApiClient googleApiClient;
     private GoogleSignInResult result;
 
@@ -92,7 +93,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         if (netInfo != null && netInfo.isConnected())
         {
             getStatusInternet = true;
-
+            checkAuthentication();
         }
         else
         {
@@ -100,6 +101,55 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         }
 
         return getStatusInternet;
+    }
+
+    private void checkAuthentication()
+    {
+        if (userFirebase != null)
+        {
+            String id = EncryptionSHA1.encryptionString(userFirebase.getEmail());
+
+            DatabaseReference accountsRef = ServicesFirebase.getFirebaseDatabase()
+                    .child("registered_users")
+                    .child(Objects.requireNonNull(id));
+
+            accountsRef.addValueEventListener(new ValueEventListener()
+            {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+                {
+                    UserClass userClass = dataSnapshot.getValue(UserClass.class);
+
+                    typeAccount = Objects.requireNonNull(userClass).getTypeUser();
+
+                    switch (typeAccount)
+                    {
+                        case "Pet Owner":
+                            startActivity(new Intent(activity, OwnerMainActivity.class));
+                            finish();
+                            break;
+                        case "Student":
+                            startActivity(new Intent(activity, StudentMainActivity.class));
+                            finish();
+                            break;
+                        case "Veterinary":
+                            startActivity(new Intent(activity, VeterinaryMainActivity.class));
+                            finish();
+                            break;
+                        case "ONG":
+                            startActivity(new Intent(activity, ONGMainActivity.class));
+                            finish();
+                            break;
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError)
+                {
+                    MessagesToast.createMessageError(getString(R.string.exception_accounts_user_database) + databaseError, activity);
+                }
+            });
+        }
     }
 
     private void initializeComponents()
@@ -192,14 +242,15 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
             @Override
             public void onComplete(@NonNull Task<AuthResult> task)
             {
+                createDialogLoading();
                 if (task.isSuccessful())
                 {
-                    createDialogLoading();
                     disableObjects();
                     checkAccountFirebase(editTextEmail.getText().toString(), "Email");
                 }
                 else
                 {
+                    dialogLoading.cancel();
                     enableObjects();
                     try
                     {

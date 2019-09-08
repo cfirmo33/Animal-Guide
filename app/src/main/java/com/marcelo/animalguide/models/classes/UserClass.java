@@ -12,6 +12,7 @@ public class UserClass
     private String name;
     private String email;
     private String password;
+    private String nameONG;
     private String provedor;
     private Boolean saveLogin;
     private DatabaseReference databaseReference = ServicesFirebase.getFirebaseDatabase();
@@ -80,6 +81,16 @@ public class UserClass
     public void setPassword(String password)
     {
         this.password = password;
+    }
+
+    public String getNameONG()
+    {
+        return nameONG;
+    }
+
+    public void setNameONG(String nameONG)
+    {
+        this.nameONG = nameONG;
     }
 
     public String getProvedor()

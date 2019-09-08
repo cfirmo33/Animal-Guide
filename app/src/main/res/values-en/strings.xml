@@ -85,4 +85,13 @@
     <string name="title_ic_pesquisar_menu_navigation_bottom" translatable="false">Search</string>
     <string name="title_ic_likes_menu_navigation_bottom" translatable="false">Notifications</string>
     <string name="title_ic_maps_menu_navigation_bottom" translatable="false">Maps</string>
+    <string name="text_name_user_menu" translatable="false">UserName</string>
+    <string name="text_open_profile" translatable="false">View Profile</string>
+    <string name="btn_amigos_menu" translatable="false">Friends</string>
+    <string name="btn_eventos_menu" translatable="false">Events</string>
+    <string name="btn_help_menu" translatable="false">Help</string>
+    <string name="btn_settings_menu" translatable="false">Settings</string>
+    <string name="btn_sobre_menu" translatable="false">About</string>
+    <string name="btn_logout_menu" translatable="false">Logout</string>
+    <string name="exception_accounts_user_database" translatable="false">Error trying to recover your account data:</string>
 </resources>

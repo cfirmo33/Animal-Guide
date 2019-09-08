@@ -67,7 +67,7 @@
         tools:ignore="ContentDescription" />
 
     <FrameLayout
-        android:id="@+id/viewPagerStudent"
+        android:id="@+id/frameLayoutStudent"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

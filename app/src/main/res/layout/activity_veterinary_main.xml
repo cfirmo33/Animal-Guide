@@ -10,7 +10,7 @@
     <include
         android:id="@+id/toolbarVeterinary"
         layout="@layout/toolbar"
-        app:layout_constraintBottom_toTopOf="@+id/viewPagerVeterinary"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayoutVeterinary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -67,7 +67,7 @@
         tools:ignore="ContentDescription" />
 
     <FrameLayout
-        android:id="@+id/viewPagerVeterinary"
+        android:id="@+id/frameLayoutVeterinary"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

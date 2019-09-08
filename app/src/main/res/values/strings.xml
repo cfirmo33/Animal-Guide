@@ -75,7 +75,7 @@
     <string name="exception_auth_google_signIn">Erro ao autenticar-se no sistema com sua conta do Google: </string>
     <string name="exception_connect_servidor_google">Erro ao conectar-se com os servidores do Google:</string>
     <!-- String Google Cloud -->
-    <string name="id_google_cloud_client" translatable="false">643957408603-l3295qt28cihkd696p7h8gf3nl3vadhd.apps.googleusercontent.com</string>
+    <string name="id_google_cloud_client" translatable="false">643957408603-0a5n87od0i5noiqjuc4f7uteleb5fm2n.apps.googleusercontent.com</string>
     <!-- ForgotPassword Activity Strings -->
     <string name="text_forgot_password">Insira no campo abaixo o email de cadastro associado à sua conta no Animal Guide.</string>
     <string name="text_email_forgot_password">Email registrado no Animal Guide</string>
@@ -106,6 +106,18 @@
     <string name="title_ic_pesquisar_menu_navigation_bottom">Pesquisar</string>
     <string name="title_ic_maps_menu_navigation_bottom">Mapa</string>
     <string name="title_ic_likes_menu_navigation_bottom">Notificações</string>
-    <string name="title_ic_pets_menu_navigation_bottom" translatable="false">Pets</string>
     <string name="title_ic_menu_navigation_bottom" translatable="false">Menu</string>
+    <string name="text_name_user_menu" >Nome do Usuário</string>
+    <string name="text_open_profile">Visualizar Perfil</string>
+    <string name="btn_amigos_menu">Amigos</string>
+    <string name="btn_blogs_menu" translatable="false">Blogs</string>
+    <string name="btn_eventos_menu">Eventos</string>
+    <string name="btn_pets_menu" translatable="false">Pets</string>
+    <string name="btn_videos_menu" translatable="false">Vídeos</string>
+    <string name="btn_help_menu">Ajuda</string>
+    <string name="btn_settings_menu">Configurações</string>
+    <string name="btn_sobre_menu" translatable="false">Sobre</string>
+    <string name="btn_logout_menu">Sair</string>
+    <!-- Strings Exceptions Accounts Database User -->
+    <string name="exception_accounts_user_database">Erro ao tentar recuperar os dados da sua conta:</string>
 </resources>
