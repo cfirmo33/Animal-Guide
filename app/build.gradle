@@ -70,5 +70,8 @@ dependencies {
     //Lib Navigation Bottom
     implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
     implementation "com.android.support:design:29.2.0"
+
+    //Libs EasyPermissions
+    implementation 'pub.devrel:easypermissions:3.0.0'
 }
 apply plugin: 'com.google.gms.google-services'

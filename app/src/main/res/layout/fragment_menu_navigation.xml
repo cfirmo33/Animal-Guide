@@ -97,15 +97,20 @@
                 android:src="@drawable/ic_friends_24dp"
                 tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textViewFriendsMenu"
+            <Button
+                android:id="@+id/buttonFriendsMenu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="38dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="sans-serif-light"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="0dp"
                 android:text="@string/btn_amigos_menu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -131,15 +136,20 @@
                 android:src="@drawable/ic_blog_24dp"
                 tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textViewBlogsMenu"
+            <Button
+                android:id="@+id/buttonBlogsMenu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="38dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="sans-serif-light"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="0dp"
                 android:text="@string/btn_blogs_menu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -165,15 +175,20 @@
                 android:src="@drawable/ic_events_24dp"
                 tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textViewEventosMenu"
+            <Button
+                android:id="@+id/buttonEventosMenu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="38dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="sans-serif-light"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="0dp"
                 android:text="@string/btn_eventos_menu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -199,15 +214,20 @@
                 android:src="@drawable/ic_pets_24dp"
                 tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textViewPetsMenu"
+            <Button
+                android:id="@+id/buttonPetsMenu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="38dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="sans-serif-light"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="0dp"
                 android:text="@string/btn_pets_menu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -233,15 +253,20 @@
                 android:src="@drawable/ic_videos_24dp"
                 tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textViewVideosMenu"
+            <Button
+                android:id="@+id/buttonVideosMenu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="38dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="sans-serif-light"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="0dp"
                 android:text="@string/btn_videos_menu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -267,15 +292,20 @@
                 android:src="@drawable/ic_help_24dp"
                 tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textViewHelpMenu"
+            <Button
+                android:id="@+id/buttonHelpMenu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="38dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="sans-serif-light"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="0dp"
                 android:text="@string/btn_help_menu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -301,15 +331,20 @@
                 android:src="@drawable/ic_settings_24dp"
                 tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textViewSettingsMenu"
+            <Button
+                android:id="@+id/buttonSettingsMenu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="38dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="sans-serif-light"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="0dp"
                 android:text="@string/btn_settings_menu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -335,15 +370,20 @@
                 android:src="@drawable/ic_info_24dp"
                 tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textViewSobreMenu"
+            <Button
+                android:id="@+id/buttonSobreMenu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="38dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="sans-serif-light"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="0dp"
                 android:text="@string/btn_sobre_menu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -371,15 +411,20 @@
                 android:src="@drawable/ic_logout_24dp"
                 tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textViewLogoutMenu"
+            <Button
+                android:id="@+id/buttonLogoutMenu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="38dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="sans-serif-light"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-thin"
+                android:paddingTop="0dp"
                 android:text="@string/btn_logout_menu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>

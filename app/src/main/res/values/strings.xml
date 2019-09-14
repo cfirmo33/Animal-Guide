@@ -14,6 +14,7 @@
     <string name="exception_email_password_login">Email ou Senha incorretos.</string>
     <string name="error_login">Não foi possiver realizar seu Login no sistema:</string>
     <string name="text_view_alert_dialog_login">Efetuando Login</string>
+    <string name="text_view_alert_dialog_splash_login">Carregando Dados</string>
     <!-- Choose Activity Strings -->
     <string name="text_choose_user_activity">Olá, Seja Bem Vindo. O Animal Guide foi desenvolvido para ajudar você e outros usuários. Então, antes de prosseguir, escolha o tipo de usuário que você utilizará no aplicativo.</string>
     <string name="owner_pet_text">Dono(a) de Pet</string>
@@ -69,7 +70,7 @@
     <string name="loading_login_google">Verificando Dados</string>
     <!-- String Exceptions Class CheckDatabaseFirebase -->
     <string name="exception_get_type_account">Erro ao pegar tipo da Conta do Usuário no Banco de Dados</string>
-    <string name="exception_acess_firebase_class_get_type_account" translatable="false">Erro ao acessar FirebaseDatabase:</string>
+    <string name="exception_acess_firebase_class_get_type_account">Erro ao acessar FirebaseDatabase:</string>
     <!-- String Exceptions SignIn Google -->
     <string name="exception_signIn_google">Erro ao conectar-se com o Google:</string>
     <string name="exception_auth_google_signIn">Erro ao autenticar-se no sistema com sua conta do Google: </string>
@@ -107,7 +108,7 @@
     <string name="title_ic_maps_menu_navigation_bottom">Mapa</string>
     <string name="title_ic_likes_menu_navigation_bottom">Notificações</string>
     <string name="title_ic_menu_navigation_bottom" translatable="false">Menu</string>
-    <string name="text_name_user_menu" >Nome do Usuário</string>
+    <string name="text_name_user_menu">Nome do Usuário</string>
     <string name="text_open_profile">Visualizar Perfil</string>
     <string name="btn_amigos_menu">Amigos</string>
     <string name="btn_blogs_menu" translatable="false">Blogs</string>
@@ -116,8 +117,24 @@
     <string name="btn_videos_menu" translatable="false">Vídeos</string>
     <string name="btn_help_menu">Ajuda</string>
     <string name="btn_settings_menu">Configurações</string>
-    <string name="btn_sobre_menu" translatable="false">Sobre</string>
+    <string name="btn_sobre_menu">Sobre</string>
     <string name="btn_logout_menu">Sair</string>
     <!-- Strings Exceptions Accounts Database User -->
     <string name="exception_accounts_user_database">Erro ao tentar recuperar os dados da sua conta:</string>
+    <string name="exception_accounts_user_name_ong">Erro ao tentar recuperar nome da ONG do Banco de Dados:</string>
+    <!-- Strings Save Password Login -->
+    <string name="text_title_save_password_login">Lembrar Informações de Login?</string>
+    <string name="text_aviso_save_dados_login">Salvando as informações do seu login, você não precisará inseri-las quando efetuar o login novamente. Só precisará clicar em sua foto.</string>
+    <string name="btn_not_save_password">Agora Não</string>
+    <string name="btn_save_password">Salvar</string>
+    <!-- Strings Exceptions Shared Preferences -->
+    <string name="exception_save_password_shared_preference">Ocorreu uma falha ao salvar as informações do seu Login:</string>
+    <string name="exception_update_status_dados_login">Erro ao alterar Status do Login no Banco de Dados:</string>
+    <string name="text_alert_shared_preferences_password">Salvando Informações do seu Login</string>
+    <!-- Strings Dialog Permissions -->
+    <string name="title_dialog_permissions">Permitir que o Animal Guide use\na câmera e o armazenamento do seu telefone?</string>
+    <string name="title_aviso_dialog_permissions">Para poder tirar fotos ou escolher uma salva em seu dispositivo, permita que o Animal Guide acesse sua câmera e fotos.</string>
+    <string name="title_ativar_dialog_permissions">Para ativar, clique em Configurações, Permissões e ative a Câmera e o Armazenamento.</string>
+    <string name="text_open_settings_permissions">Configurações</string>
+    <string name="permission_negada">Permissão Negada</string>
 </resources>

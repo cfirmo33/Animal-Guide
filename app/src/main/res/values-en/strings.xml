@@ -94,4 +94,18 @@
     <string name="btn_sobre_menu" translatable="false">About</string>
     <string name="btn_logout_menu" translatable="false">Logout</string>
     <string name="exception_accounts_user_database" translatable="false">Error trying to recover your account data:</string>
+    <string name="text_view_alert_dialog_splash_login" translatable="false">Loading Data</string>
+    <string name="text_title_save_password_login" translatable="false">Remember Login Information?</string>
+    <string name="btn_not_save_password" translatable="false">Not now</string>
+    <string name="btn_save_password" translatable="false">Save</string>
+    <string name="text_aviso_save_dados_login" translatable="false">By saving your login information, you do not have to enter it when you log in again. Just need to click on your photo.</string>
+    <string name="exception_save_password_shared_preference" translatable="false">Failed to save your Login information:</string>
+    <string name="exception_update_status_dados_login" translatable="false">Error Changing Database Login Status:</string>
+    <string name="text_alert_shared_preferences_password" translatable="false">Saving Your Login Information</string>
+    <string name="exception_accounts_user_name_ong" translatable="false">Error trying to retrieve name from Database ONG:</string>
+    <string name="title_dialog_permissions" translatable="false">Allow Animal Guide to use your phone\'s camera and storage?</string>
+    <string name="title_aviso_dialog_permissions" translatable="false">Before you can take photos or choose a photo saved on your device, allow Animal Guide to access your camera and photos.</string>
+    <string name="title_ativar_dialog_permissions" translatable="false">To enable, click Settings Permissions and enable Camera and Storage.</string>
+    <string name="text_open_settings_permissions" translatable="false">Settings</string>
+    <string name="permission_negada" translatable="false">Permission denied</string>
 </resources>

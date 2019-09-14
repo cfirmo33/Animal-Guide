@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-55:12
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-58:12
 MERGED from [androidx.multidex:multidex:2.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/159d1d015cf862f0b8e875329e4ded79/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/marcelo/.gradle/caches/transforms-2/files-2.1/8cb86e75cca33e4ac5f552ecb3f7a690/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [com.firebaseui:firebase-ui-auth:0.6.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1c222a2051da4e86706acb7f24cd77d4/jetified-firebase-ui-auth-0.6.0/AndroidManifest.xml:2:1-85:12
@@ -13,6 +13,7 @@ MERGED from [com.google.android.libraries.places:places:2.0.0] /home/marcelo/.gr
 MERGED from [androidx.navigation:navigation-ui:2.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6d36339882d6f05f7ab4c92241745d1b/jetified-navigation-ui-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.ittianyu:BottomNavigationViewEx:2.0.4] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b27bc4885ac5784a5565f72b60fedaf5/jetified-BottomNavigationViewEx-2.0.4/AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4141e45cf081a85b30e69d6cd880b858/material-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [pub.devrel:easypermissions:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/610d640d434c4fb500040d23348766fc/easypermissions-3.0.0/AndroidManifest.xml:2:1-19:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a80291ba9377785a78bac47ded2ace53/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:21:1-39:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/7b2de69f5a4675d5c8a772d83ec807cf/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -91,22 +92,22 @@ MERGED from [androidx.print:print:1.0.0] /home/marcelo/.gradle/caches/transforms
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/af77e083e9af376ca4d77d8c89f4928e/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/6b5032187f984713b9c82a80fec56ae4/firebase-database-collection-17.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.android.volley:volley:1.1.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b657b96df5c03a68c132a2b107730286/jetified-volley-1.1.1/AndroidManifest.xml:2:1-11:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-58:12
 	package
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:4:5-38
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-55:12
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-58:12
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-55:12
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:1-58:12
 		INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:2:11-69
@@ -183,13 +184,13 @@ ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/
 	android:name
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:15:22-62
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:16:5-95
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:16:5-18:31
 	tools:node
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:16:73-92
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:18:9-28
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:16:22-72
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:17:9-59
 application
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:18:5-53:19
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:20:5-56:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/marcelo/.gradle/caches/transforms-2/files-2.1/8cb86e75cca33e4ac5f552ecb3f7a690/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/marcelo/.gradle/caches/transforms-2/files-2.1/8cb86e75cca33e4ac5f552ecb3f7a690/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [com.firebaseui:firebase-ui-auth:0.6.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1c222a2051da4e86706acb7f24cd77d4/jetified-firebase-ui-auth-0.6.0/AndroidManifest.xml:12:5-83:19
@@ -202,6 +203,8 @@ MERGED from [com.github.ittianyu:BottomNavigationViewEx:2.0.4] /home/marcelo/.gr
 MERGED from [com.github.ittianyu:BottomNavigationViewEx:2.0.4] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b27bc4885ac5784a5565f72b60fedaf5/jetified-BottomNavigationViewEx-2.0.4/AndroidManifest.xml:11:5-12:19
 MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4141e45cf081a85b30e69d6cd880b858/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4141e45cf081a85b30e69d6cd880b858/material-1.0.0/AndroidManifest.xml:22:5-20
+MERGED from [pub.devrel:easypermissions:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/610d640d434c4fb500040d23348766fc/easypermissions-3.0.0/AndroidManifest.xml:11:5-17:19
+MERGED from [pub.devrel:easypermissions:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/610d640d434c4fb500040d23348766fc/easypermissions-3.0.0/AndroidManifest.xml:11:5-17:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a80291ba9377785a78bac47ded2ace53/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:28:5-37:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a80291ba9377785a78bac47ded2ace53/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:28:5-37:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/09f037db95ea905e1cce0ef44fc59d27/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
@@ -277,87 +280,91 @@ MERGED from [com.android.volley:volley:1.1.1] /home/marcelo/.gradle/caches/trans
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3da0e19a8222f0c6b721fc5b426bd31f/core-1.0.2/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:21:9-35
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:23:9-35
 	android:label
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:20:9-41
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:22:9-41
 	tools:ignore
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:23:9-60
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:25:9-60
 	android:allowBackup
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:19:9-35
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:21:9-35
 	android:theme
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:22:9-40
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:9-40
+activity#com.marcelo.animalguide.activitys.splash_screen.SplashScreenActivity
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:9-82
+	android:name
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:19-79
 activity#com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:9-80
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:9-80
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:19-77
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:19-77
 activity#com.marcelo.animalguide.activitys.conexion.CheckInternetActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:25:9-78
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:9-78
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:25:19-75
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:19-75
 activity#com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:9-78
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:29:9-78
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:19-75
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:29:19-75
 activity#com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:9-82
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:9-82
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:19-79
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:19-79
 activity#com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:9-85
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:9-85
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:19-82
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:19-82
 activity#com.marcelo.animalguide.activitys.login.AccountsActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:29:9-70
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:32:9-70
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:29:19-67
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:32:19-67
 activity#com.marcelo.animalguide.activitys.password.ForgotPasswordActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:9-32:75
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:33:9-35:75
 	android:parentActivityName
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:32:13-72
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:35:13-72
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:13-70
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:34:13-70
 activity#com.marcelo.animalguide.registers.RegisterONGActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:33:9-35:76
-	android:parentActivityName
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:35:13-73
-	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:34:13-58
-activity#com.marcelo.animalguide.registers.RegisterVeterinaryActivity
 ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:36:9-38:76
 	android:parentActivityName
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:38:13-73
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:37:13-65
-activity#com.marcelo.animalguide.registers.RegisterStudentActivity
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:37:13-58
+activity#com.marcelo.animalguide.registers.RegisterVeterinaryActivity
 ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:39:9-41:76
 	android:parentActivityName
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:41:13-73
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:40:13-62
-activity#com.marcelo.animalguide.registers.RegisterOwnerActivity
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:40:13-65
+activity#com.marcelo.animalguide.registers.RegisterStudentActivity
 ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:42:9-44:76
 	android:parentActivityName
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:44:13-73
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:43:13-60
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:43:13-62
+activity#com.marcelo.animalguide.registers.RegisterOwnerActivity
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:45:9-47:76
+	android:parentActivityName
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:47:13-73
+	android:name
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:46:13-60
 activity#com.marcelo.animalguide.activitys.login.ChooseActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:45:9-68
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:48:9-68
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:45:19-65
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:48:19-65
 activity#com.marcelo.animalguide.activitys.login.LoginActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:46:9-52:20
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:49:9-55:20
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:46:19-64
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:49:19-64
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:47:13-51:29
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:50:13-54:29
 action#android.intent.action.MAIN
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:48:17-69
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:51:17-69
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:48:25-66
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:51:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:50:17-77
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:53:17-77
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:50:27-74
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:53:27-74
 uses-sdk
 INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml
@@ -380,6 +387,8 @@ MERGED from [com.github.ittianyu:BottomNavigationViewEx:2.0.4] /home/marcelo/.gr
 MERGED from [com.github.ittianyu:BottomNavigationViewEx:2.0.4] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b27bc4885ac5784a5565f72b60fedaf5/jetified-BottomNavigationViewEx-2.0.4/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4141e45cf081a85b30e69d6cd880b858/material-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4141e45cf081a85b30e69d6cd880b858/material-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [pub.devrel:easypermissions:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/610d640d434c4fb500040d23348766fc/easypermissions-3.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [pub.devrel:easypermissions:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/610d640d434c4fb500040d23348766fc/easypermissions-3.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/marcelo/.gradle/caches/transforms-2/files-2.1/33ee7a807aa5aabacc71c09e34d03dd9/appcompat-1.0.2/AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a80291ba9377785a78bac47ded2ace53/jetified-facebook-android-sdk-4.14.1/AndroidManifest.xml:24:5-26:41
@@ -709,6 +718,16 @@ ADDED from [com.google.android.libraries.places:places:2.0.0] /home/marcelo/.gra
 		ADDED from [com.google.android.libraries.places:places:2.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/284afe1e179ff0155563a8189f09cac7/places-2.0.0/AndroidManifest.xml:21:13-66
 	android:name
 		ADDED from [com.google.android.libraries.places:places:2.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/284afe1e179ff0155563a8189f09cac7/places-2.0.0/AndroidManifest.xml:17:13-91
+activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
+ADDED from [pub.devrel:easypermissions:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/610d640d434c4fb500040d23348766fc/easypermissions-3.0.0/AndroidManifest.xml:12:9-16:66
+	android:label
+		ADDED from [pub.devrel:easypermissions:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/610d640d434c4fb500040d23348766fc/easypermissions-3.0.0/AndroidManifest.xml:15:13-29
+	android:exported
+		ADDED from [pub.devrel:easypermissions:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/610d640d434c4fb500040d23348766fc/easypermissions-3.0.0/AndroidManifest.xml:14:13-37
+	android:theme
+		ADDED from [pub.devrel:easypermissions:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/610d640d434c4fb500040d23348766fc/easypermissions-3.0.0/AndroidManifest.xml:16:13-63
+	android:name
+		ADDED from [pub.devrel:easypermissions:3.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/610d640d434c4fb500040d23348766fc/easypermissions-3.0.0/AndroidManifest.xml:13:13-86
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:19.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/8877d3eb1c5bd8fd194caca1976aa8d1/firebase-auth-19.0.0/AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents

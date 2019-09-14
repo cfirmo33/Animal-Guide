@@ -1,16 +1,12 @@
 package com.marcelo.animalguide.registers;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.ConnectivityManager;
@@ -18,64 +14,83 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.provider.Settings;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
-import com.google.android.material.snackbar.Snackbar;
-import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity;
-import com.marcelo.animalguide.encryption.EncryptionSHA1;
-import com.marcelo.animalguide.firebase.ServicesFirebase;
-import com.marcelo.animalguide.firebase.UserFirebase;
-import com.marcelo.animalguide.models.classes.UserClass;
-import com.marcelo.animalguide.models.message_toast.MessagesToast;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.marcelo.animalguide.R;
+import com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity;
+import com.marcelo.animalguide.encryption.Base64Custom;
+import com.marcelo.animalguide.encryption.EncryptionSHA1;
+import com.marcelo.animalguide.firebase.ServicesFirebase;
+import com.marcelo.animalguide.firebase.UserFirebase;
+import com.marcelo.animalguide.models.classes.BackupSharedPreferences;
+import com.marcelo.animalguide.models.classes.DatesCustomized;
+import com.marcelo.animalguide.models.classes.UserClass;
+import com.marcelo.animalguide.models.message_toast.MessagesToast;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+import java.util.List;
 import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import pub.devrel.easypermissions.AfterPermissionGranted;
+import pub.devrel.easypermissions.AppSettingsDialog;
+import pub.devrel.easypermissions.EasyPermissions;
 
-public class RegisterONGActivity extends AppCompatActivity
+public class RegisterONGActivity extends AppCompatActivity implements EasyPermissions.PermissionCallbacks
 {
     private EditText editTextNameUser, editTextEmailUser, editTextPasswordUser, editTextNameONG;
     private TextInputLayout inputTextPasswordRegisterONG;
     private ConstraintLayout constraintLayout;
     private CircleImageView circleImageViewONG;
     private Button btnRegisterONG;
-    private AlertDialog dialog, dialogPhotos;
+    private AlertDialog dialog, dialogPhotos, dialogSave, dialogPermissions;
 
     private UserClass userClass = new UserClass();
+    private BackupSharedPreferences backupSharedPreferences = new BackupSharedPreferences();
     private FirebaseAuth authentication = ServicesFirebase.getFirebaseAuth();
+    private DatabaseReference firebaseRef = ServicesFirebase.getFirebaseDatabase();
+    private DatabaseReference userRef = ServicesFirebase.getFirebaseDatabase();
     private StorageReference imageReference = ServicesFirebase.getFirebaseStorage();
+    private SharedPreferences sharedPreferences;
 
     private Activity activity = this;
     private Bitmap imagem;
-    private String message;
-    private String idUser;
-    private String exception;
-    private String getNome;
-    private String getEmail;
-    private String getProvedor;
-    private String typeUser;
-    private String accountGoogle = "Não";
-    private Boolean check;
-    private static final int SELECAO_CAMERA = 100;
-    private static final int SELECAO_GALERIA = 200;
+    private String message, idUser, exception, getNome, getEmail, getProvedor, typeUser,
+            accountGoogle = "Não", getPasswordEncrypted, getPhotoPreferences;
+    private Boolean check, checkPreference = false;
+    private static final int SELECAO_CAMERA = 100, SELECAO_GALERIA = 200;
+    private static final String ARQUIVO_PREFERENCIA = "SaveDados";
+    private String[] permissionsRequired = new String[]
+    {
+        Manifest.permission.READ_EXTERNAL_STORAGE,
+        Manifest.permission.CAMERA
+    };
 
     @Override
     protected void onStart()
@@ -190,6 +205,8 @@ public class RegisterONGActivity extends AppCompatActivity
                     userClass.setName(editTextNameUser.getText().toString());
                     userClass.setEmail(editTextEmailUser.getText().toString());
                     userClass.setPassword(editTextPasswordUser.getText().toString());
+                    getPasswordEncrypted = Base64Custom.encryption(editTextPasswordUser.getText().toString());
+                    userClass.setNameONG(editTextNameONG.getText().toString());
                     userClass.setProvedor("Email");
                     userClass.setSaveLogin(false);
                     if (imagem == null)
@@ -276,8 +293,7 @@ public class RegisterONGActivity extends AppCompatActivity
                 if (accountGoogle.equals("Sim"))
                 {
                     userClass.saveDatabase("registered_users");
-                    startActivity(new Intent(activity, ONGMainActivity.class));
-                    finish();
+                    createAlertDialogSaveLogin();
                 }
                 else if (accountGoogle.equals("Não"))
                 {
@@ -299,6 +315,150 @@ public class RegisterONGActivity extends AppCompatActivity
 
         dialog = alert.create();
         dialog.show();
+    }
+
+    private void createAlertDialogSaveLogin()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(getString(R.string.text_title_save_password_login));
+        builder.setMessage(getString(R.string.text_aviso_save_dados_login));
+        builder.setCancelable(false);
+        builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i)
+            {
+                checkPreference = true;
+                saveSharedPrefencesDados();
+            }
+        });
+        builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i)
+            {
+                saveSharedPrefencesDados();
+            }
+        });
+
+        dialogSave = builder.create();
+        dialogSave.show();
+    }
+
+    private void createAlertDialogPermissionsApp()
+    {
+        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setCancelable(false);
+        @SuppressLint("InflateParams") View alertView = getLayoutInflater().inflate(R.layout.dialog_permissions_app, null);
+        TextView textNotPermission = alertView.findViewById(R.id.textViewNotPermission);
+        TextView textOpenSettings = alertView.findViewById(R.id.textViewOpenSettingsPermissions);
+
+        textNotPermission.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                MessagesToast.createMessageWarning(getString(R.string.permission_negada), activity);
+                dialogPermissions.cancel();
+            }
+        });
+
+        textOpenSettings.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                Uri uri = Uri.fromParts("package", getPackageName(), null);
+                intent.setData(uri);
+                startActivity(intent);
+            }
+        });
+
+        alertDialogBuilder.setView(alertView);
+        dialogPermissions = alertDialogBuilder.create();
+        dialogPermissions.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialogPermissions.show();
+    }
+
+    @SuppressLint("ApplySharedPref")
+    private void saveSharedPrefencesDados()
+    {
+        sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
+        @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        if (checkPreference)
+        {
+            try
+            {
+                editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                editor.putString("name_ong_user", editTextNameONG.getText().toString());
+                editor.putString("path_foto_user_menu", getPhotoPreferences);
+                editor.putString("email_user", editTextEmailUser.getText().toString());
+                editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                editor.commit();
+                backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                backupSharedPreferences.setNameONG(editTextNameONG.getText().toString());
+                backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                updateStatusDatabase();
+            }
+            catch (Exception e)
+            {
+                MessagesToast.createMessageError(getString(R.string.exception_save_password_shared_preference) + e, activity);
+            }
+        }
+        else if (!checkPreference)
+        {
+            try
+            {
+                editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                editor.putString("name_ong_user", editTextNameONG.getText().toString());
+                editor.putString("path_foto_user_menu", getPhotoPreferences);
+                editor.putString("email_user", editTextEmailUser.getText().toString());
+                editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                editor.commit();
+                backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                backupSharedPreferences.setNameONG(editTextNameONG.getText().toString());
+                backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                backupSharedPreferences.setPathFoto(getPhotoPreferences);
+
+                String getDateCurrent = DatesCustomized.getData();
+                backupSharedPreferences.saveDatabase(DatesCustomized.dateCustom(getDateCurrent));
+
+                startActivity(new Intent(activity, ONGMainActivity.class));
+                finish();
+            }
+            catch (Exception e)
+            {
+                MessagesToast.createMessageError(getString(R.string.exception_save_password_shared_preference) + e, activity);
+            }
+        }
+    }
+
+    private void updateStatusDatabase()
+    {
+        String idDatabase = EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString());
+        try
+        {
+            dialog.cancel();
+            userRef = firebaseRef.child("registered_users").child(Objects.requireNonNull(idDatabase));
+
+            userRef.child("saveLogin").setValue(true);
+
+            String getDateCurrent = DatesCustomized.getData();
+            backupSharedPreferences.saveDatabase(DatesCustomized.dateCustom(getDateCurrent));
+
+            startActivity(new Intent(activity, ONGMainActivity.class));
+            finish();
+        }
+        catch (Exception e)
+        {
+            MessagesToast.createMessageError(getString(R.string.exception_update_status_dados_login) + e, activity);
+        }
     }
 
     public void saveImageFirebaseStorage()
@@ -339,9 +499,12 @@ public class RegisterONGActivity extends AppCompatActivity
                             @Override
                             public void onSuccess(Uri uri)
                             {
+                                getPhotoPreferences = uri.toString();
+
                                 if (accountGoogle.equals("Não"))
                                 {
                                     dialog.cancel();
+                                    getPhotoPreferences = uri.toString();
                                     UserFirebase.updateNameUser(userClass.getName());
                                     updatePhotoUser(uri);
                                     saveDatabaseAccountEmail();
@@ -371,10 +534,7 @@ public class RegisterONGActivity extends AppCompatActivity
     {
         createDialogLoading();
 
-        authentication.createUserWithEmailAndPassword
-        (
-                userClass.getEmail(),
-                userClass.getPassword()).addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
+        authentication.createUserWithEmailAndPassword(userClass.getEmail(), userClass.getPassword()).addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
         {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task)
@@ -387,8 +547,10 @@ public class RegisterONGActivity extends AppCompatActivity
                     {
                         saveImageFirebaseStorage();
                     }
-
-                    saveDatabaseAccountEmail();
+                    else
+                    {
+                        saveDatabaseAccountEmail();
+                    }
 
                     UserFirebase.updateNameUser(userClass.getName());
                 }
@@ -431,8 +593,7 @@ public class RegisterONGActivity extends AppCompatActivity
         {
             dialog.cancel();
             userClass.saveDatabase("registered_users");
-            startActivity(new Intent(activity, ONGMainActivity.class));
-            finish();
+            createAlertDialogSaveLogin();
         }
         catch (Exception e)
         {
@@ -449,44 +610,53 @@ public class RegisterONGActivity extends AppCompatActivity
         editTextNameONG.setEnabled(false);
     }
 
+    @AfterPermissionGranted(1)
     public void openCameraONG(View view)
     {
-        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setCancelable(false);
-        @SuppressLint("InflateParams") View alertView = getLayoutInflater().inflate(R.layout.dialog_customized_photos, null);
-        Button btnCamera = alertView.findViewById(R.id.buttonCameraDialog);
-        Button btnGaleria = alertView.findViewById(R.id.buttonGaleriaDialog);
-        Button btnCancel = alertView.findViewById(R.id.buttonCancelDialog);
+        if (EasyPermissions.hasPermissions(activity, permissionsRequired))
+        {
+            final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+            alertDialogBuilder.setCancelable(false);
+            @SuppressLint("InflateParams") View alertView = getLayoutInflater().inflate(R.layout.dialog_customized_photos, null);
+            Button btnCamera = alertView.findViewById(R.id.buttonCameraDialog);
+            Button btnGaleria = alertView.findViewById(R.id.buttonGaleriaDialog);
+            Button btnCancel = alertView.findViewById(R.id.buttonCancelDialog);
 
-        btnCancel.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
+            btnCancel.setOnClickListener(new View.OnClickListener()
             {
-                dialogPhotos.dismiss();
-            }
-        });
-        btnCamera.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
+                @Override
+                public void onClick(View view)
+                {
+                    dialogPhotos.dismiss();
+                }
+            });
+            btnCamera.setOnClickListener(new View.OnClickListener()
             {
-                openDeviceCamera();
-            }
-        });
-        btnGaleria.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
+                @Override
+                public void onClick(View view)
+                {
+                    openDeviceCamera();
+                }
+            });
+            btnGaleria.setOnClickListener(new View.OnClickListener()
             {
-                openDeviceGallery();
-            }
-        });
+                @Override
+                public void onClick(View view)
+                {
+                    openDeviceGallery();
+                }
+            });
 
-        alertDialogBuilder.setView(alertView);
-        dialogPhotos = alertDialogBuilder.create();
-        dialogPhotos.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialogPhotos.show();
+            alertDialogBuilder.setView(alertView);
+            dialogPhotos = alertDialogBuilder.create();
+            dialogPhotos.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            dialogPhotos.show();
+        }
+        else
+        {
+            EasyPermissions.requestPermissions(activity, getString(R.string.message_alert_register_owner),
+                    1, permissionsRequired);
+        }
     }
 
     public void openDeviceGallery()
@@ -536,6 +706,34 @@ public class RegisterONGActivity extends AppCompatActivity
             {
                 e.printStackTrace();
             }
+        }
+
+        if (requestCode == AppSettingsDialog.DEFAULT_SETTINGS_REQ_CODE)
+        {
+            //Lib EasyPermissions interface takes action if this is true.
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
+    {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        EasyPermissions.onRequestPermissionsResult(requestCode,permissions,grantResults, activity);
+    }
+
+    @Override
+    public void onPermissionsGranted(int requestCode, @NonNull List<String> perms)
+    {
+
+    }
+
+    @Override
+    public void onPermissionsDenied(int requestCode, @NonNull List<String> perms)
+    {
+        if (EasyPermissions.somePermissionPermanentlyDenied(this, perms))
+        {
+           createAlertDialogPermissionsApp();
         }
     }
 }

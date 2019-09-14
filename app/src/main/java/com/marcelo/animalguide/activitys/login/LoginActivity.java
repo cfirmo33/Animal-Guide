@@ -45,6 +45,7 @@ import com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity;
 import com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity;
 import com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity;
 import com.marcelo.animalguide.activitys.password.ForgotPasswordActivity;
+import com.marcelo.animalguide.activitys.splash_screen.SplashScreenActivity;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 import com.marcelo.animalguide.models.classes.UserClass;
@@ -76,6 +77,13 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     }
 
     @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        finish();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
@@ -103,10 +111,18 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         return getStatusInternet;
     }
 
+    private void openActivitySplash()
+    {
+        startActivity(new Intent(activity, SplashScreenActivity.class));
+        finish();
+    }
+
     private void checkAuthentication()
     {
         if (userFirebase != null)
         {
+            openActivitySplash();
+
             String id = EncryptionSHA1.encryptionString(userFirebase.getEmail());
 
             DatabaseReference accountsRef = ServicesFirebase.getFirebaseDatabase()
@@ -325,7 +341,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                             switch (getTypeAccount)
                             {
                                 case "Pet Owner":
-                                    //startActivity(new Intent(activity, OwnerMainActivity.class));
+                                    startActivity(new Intent(activity, OwnerMainActivity.class));
                                     finish();
                                     break;
                                 case "Student":
@@ -457,6 +473,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     public void userType(View view)
     {
         startActivity(new Intent(this, ChooseActivity.class));
+        finish();
     }
 
     public void forgotPassword(View view)
