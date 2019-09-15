@@ -1815,6 +1815,7 @@ id display_always
 id divider
 id do_delete
 id editTextAdapterEmailAccountsUser
+id editTextEmailAccountsUser
 id editTextEmailForgotPassword
 id editTextEmailLogin
 id editTextEmailRegisterONG
@@ -1880,7 +1881,7 @@ id imageUserONG
 id imageUserOwner
 id imageUserStudent
 id imageUserVeterinary
-id imageViewAdapterAccountsUser
+id imageViewAccountsUser
 id imageViewBlogsMenu
 id imageViewCameraToolbar
 id imageViewChat
@@ -1898,7 +1899,7 @@ id imageViewVideosMenu
 id include
 id info
 id inline
-id inputTextAdapterEmailAccountsUser
+id inputTextEmailAccountsUser
 id inputTextEmailForgotPassword
 id inputTextEmailLogin
 id inputTextEmailRegisterONG
@@ -1937,6 +1938,7 @@ id linearLayoutObjects
 id linearLayoutPetsMenu
 id linearLayoutPhotoAccount
 id linearLayoutPhotoUser
+id linearLayoutRegister
 id linearLayoutSettingsMenu
 id linearLayoutSobreMenu
 id linearLayoutVideosMenu
@@ -2004,7 +2006,6 @@ id progress_bar
 id progress_circular
 id progress_horizontal
 id radio
-id recyclerViewAccounts
 id right
 id right_icon
 id right_side
@@ -2064,7 +2065,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textViewAdapterTypeAccount
 id textViewAtivar
 id textViewAviso
 id textViewAvisoCheckInternet
@@ -2089,6 +2089,7 @@ id textViewTitleToolbarONG
 id textViewTitleToolbarOwner
 id textViewTitleToolbarStudent
 id textViewTitleToolbarVeterinary
+id textViewTypeAccount
 id textViewVeterinary
 id text_input_password_toggle
 id textinput_counter
@@ -2409,7 +2410,9 @@ string exception_accounts_user_database
 string exception_accounts_user_name_ong
 string exception_acess_firebase_class_get_type_account
 string exception_auth_google_signIn
+string exception_check_database_save_login
 string exception_connect_servidor_google
+string exception_database_logout
 string exception_email_exists_register
 string exception_email_password_login
 string exception_email_register
@@ -2471,6 +2474,7 @@ string name_ong
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string next
+string ong_account_text
 string ong_text
 string owner_pet_text
 string password_hint
@@ -2511,6 +2515,7 @@ string sign_in_with_email
 string sign_in_with_facebook
 string sign_in_with_google
 string status_bar_notification_info_overflow
+string student_account_text
 string student_veterinary_text
 string sucess_insert_photo_camera
 string terms_of_service

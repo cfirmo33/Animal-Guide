@@ -19,14 +19,16 @@
     <string name="text_choose_user_activity">Olá, Seja Bem Vindo. O Animal Guide foi desenvolvido para ajudar você e outros usuários. Então, antes de prosseguir, escolha o tipo de usuário que você utilizará no aplicativo.</string>
     <string name="owner_pet_text">Dono(a) de Pet</string>
     <string name="student_veterinary_text">Veterinário Universitário(a)</string>
+    <string name="student_account_text">Estudante</string>
     <string name="veterinary_text">Veterinário(a)</string>
     <string name="ong_text">ONG para Animais</string>
+    <string name="ong_account_text" translatable="false">ONG</string>
     <!-- RegisterOwner Activity Strings -->
     <string name="name_last_name">Nome e Sobrenome</string>
     <string name="clear_fields_owner">Limpar Campos</string>
     <string name="register_owner">Cadastre-se</string>
     <string name="title_toolbar_owner">Cadastro do Dono</string>
-    <string name="exception_save_user_owner_database" translatable="false">Erro ao salvar usuário no Banco de Dados:</string>
+    <string name="exception_save_user_owner_database">Erro ao salvar usuário no Banco de Dados:</string>
     <!-- RegisterStudent Activity Strings -->
     <string name="name_college_student">Nome da Faculdade</string>
     <string name="title_toolbar_student">Cadastro Universitário</string>
@@ -137,4 +139,8 @@
     <string name="title_ativar_dialog_permissions">Para ativar, clique em Configurações, Permissões e ative a Câmera e o Armazenamento.</string>
     <string name="text_open_settings_permissions">Configurações</string>
     <string name="permission_negada">Permissão Negada</string>
+    <!-- Strings Exception Logout -->
+    <string name="exception_database_logout">Ocorreu um erro ao tentar sair do Aplicativo:</string>
+    <!-- Strings Exception Check SaveLogin Database -->
+    <string name="exception_check_database_save_login">Ocorreu um erro ao tentar recuperar os dados da sua Conta:</string>
 </resources>

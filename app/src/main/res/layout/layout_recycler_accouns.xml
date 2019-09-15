@@ -16,7 +16,7 @@
         android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imageViewAdapterAccountsUser"
+            android:id="@+id/imageViewAccountsUser"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_gravity="center"
@@ -35,7 +35,7 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputTextAdapterEmailAccountsUser"
+            android:id="@+id/inputTextEmailAccountsUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -51,7 +51,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/textViewAdapterTypeAccount"
+            android:id="@+id/textViewTypeAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"

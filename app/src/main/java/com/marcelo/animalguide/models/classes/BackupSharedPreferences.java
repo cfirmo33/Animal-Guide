@@ -8,6 +8,7 @@ public class BackupSharedPreferences
     private String emailUser;
     private String passwordUser;
     private String nameUser;
+    private String typeUser;
     private String nameONG;
     private String pathFoto;
     private DatabaseReference databaseReference = ServicesFirebase.getFirebaseDatabase();
@@ -49,6 +50,16 @@ public class BackupSharedPreferences
     public void setNameUser(String nameUser)
     {
         this.nameUser = nameUser;
+    }
+
+    public String getTypeUser()
+    {
+        return typeUser;
+    }
+
+    public void setTypeUser(String typeUser)
+    {
+        this.typeUser = typeUser;
     }
 
     public String getNameONG()

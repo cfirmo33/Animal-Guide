@@ -378,11 +378,13 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
             try
             {
                 editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                editor.putString("type_user", "Veterinary");
                 editor.putString("path_foto_user_menu", getPhotoPreferences);
                 editor.putString("email_user", editTextEmailUser.getText().toString());
                 editor.putString("password_criptografado_base64", getPasswordEncrypted);
                 editor.commit();
                 backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                backupSharedPreferences.setTypeUser("Veterinary");
                 backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
                 backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
                 backupSharedPreferences.setPathFoto(getPhotoPreferences);
@@ -398,11 +400,13 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
             try
             {
                 editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                editor.putString("type_user", "Veterinary");
                 editor.putString("path_foto_user_menu", getPhotoPreferences);
                 editor.putString("email_user", editTextEmailUser.getText().toString());
                 editor.putString("password_criptografado_base64", getPasswordEncrypted);
                 editor.commit();
                 backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                backupSharedPreferences.setTypeUser("Veterinary");
                 backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
                 backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
                 backupSharedPreferences.setPathFoto(getPhotoPreferences);

@@ -152,20 +152,20 @@ public final class R {
         public static final int com_facebook_tooltip_bubble_view_top_pointer = 0x7f090067;
         public static final int confirmation_code = 0x7f090068;
         public static final int display_always = 0x7f090080;
-        public static final int inline = 0x7f0900d6;
-        public static final int large = 0x7f0900ed;
-        public static final int left = 0x7f0900ef;
-        public static final int messenger_send_button = 0x7f090107;
-        public static final int never_display = 0x7f090116;
-        public static final int normal = 0x7f090118;
-        public static final int open_graph = 0x7f09011c;
-        public static final int page = 0x7f09011f;
-        public static final int progress_bar = 0x7f09013d;
-        public static final int right = 0x7f090142;
-        public static final int small = 0x7f09015f;
-        public static final int standard = 0x7f09016c;
-        public static final int top = 0x7f0901a5;
-        public static final int unknown = 0x7f0901af;
+        public static final int inline = 0x7f0900d7;
+        public static final int large = 0x7f0900ee;
+        public static final int left = 0x7f0900f0;
+        public static final int messenger_send_button = 0x7f090109;
+        public static final int never_display = 0x7f090118;
+        public static final int normal = 0x7f09011a;
+        public static final int open_graph = 0x7f09011e;
+        public static final int page = 0x7f090121;
+        public static final int progress_bar = 0x7f09013f;
+        public static final int right = 0x7f090143;
+        public static final int small = 0x7f090160;
+        public static final int standard = 0x7f09016d;
+        public static final int top = 0x7f0901a6;
+        public static final int unknown = 0x7f0901b0;
     }
     public static final class layout {
         private layout() {}
@@ -201,7 +201,7 @@ public final class R {
         public static final int com_facebook_send_button_text = 0x7f0f0059;
         public static final int com_facebook_share_button_text = 0x7f0f005a;
         public static final int com_facebook_tooltip_default = 0x7f0f005b;
-        public static final int messenger_send_button_text = 0x7f0f00b4;
+        public static final int messenger_send_button_text = 0x7f0f00b6;
     }
     public static final class style {
         private style() {}

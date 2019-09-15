@@ -16,48 +16,111 @@
             android:id="@+id/textViewTitleAccounts"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
             android:fontFamily="casual"
             android:text="@string/app_name"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
             android:textSize="22sp"
-            app:layout_constraintBottom_toTopOf="@+id/recyclerViewAccounts"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="spread" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewAccounts"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTextEmailAccountsUser"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayoutButtons"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewTitleAccounts" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAccountsUser">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmailAccountsUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/email_login"
+                android:inputType="textImeMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textViewTypeAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputTextEmailAccountsUser" />
 
         <LinearLayout
             android:id="@+id/linearLayoutButtons"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTypeAccount">
+
+            <Button
+                android:id="@+id/buttonEnterAccount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/colorAccent"
+                android:onClick="reauthenticateUser"
+                android:text="@string/text_button_enter_account"
+                android:textAllCaps="false"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/buttonRemoveAccount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/colorAccent"
+                android:onClick="removeAccount"
+                android:text="@string/text_button_remove_account"
+                android:textAllCaps="false"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerViewAccounts">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutButtons"
+            app:layout_constraintVertical_bias="0.0">
 
             <Button
                 android:id="@+id/buttonChangeAccount"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginStart="8dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:background="@color/colorAccent"
                 android:onClick="changeAccount"
                 android:text="@string/text_button_account_changed"
@@ -69,13 +132,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginStart="8dp"
-                android:layout_weight="1"
+                android:layout_weight="3"
                 android:background="@color/colorAccent"
                 android:onClick="registerAccount"
                 android:text="@string/text_button_register_account"
                 android:textAllCaps="false"
                 android:textColor="#FFF" />
         </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewAccountsUser"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/photo_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitleAccounts" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

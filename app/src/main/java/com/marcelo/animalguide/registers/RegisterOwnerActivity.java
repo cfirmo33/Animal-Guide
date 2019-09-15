@@ -15,6 +15,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -51,6 +52,7 @@ import com.marcelo.animalguide.models.classes.BackupSharedPreferences;
 import com.marcelo.animalguide.models.classes.DatesCustomized;
 import com.marcelo.animalguide.models.classes.UserClass;
 import com.marcelo.animalguide.models.message_toast.MessagesToast;
+import com.marcelo.animalguide.permissions.PermissionsPhotos;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -81,7 +83,8 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
 
     private Activity activity = this;
     private Bitmap imagem;
-    private String message, idUser, exception, getNome, getEmail, getProvedor, typeUser, accountGoogle = "Não", getPasswordEncrypted, getPhotoPreferences;
+    private String message, idUser, exception, getNome, getEmail, getProvedor, typeUser,
+            accountGoogle = "Não", getPasswordEncrypted, getPhotoPreferences;
     private Boolean check, checkPreference = false;
     private static final int SELECAO_CAMERA = 100, SELECAO_GALERIA = 200;
     private static final String ARQUIVO_PREFENCIA = "SaveDados";
@@ -367,11 +370,13 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
             try
             {
                 editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                editor.putString("type_user", "Pet Owner");
                 editor.putString("path_foto_user_menu", getPhotoPreferences);
                 editor.putString("email_user", editTextEmailUser.getText().toString());
                 editor.putString("password_criptografado_base64", getPasswordEncrypted);
                 editor.commit();
                 backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                backupSharedPreferences.setTypeUser("Pet Owner");
                 backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
                 backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
                 backupSharedPreferences.setPathFoto(getPhotoPreferences);
@@ -387,11 +392,13 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
             try
             {
                 editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                editor.putString("type_user", "Pet Owner");
                 editor.putString("path_foto_user_menu", getPhotoPreferences);
                 editor.putString("email_user", editTextEmailUser.getText().toString());
                 editor.putString("password_criptografado_base64", getPasswordEncrypted);
                 editor.commit();
                 backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                backupSharedPreferences.setTypeUser("Pet Owner");
                 backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
                 backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
                 backupSharedPreferences.setPathFoto(getPhotoPreferences);
@@ -588,7 +595,6 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
         editTextPasswordUser.setEnabled(false);
     }
 
-    @AfterPermissionGranted(1)
     public void openCameraOwner(View view)
     {
         if (EasyPermissions.hasPermissions(activity, permissionsRequired))
@@ -695,7 +701,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
     {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        EasyPermissions.onRequestPermissionsResult(requestCode,permissions,grantResults, activity);
+        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
     }
 
     @Override

@@ -17,6 +17,8 @@ import java.util.Objects;
 public class CheckInternetActivity extends AppCompatActivity
 {
     private Activity activity = this;
+    private ConnectivityManager cm;
+    private NetworkInfo netInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,8 +29,8 @@ public class CheckInternetActivity extends AppCompatActivity
 
     private void verificarConex()
     {
-        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo netInfo = Objects.requireNonNull(cm).getActiveNetworkInfo();
+        cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        netInfo = Objects.requireNonNull(cm).getActiveNetworkInfo();
 
         if (netInfo != null && netInfo.isConnected())
         {
@@ -36,8 +38,8 @@ public class CheckInternetActivity extends AppCompatActivity
         }
         else
         {
-            finish();
             startActivity(new Intent(activity, CheckInternetActivity.class));
+            finish();
         }
     }
 

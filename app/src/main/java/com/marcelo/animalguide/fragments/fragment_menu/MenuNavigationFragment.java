@@ -2,6 +2,7 @@ package com.marcelo.animalguide.fragments.fragment_menu;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,6 +24,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.StorageReference;
 import com.marcelo.animalguide.R;
+import com.marcelo.animalguide.activitys.login.AccountsActivity;
+import com.marcelo.animalguide.activitys.login.LoginActivity;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 import com.marcelo.animalguide.models.classes.UserClass;
@@ -38,6 +41,8 @@ public class MenuNavigationFragment extends Fragment
     private View view;
     private FirebaseAuth auth = ServicesFirebase.getFirebaseAuth();
     private FirebaseUser userFirebase = auth.getCurrentUser();
+    private DatabaseReference firebaseRef = ServicesFirebase.getFirebaseDatabase();
+    private DatabaseReference logoutRef;
     private StorageReference storageReference = ServicesFirebase.getFirebaseStorage();
     private SharedPreferences sharedPreferences;
     private static final String ARQUIVO_PREFERENCIA = "SaveDados";
@@ -48,7 +53,7 @@ public class MenuNavigationFragment extends Fragment
 
     private String typeAccount, getNameUser;
     private Uri url;
-    private Activity activity = getActivity();
+    private boolean login;
 
     public MenuNavigationFragment()
     {
@@ -113,7 +118,7 @@ public class MenuNavigationFragment extends Fragment
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError)
             {
-                MessagesToast.createMessageError(getString(R.string.exception_accounts_user_database) + databaseError, activity);
+                MessagesToast.createMessageError(getString(R.string.exception_accounts_user_database) + databaseError, getActivity());
             }
         });
     }
@@ -168,6 +173,52 @@ public class MenuNavigationFragment extends Fragment
 
     private void clickButtons()
     {
+        btnLogout.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                logoutUser();
+            }
+        });
+    }
 
+    private void logoutUser()
+    {
+        auth.signOut();
+        String idDatabase = EncryptionSHA1.encryptionString(userFirebase.getEmail());
+        logoutRef = firebaseRef
+                .child("registered_users")
+                .child(Objects.requireNonNull(idDatabase));
+
+        logoutRef.addValueEventListener(new ValueEventListener()
+        {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+            {
+                for (DataSnapshot datas : dataSnapshot.getChildren())
+                {
+                    UserClass userClass = dataSnapshot.getValue(UserClass.class);
+
+                    login = Objects.requireNonNull(userClass).getSaveLogin();
+
+                    if (login)
+                    {
+                        Intent intent = new Intent(getActivity(), AccountsActivity.class);
+                        startActivity(intent);
+                    }
+                    else
+                    {
+                        startActivity(new Intent(getActivity(), LoginActivity.class));
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError)
+            {
+                MessagesToast.createMessageError(getString(R.string.exception_database_logout)+databaseError, getActivity());
+            }
+        });
     }
 }

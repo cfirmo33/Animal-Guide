@@ -108,4 +108,7 @@
     <string name="title_ativar_dialog_permissions" translatable="false">To enable, click Settings Permissions and enable Camera and Storage.</string>
     <string name="text_open_settings_permissions" translatable="false">Settings</string>
     <string name="permission_negada" translatable="false">Permission denied</string>
+    <string name="exception_database_logout" translatable="false">An error occurred while trying to exit the Application:</string>
+    <string name="exception_check_database_save_login" translatable="false">There was an error trying to recover your Account data:</string>
+    <string name="student_account_text" translatable="false">Student</string>
 </resources>

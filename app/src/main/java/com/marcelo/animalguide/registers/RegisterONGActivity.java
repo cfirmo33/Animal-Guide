@@ -393,12 +393,14 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
             try
             {
                 editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                editor.putString("type_user", "ONG");
                 editor.putString("name_ong_user", editTextNameONG.getText().toString());
                 editor.putString("path_foto_user_menu", getPhotoPreferences);
                 editor.putString("email_user", editTextEmailUser.getText().toString());
                 editor.putString("password_criptografado_base64", getPasswordEncrypted);
                 editor.commit();
                 backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                backupSharedPreferences.setTypeUser("ONG");
                 backupSharedPreferences.setNameONG(editTextNameONG.getText().toString());
                 backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
                 backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
@@ -415,12 +417,14 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
             try
             {
                 editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                editor.putString("type_user", "ONG");
                 editor.putString("name_ong_user", editTextNameONG.getText().toString());
                 editor.putString("path_foto_user_menu", getPhotoPreferences);
                 editor.putString("email_user", editTextEmailUser.getText().toString());
                 editor.putString("password_criptografado_base64", getPasswordEncrypted);
                 editor.commit();
                 backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                backupSharedPreferences.setTypeUser("ONG");
                 backupSharedPreferences.setNameONG(editTextNameONG.getText().toString());
                 backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
                 backupSharedPreferences.setPasswordUser(getPasswordEncrypted);

@@ -1,51 +1,89 @@
 package com.marcelo.animalguide.activitys.login;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.StorageReference;
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.adapters.AdapterAccounts;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
-import com.marcelo.animalguide.models.classes.UserClass;
-import com.marcelo.animalguide.models.message_toast.MessagesToast;
+import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class AccountsActivity extends AppCompatActivity
 {
     private Activity activity = this;
-    private Context context;
-    private List<UserClass> listUsers;
-    private AdapterAccounts adapterAccounts;
-    private RecyclerView recyclerViewAccounts;
+    private StorageReference storageReference = ServicesFirebase.getFirebaseStorage();
+    private SharedPreferences sharedPreferences;
+    private static final String ARQUIVO_PREFERENCIA = "SaveDados";
 
-    private DatabaseReference firebaseRef = ServicesFirebase.getFirebaseDatabase();
-    private DatabaseReference accountsRef;
-
-    private String getEmailBundle;
+    private CircleImageView imageAccountUser;
+    private EditText editTextEmailAccount;
+    private TextView textTypeAccount;
 
     @Override
     protected void onStart()
     {
         super.onStart();
-        listUsers.clear();
-        getDataBundle();
-        uploadAccounts(getEmailBundle);
+        loadingDados();
+    }
+
+    private void loadingDados()
+    {
+        sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
+
+        if (sharedPreferences.contains("email_user") && sharedPreferences.contains("type_user"))
+        {
+            editTextEmailAccount.setText(sharedPreferences.getString("email_user", ""));
+            String getTypeUser = sharedPreferences.getString("type_user", "");
+
+            switch (getTypeUser)
+            {
+                case "Pet Owner":
+                    textTypeAccount.setText(getString(R.string.owner_pet_text));
+                    break;
+                case "Student":
+                    textTypeAccount.setText(getString(R.string.student_account_text));
+                    break;
+                case "Veterinary":
+                    textTypeAccount.setText(getString(R.string.veterinary_text));
+                    break;
+                case "ONG":
+                    textTypeAccount.setText(getString(R.string.ong_account_text));
+                    break;
+            }
+
+            String idStorage = EncryptionSHA1.encryptionString(sharedPreferences.getString("email_user", ""));
+
+            StorageReference imageReference = storageReference
+                    .child("Cadastro do Usuário")
+                    .child(Objects.requireNonNull(idStorage))
+                    .child("photo.png");
+
+            imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
+            {
+                @Override
+                public void onSuccess(Uri uri)
+                {
+                    Picasso.get()
+                            .load(uri)
+                            .into(imageAccountUser);
+                }
+            });
+        }
     }
 
     @Override
@@ -55,60 +93,19 @@ public class AccountsActivity extends AppCompatActivity
         setContentView(R.layout.activity_accounts);
 
         initializeObjects();
-        configureRecyclerAdapterView();
+        desableObjects();
     }
 
     private void initializeObjects()
     {
-        recyclerViewAccounts = findViewById(R.id.recyclerViewAccounts);
-        listUsers = new ArrayList<>();
-        adapterAccounts = new AdapterAccounts(listUsers, context, "Pet Owner", getEmailBundle);
+        imageAccountUser = findViewById(R.id.imageViewAccountsUser);
+        editTextEmailAccount = findViewById(R.id.editTextEmailAccountsUser);
+        textTypeAccount = findViewById(R.id.textViewTypeAccount);
     }
 
-    private void getDataBundle()
+    private void desableObjects()
     {
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null)
-        {
-            getEmailBundle = bundle.getString("getEmailBundle");
-        }
-    }
-
-    private void configureRecyclerAdapterView()
-    {
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(context);
-        recyclerViewAccounts.setLayoutManager(layoutManager);
-        recyclerViewAccounts.setHasFixedSize(true);
-        recyclerViewAccounts.setAdapter(adapterAccounts);
-    }
-
-    private void uploadAccounts(String email)
-    {
-    String idDatabase= EncryptionSHA1.encryptionString("marcelocaregnatodesouza@gmail.com");
-        accountsRef = firebaseRef
-                .child("registered_users")
-                .child(Objects.requireNonNull(idDatabase));
-
-        accountsRef.addValueEventListener(new ValueEventListener()
-        {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
-            {
-                for (DataSnapshot datas : dataSnapshot.getChildren())
-                {
-                    listUsers.clear();
-                    UserClass userClass = dataSnapshot.getValue(UserClass.class);
-                    listUsers.add(userClass);
-                }
-                adapterAccounts.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError)
-            {
-                MessagesToast.createMessageError(getString(R.string.erro_retriveing_accounts_system)+databaseError, activity);
-            }
-        });
+        editTextEmailAccount.setEnabled(false);
     }
 
     public void changeAccount(View view)
@@ -121,5 +118,15 @@ public class AccountsActivity extends AppCompatActivity
     {
         startActivity(new Intent(activity, ChooseActivity.class));
         finish();
+    }
+
+    public void reauthenticateUser(View view)
+    {
+
+    }
+
+    public void removeAccount(View view)
+    {
+
     }
 }
