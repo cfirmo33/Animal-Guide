@@ -111,4 +111,9 @@
     <string name="exception_database_logout" translatable="false">An error occurred while trying to exit the Application:</string>
     <string name="exception_check_database_save_login" translatable="false">There was an error trying to recover your Account data:</string>
     <string name="student_account_text" translatable="false">Student</string>
+    <string name="exception_photo_menu" translatable="false">An error occured while trying to recover your profile photo</string>
+    <string name="text_snack_bar_login_check_internet_logout" translatable="false">There is no internet access. Please check your connection and try leaving the app again.</string>
+    <string name="exception_relogin" translatable="false">An error occured while trying to re-authenticate your account.</string>
+    <string name="dialog_text_exit" translatable="false">Going out</string>
+    <string name="dialog_text_relogin" translatable="false">Entering</string>
 </resources>

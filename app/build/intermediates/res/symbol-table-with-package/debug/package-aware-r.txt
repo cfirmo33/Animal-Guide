@@ -1788,6 +1788,7 @@ id com_facebook_tooltip_bubble_view_bottom_pointer
 id com_facebook_tooltip_bubble_view_text_body
 id com_facebook_tooltip_bubble_view_top_pointer
 id confirmation_code
+id constraintLayoutAccounts
 id constraintLayoutLogin
 id constraintLayoutONG
 id constraintLayoutOwner
@@ -2119,8 +2120,6 @@ id unknown
 id unlabeled
 id up
 id useLogo
-id viewPagerONG
-id viewPagerStudent
 id view_offset_helper
 id visible
 id welcome_back_idp_button
@@ -2396,6 +2395,8 @@ string create_account_preamble
 string create_account_title
 string default_toolbar_title
 string default_web_client_id
+string dialog_text_exit
+string dialog_text_relogin
 string do_delete
 string email_account_creation_error
 string email_hint
@@ -2423,8 +2424,10 @@ string exception_name_last_name_register_owner
 string exception_password_register
 string exception_password_register_ong
 string exception_password_register_owner
+string exception_photo_menu
 string exception_photo_user_owner
 string exception_register_user
+string exception_relogin
 string exception_save_password_shared_preference
 string exception_save_user_owner_database
 string exception_signIn_google
@@ -2537,6 +2540,7 @@ string text_open_profile
 string text_open_settings_permissions
 string text_progress_bar_register_owner
 string text_snack_bar_login_check_internet
+string text_snack_bar_login_check_internet_logout
 string text_snack_bar_register_check_internet
 string text_title_save_password_login
 string text_view_alert_dialog_login

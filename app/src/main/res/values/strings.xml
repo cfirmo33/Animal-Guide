@@ -103,6 +103,7 @@
     <string name="text_button_check_internet">Tentar Novamente</string>
     <!-- Strings SnackBar Check Internet -->
     <string name="text_snack_bar_login_check_internet">Não há acesso a internet. Por favor, verifique sua conexão e tente realizar login novamente.</string>
+    <string name="text_snack_bar_login_check_internet_logout">Não há acesso a internet. Por favor, verifique sua conexão e tente sair do app novamente.</string>
     <string name="text_snack_bar_register_check_internet">Não há acesso a internet. Por favor, verifique sua conexão e tente se cadastrar novamente.</string>
     <!-- Strings Menu Navigation Bottom -->
     <string name="title_ic_feed_menu_navigation_bottom" translatable="false">Feed</string>
@@ -121,6 +122,7 @@
     <string name="btn_settings_menu">Configurações</string>
     <string name="btn_sobre_menu">Sobre</string>
     <string name="btn_logout_menu">Sair</string>
+    <string name="exception_photo_menu">Ocorreu um erro ao tentar recuperar sua foto de perfil</string>
     <!-- Strings Exceptions Accounts Database User -->
     <string name="exception_accounts_user_database">Erro ao tentar recuperar os dados da sua conta:</string>
     <string name="exception_accounts_user_name_ong">Erro ao tentar recuperar nome da ONG do Banco de Dados:</string>
@@ -141,6 +143,12 @@
     <string name="permission_negada">Permissão Negada</string>
     <!-- Strings Exception Logout -->
     <string name="exception_database_logout">Ocorreu um erro ao tentar sair do Aplicativo:</string>
+    <!-- Strings Exception Relogin -->
+    <string name="exception_relogin">Ocorreu um erro ao tentar reautenticar sua conta:</string>
     <!-- Strings Exception Check SaveLogin Database -->
     <string name="exception_check_database_save_login">Ocorreu um erro ao tentar recuperar os dados da sua Conta:</string>
+    <!-- Sring  Message Exit -->
+    <string name="dialog_text_exit">Saindo</string>
+    <!-- Sring Message Relogin -->
+    <string name="dialog_text_relogin">Entrando</string>
 </resources>

@@ -37,13 +37,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.marcelo.animalguide.activitys.login.AccountsActivity" />
         <activity android:name="com.marcelo.animalguide.activitys.splash_screen.SplashScreenActivity" />
         <activity android:name="com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity" />
         <activity android:name="com.marcelo.animalguide.activitys.conexion.CheckInternetActivity" />
         <activity android:name="com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity" />
         <activity android:name="com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity" />
         <activity android:name="com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity" />
-        <activity android:name="com.marcelo.animalguide.activitys.login.AccountsActivity" />
         <activity
             android:name="com.marcelo.animalguide.activitys.password.ForgotPasswordActivity"
             android:parentActivityName="com.marcelo.animalguide.activitys.login.LoginActivity" />

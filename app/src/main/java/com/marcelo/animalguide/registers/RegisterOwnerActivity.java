@@ -15,7 +15,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -52,7 +51,6 @@ import com.marcelo.animalguide.models.classes.BackupSharedPreferences;
 import com.marcelo.animalguide.models.classes.DatesCustomized;
 import com.marcelo.animalguide.models.classes.UserClass;
 import com.marcelo.animalguide.models.message_toast.MessagesToast;
-import com.marcelo.animalguide.permissions.PermissionsPhotos;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -60,7 +58,6 @@ import java.util.List;
 import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
-import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
 
@@ -85,9 +82,9 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
     private Bitmap imagem;
     private String message, idUser, exception, getNome, getEmail, getProvedor, typeUser,
             accountGoogle = "Não", getPasswordEncrypted, getPhotoPreferences;
-    private Boolean check, checkPreference = false;
+    private Boolean check, checkPreference = false, logado;
     private static final int SELECAO_CAMERA = 100, SELECAO_GALERIA = 200;
-    private static final String ARQUIVO_PREFENCIA = "SaveDados";
+    private static final String ARQUIVO_PREFERENCIA = "SaveDados";
     private String[] permissionsRequired = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
 
     @Override
@@ -241,7 +238,6 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
                     userClass.setEmail(getEmail);
                     userClass.setProvedor(getProvedor);
                     userClass.setSaveLogin(false);
-
                     if (imagem == null)
                     {
                         createAlertDialog();
@@ -362,13 +358,14 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
     @SuppressLint("ApplySharedPref")
     private void saveSharedPrefencesDados()
     {
-        sharedPreferences = getSharedPreferences(ARQUIVO_PREFENCIA, 0);
+        sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
         @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = sharedPreferences.edit();
 
         if (checkPreference)
         {
             try
             {
+                editor.putString("authenticate_user", String.valueOf(true));
                 editor.putString("nome_user_menu", editTextNameUser.getText().toString());
                 editor.putString("type_user", "Pet Owner");
                 editor.putString("path_foto_user_menu", getPhotoPreferences);
@@ -391,6 +388,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
         {
             try
             {
+                editor.putString("authenticate_user", String.valueOf(true));
                 editor.putString("nome_user_menu", editTextNameUser.getText().toString());
                 editor.putString("type_user", "Pet Owner");
                 editor.putString("path_foto_user_menu", getPhotoPreferences);
@@ -423,7 +421,8 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
         try
         {
             dialog.cancel();
-            userRef = firebaseRef.child("registered_users").child(Objects.requireNonNull(idDatabase));
+            userRef = firebaseRef.child("registered_users")
+                    .child(Objects.requireNonNull(idDatabase));
 
             userRef.child("saveLogin").setValue(true);
 

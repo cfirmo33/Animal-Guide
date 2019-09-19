@@ -1115,6 +1115,8 @@
     <string name="create_account_title">Create account</string>
     <string name="default_toolbar_title">@string/app_name</string>
     <string name="default_web_client_id" translatable="false">CHANGE-ME</string>
+    <string name="dialog_text_exit">Saindo</string>
+    <string name="dialog_text_relogin">Entrando</string>
     <string name="do_delete">Delete</string>
     <string name="email_account_creation_error">Email account registration unsuccessful</string>
     <string name="email_hint">Email</string>
@@ -1142,8 +1144,10 @@
     <string name="exception_password_register">Insira uma senha contendo letras e números</string>
     <string name="exception_password_register_ong">Insira o nome da ONG</string>
     <string name="exception_password_register_owner">Insira sua Senha</string>
+    <string name="exception_photo_menu">Ocorreu um erro ao tentar recuperar sua foto de perfil</string>
     <string name="exception_photo_user_owner">Erro ao inserir foto de perfil:</string>
     <string name="exception_register_user">Erro ao efetuar cadastro:</string>
+    <string name="exception_relogin">Ocorreu um erro ao tentar reautenticar sua conta:</string>
     <string name="exception_save_password_shared_preference">Ocorreu uma falha ao salvar as informações do seu Login:</string>
     <string name="exception_save_user_owner_database">Erro ao salvar usuário no Banco de Dados:</string>
     <string name="exception_signIn_google">Erro ao conectar-se com o Google:</string>
@@ -1261,6 +1265,7 @@
     <string name="text_open_settings_permissions">Configurações</string>
     <string name="text_progress_bar_register_owner">Cadastrando…</string>
     <string name="text_snack_bar_login_check_internet">Não há acesso a internet. Por favor, verifique sua conexão e tente realizar login novamente.</string>
+    <string name="text_snack_bar_login_check_internet_logout">Não há acesso a internet. Por favor, verifique sua conexão e tente sair do app novamente.</string>
     <string name="text_snack_bar_register_check_internet">Não há acesso a internet. Por favor, verifique sua conexão e tente se cadastrar novamente.</string>
     <string name="text_title_save_password_login">Lembrar Informações de Login?</string>
     <string name="text_view_alert_dialog_login">Efetuando Login</string>

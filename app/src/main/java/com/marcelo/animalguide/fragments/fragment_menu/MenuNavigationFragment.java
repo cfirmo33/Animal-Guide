@@ -1,7 +1,6 @@
 package com.marcelo.animalguide.fragments.fragment_menu;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -9,10 +8,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -42,7 +43,7 @@ public class MenuNavigationFragment extends Fragment
     private FirebaseAuth auth = ServicesFirebase.getFirebaseAuth();
     private FirebaseUser userFirebase = auth.getCurrentUser();
     private DatabaseReference firebaseRef = ServicesFirebase.getFirebaseDatabase();
-    private DatabaseReference logoutRef;
+    private DatabaseReference userRef, logoutRef;
     private StorageReference storageReference = ServicesFirebase.getFirebaseStorage();
     private SharedPreferences sharedPreferences;
     private static final String ARQUIVO_PREFERENCIA = "SaveDados";
@@ -50,6 +51,7 @@ public class MenuNavigationFragment extends Fragment
     private CircleImageView imageUserMenu;
     private Button btnFriends, btnBlogs, btnEventos, btnPets, btnVideos, btnHelp, btnSettings, btnSobre, btnLogout;
     private TextView txtNameUser, txtOpenProfile;
+    private AlertDialog dialogLogout;
 
     private String typeAccount, getNameUser;
     private Uri url;
@@ -65,6 +67,17 @@ public class MenuNavigationFragment extends Fragment
     {
         super.onStart();
         loadingDadosPreferences();
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        view = inflater.inflate(R.layout.fragment_menu_navigation, container, false);
+
+        initializeObjects();
+        clickButtons();
+
+        return view;
     }
 
     private void loadingDadosPreferences()
@@ -144,17 +157,6 @@ public class MenuNavigationFragment extends Fragment
         });
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-    {
-        view = inflater.inflate(R.layout.fragment_menu_navigation, container, false);
-
-        initializeObjects();
-        clickButtons();
-
-        return view;
-    }
-
     private void initializeObjects()
     {
         imageUserMenu = view.findViewById(R.id.photoUserMenu);
@@ -183,9 +185,37 @@ public class MenuNavigationFragment extends Fragment
         });
     }
 
+    private void createAlertDialogLogout()
+    {
+        final androidx.appcompat.app.AlertDialog.Builder alertDialogBuilder = new androidx.appcompat.app.AlertDialog.Builder(Objects.requireNonNull(getActivity()));
+        alertDialogBuilder.setCancelable(false);
+        @SuppressLint("InflateParams") View alertView = getLayoutInflater().inflate(R.layout.loading, null);
+
+        TextView txtLoading = alertView.findViewById(R.id.textViewTitleLoading);
+        txtLoading.setText(getString(R.string.dialog_text_exit));
+
+        alertDialogBuilder.setView(alertView);
+        dialogLogout = alertDialogBuilder.create();
+        dialogLogout.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialogLogout.show();
+    }
+
+    private void updateAuthPreferences()
+    {
+        sharedPreferences = Objects.requireNonNull(getActivity()).getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
+        @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        if (sharedPreferences.contains("authenticate_user"))
+        {
+            editor.putString("authenticate_user", String.valueOf(false));
+            editor.apply();
+        }
+    }
+
     private void logoutUser()
     {
-        auth.signOut();
+        createAlertDialogLogout();
+
         String idDatabase = EncryptionSHA1.encryptionString(userFirebase.getEmail());
         logoutRef = firebaseRef
                 .child("registered_users")
@@ -204,12 +234,17 @@ public class MenuNavigationFragment extends Fragment
 
                     if (login)
                     {
+                        updateAuthPreferences();
                         Intent intent = new Intent(getActivity(), AccountsActivity.class);
+                        dialogLogout.cancel();
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
+                        Objects.requireNonNull(getActivity()).finish();
                     }
                     else
                     {
                         startActivity(new Intent(getActivity(), LoginActivity.class));
+                        Objects.requireNonNull(getActivity()).finish();
                     }
                 }
             }
@@ -217,6 +252,7 @@ public class MenuNavigationFragment extends Fragment
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError)
             {
+                dialogLogout.cancel();
                 MessagesToast.createMessageError(getString(R.string.exception_database_logout)+databaseError, getActivity());
             }
         });

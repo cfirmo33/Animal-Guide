@@ -19,6 +19,8 @@
     <string name="button_positive_alert_dialog_insert_photo_register" translatable="false">Yes</string>
     <string name="clear_fields_owner" translatable="false">Clear Fields</string>
     <string name="create_account_login" translatable="false">No account yet? Register</string>
+    <string name="dialog_text_exit" translatable="false">Going out</string>
+    <string name="dialog_text_relogin" translatable="false">Entering</string>
     <string name="erro_retriveing_accounts_system" translatable="false">Error retrieving accounts saved in app:</string>
     <string name="error_login" translatable="false">Unable to login to the system:</string>
     <string name="error_save_photo_firebase_register" translatable="false">Error saving Photo in Firebase:</string>
@@ -39,8 +41,10 @@
     <string name="exception_password_register" translatable="false">Enter a password containing letters and numbers</string>
     <string name="exception_password_register_ong" translatable="false">Enter NGO Name</string>
     <string name="exception_password_register_owner" translatable="false">Enter your Password</string>
+    <string name="exception_photo_menu" translatable="false">An error occured while trying to recover your profile photo</string>
     <string name="exception_photo_user_owner" translatable="false">Error inserting profile photo:</string>
     <string name="exception_register_user" translatable="false">Error while registering:</string>
+    <string name="exception_relogin" translatable="false">An error occured while trying to re-authenticate your account.</string>
     <string name="exception_save_password_shared_preference" translatable="false">Failed to save your Login information:</string>
     <string name="exception_save_user_owner_database">Error saving database user:</string>
     <string name="exception_signIn_google" translatable="false">Error connecting with Google:</string>
@@ -88,6 +92,7 @@
     <string name="text_open_settings_permissions" translatable="false">Settings</string>
     <string name="text_progress_bar_register_owner" translatable="false">Signing up...</string>
     <string name="text_snack_bar_login_check_internet" translatable="false">There is no internet access. Please check your connection and try logging in again.</string>
+    <string name="text_snack_bar_login_check_internet_logout" translatable="false">There is no internet access. Please check your connection and try leaving the app again.</string>
     <string name="text_snack_bar_register_check_internet" translatable="false">There is no internet access. Please check your connection and try signing up again.</string>
     <string name="text_title_save_password_login" translatable="false">Remember Login Information?</string>
     <string name="text_view_alert_dialog_login" translatable="false">Logging In</string>

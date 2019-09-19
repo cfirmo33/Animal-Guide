@@ -289,34 +289,34 @@ MERGED from [com.android.volley:volley:1.1.1] /home/marcelo/.gradle/caches/trans
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:21:9-35
 	android:theme
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:24:9-40
+activity#com.marcelo.animalguide.activitys.login.AccountsActivity
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:9-70
+	android:name
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:19-67
 activity#com.marcelo.animalguide.activitys.splash_screen.SplashScreenActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:9-82
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:9-82
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:26:19-79
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:19-79
 activity#com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:9-80
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:9-80
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:27:19-77
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:19-77
 activity#com.marcelo.animalguide.activitys.conexion.CheckInternetActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:9-78
-	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:28:19-75
-activity#com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity
 ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:29:9-78
 	android:name
 		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:29:19-75
+activity#com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:9-78
+	android:name
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:19-75
 activity#com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:9-82
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:9-82
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:30:19-79
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:19-79
 activity#com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:9-85
+ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:32:9-85
 	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:31:19-82
-activity#com.marcelo.animalguide.activitys.login.AccountsActivity
-ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:32:9-70
-	android:name
-		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:32:19-67
+		ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:32:19-82
 activity#com.marcelo.animalguide.activitys.password.ForgotPasswordActivity
 ADDED from /home/marcelo/Área de Trabalho/Projetos/TG-Fatec/Aplicativo/app/src/main/AndroidManifest.xml:33:9-35:75
 	android:parentActivityName

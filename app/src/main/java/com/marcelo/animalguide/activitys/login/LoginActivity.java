@@ -67,12 +67,12 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
     private FirebaseAuth auth = ServicesFirebase.getFirebaseAuth();
     private FirebaseUser userFirebase = auth.getCurrentUser();
-    private DatabaseReference firebaseRef = ServicesFirebase.getFirebaseDatabase();
     private DatabaseReference loginRef;
     private GoogleApiClient googleApiClient;
     private GoogleSignInResult result;
     private SharedPreferences sharedPreferences;
     private static final String ARQUIVO_PREFERENCIA = "SaveDados";
+    private boolean authUser;
 
     @Override
     protected void onStart()
@@ -98,7 +98,6 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
         if (netInfo != null && netInfo.isConnected())
         {
-            openActivitySplash();
             getStatusInternet = true;
             checkAuthentication();
         }
@@ -118,57 +117,69 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
     private void checkAuthentication()
     {
-        if (userFirebase != null)
+        sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
+
+        if (sharedPreferences.contains("authenticate_user"))
         {
-            openActivitySplash();
+            authUser = Boolean.parseBoolean(sharedPreferences.getString("authenticate_user", ""));
 
-            String id = EncryptionSHA1.encryptionString(userFirebase.getEmail());
-
-            DatabaseReference accountsRef = ServicesFirebase.getFirebaseDatabase()
-                    .child("registered_users")
-                    .child(Objects.requireNonNull(id));
-
-            accountsRef.addValueEventListener(new ValueEventListener()
+            if (authUser)
             {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+                if (userFirebase != null)
                 {
-                    UserClass userClass = dataSnapshot.getValue(UserClass.class);
+                    openActivitySplash();
 
-                    typeAccount = Objects.requireNonNull(userClass).getTypeUser();
+                    String id = EncryptionSHA1.encryptionString(userFirebase.getEmail());
 
-                    switch (typeAccount)
+                    DatabaseReference accountsRef = ServicesFirebase.getFirebaseDatabase().child("registered_users").child(Objects.requireNonNull(id));
+
+                    accountsRef.addValueEventListener(new ValueEventListener()
                     {
-                        case "Pet Owner":
-                            startActivity(new Intent(activity, OwnerMainActivity.class));
-                            finish();
-                            break;
-                        case "Student":
-                            startActivity(new Intent(activity, StudentMainActivity.class));
-                            finish();
-                            break;
-                        case "Veterinary":
-                            startActivity(new Intent(activity, VeterinaryMainActivity.class));
-                            finish();
-                            break;
-                        case "ONG":
-                            startActivity(new Intent(activity, ONGMainActivity.class));
-                            finish();
-                            break;
-                    }
-                }
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+                        {
+                            UserClass userClass = dataSnapshot.getValue(UserClass.class);
 
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError)
-                {
-                    MessagesToast.createMessageError(getString(R.string.exception_accounts_user_database) + databaseError, activity);
+                            typeAccount = Objects.requireNonNull(userClass).getTypeUser();
+
+                            switch (typeAccount)
+                            {
+                                case "Pet Owner":
+                                    startActivity(new Intent(activity, OwnerMainActivity.class));
+                                    finish();
+                                    break;
+                                case "Student":
+                                    startActivity(new Intent(activity, StudentMainActivity.class));
+                                    finish();
+                                    break;
+                                case "Veterinary":
+                                    startActivity(new Intent(activity, VeterinaryMainActivity.class));
+                                    finish();
+                                    break;
+                                case "ONG":
+                                    startActivity(new Intent(activity, ONGMainActivity.class));
+                                    finish();
+                                    break;
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError)
+                        {
+                            MessagesToast.createMessageError(getString(R.string.exception_accounts_user_database) + databaseError, activity);
+                        }
+                    });
                 }
-            });
-        }
-        else
-        {
-            finish();
-            checkDatabase();
+                else
+                {
+                    checkDatabase();
+                }
+            }
+            else
+            {
+                startActivity(new Intent(activity, AccountsActivity.class));
+                finish();
+            }
         }
     }
 
@@ -180,9 +191,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         {
             String idDatabase = EncryptionSHA1.encryptionString(sharedPreferences.getString("email_user", ""));
 
-            loginRef = ServicesFirebase.getFirebaseDatabase()
-                    .child("registered_users")
-                    .child(Objects.requireNonNull(idDatabase));
+            loginRef = ServicesFirebase.getFirebaseDatabase().child("registered_users").child(Objects.requireNonNull(idDatabase));
 
             loginRef.addValueEventListener(new ValueEventListener()
             {
@@ -193,16 +202,12 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
                     saveLogin = Objects.requireNonNull(userClass).getSaveLogin();
 
-                    if (saveLogin)
-                    {
-                        startActivity(new Intent(activity, AccountsActivity.class));
-                        finish();
-                    }
                 }
+
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError)
                 {
-                    MessagesToast.createMessageError(getString(R.string.exception_check_database_save_login)+databaseError, activity);
+                    MessagesToast.createMessageError(getString(R.string.exception_check_database_save_login) + databaseError, activity);
                 }
             });
         }
@@ -241,7 +246,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.loading, null);
 
         TextView textViewAlertLoading = view.findViewById(R.id.textViewTitleLoading);
-        textViewAlertLoading.setText(getString(R.string.text_view_alert_dialog_login));
+        textViewAlertLoading.setVisibility(View.GONE);
 
         dialogLoading = alertLoading.create();
         dialogLoading.show();
