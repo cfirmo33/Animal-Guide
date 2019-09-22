@@ -15,6 +15,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -48,7 +49,6 @@ import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 import com.marcelo.animalguide.firebase.UserFirebase;
 import com.marcelo.animalguide.models.classes.BackupSharedPreferences;
-import com.marcelo.animalguide.models.classes.DatesCustomized;
 import com.marcelo.animalguide.models.classes.UserClass;
 import com.marcelo.animalguide.models.message_toast.MessagesToast;
 
@@ -68,7 +68,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
     private ConstraintLayout constraintLayout;
     private CircleImageView circleImageViewUser;
     private Button btnRegisterOwner;
-    private AlertDialog dialog, dialogPhotos, dialogSave, dialogPermissions;
+    private AlertDialog dialogLogin, dialogPhotos, dialogSave, dialogPermissions;
 
     private UserClass userClass = new UserClass();
     private BackupSharedPreferences backupSharedPreferences = new BackupSharedPreferences();
@@ -80,8 +80,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
 
     private Activity activity = this;
     private Bitmap imagem;
-    private String message, idUser, exception, getNome, getEmail, getProvedor, typeUser,
-            accountGoogle = "Não", getPasswordEncrypted, getPhotoPreferences;
+    private String message, idUser, exception, getNome, getEmail, getProvedor, typeUser, accountGoogle = "Não", getPasswordEncrypted, getPhotoPreferences;
     private Boolean check, checkPreference = false, logado;
     private static final int SELECAO_CAMERA = 100, SELECAO_GALERIA = 200;
     private static final String ARQUIVO_PREFERENCIA = "SaveDados";
@@ -213,6 +212,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
                 }
             }
         }
+
         else if (accountGoogle.equals("Sim"))
         {
             if (editTextNameUser.getText().toString().equals(""))
@@ -274,9 +274,8 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
             {
                 if (accountGoogle.equals("Sim"))
                 {
-                    userClass.saveDatabase("registered_users");
-                    startActivity(new Intent(activity, OwnerMainActivity.class));
-                    finish();
+                    createDialogLoading();
+                    createAlertDialogSaveLogin();
                 }
                 else if (accountGoogle.equals("Não"))
                 {
@@ -292,30 +291,65 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
 
     private void createAlertDialogSaveLogin()
     {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(getString(R.string.text_title_save_password_login));
-        builder.setMessage(getString(R.string.text_aviso_save_dados_login));
-        builder.setCancelable(false);
-        builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
+        if (accountGoogle.equals("Não"))
         {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(getString(R.string.text_title_save_password_login));
+            builder.setMessage(getString(R.string.text_aviso_save_dados_login));
+            builder.setCancelable(false);
+            builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
             {
-                checkPreference = true;
-                saveSharedPrefencesDados();
-            }
-        });
-        builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
-        {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    checkPreference = true;
+                    saveSharedPrefencesDados();
+                }
+            });
+            builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
             {
-                saveSharedPrefencesDados();
-            }
-        });
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    saveSharedPrefencesDados();
+                }
+            });
 
-        dialogSave = builder.create();
-        dialogSave.show();
+            dialogSave = builder.create();
+            dialogSave.show();
+        }
+
+        else if (accountGoogle.equals("Sim"))
+        {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(getString(R.string.text_title_save_password_login));
+            builder.setMessage(getString(R.string.text_aviso_save_dados_login));
+            builder.setCancelable(false);
+            builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
+            {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    userClass.saveDatabase("registered_users");
+
+                    checkPreference = true;
+                    saveSharedPrefencesDados();
+                }
+            });
+            builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
+            {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    userClass.saveDatabase("registered_users");
+
+                    saveSharedPrefencesDados();
+                }
+            });
+
+            dialogSave = builder.create();
+            dialogSave.show();
+        }
     }
 
     private void createAlertDialogPermissionsApp()
@@ -365,19 +399,44 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
         {
             try
             {
-                editor.putString("authenticate_user", String.valueOf(true));
-                editor.putString("nome_user_menu", editTextNameUser.getText().toString());
-                editor.putString("type_user", "Pet Owner");
-                editor.putString("path_foto_user_menu", getPhotoPreferences);
-                editor.putString("email_user", editTextEmailUser.getText().toString());
-                editor.putString("password_criptografado_base64", getPasswordEncrypted);
-                editor.commit();
-                backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
-                backupSharedPreferences.setTypeUser("Pet Owner");
-                backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
-                backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
-                backupSharedPreferences.setPathFoto(getPhotoPreferences);
-                updateStatusDatabase();
+                if (accountGoogle.equals("Não"))
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Email");
+                    editor.putString("type_user", "Pet Owner");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Pet Owner");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Email");
+                    updateStatusDatabase();
+                }
+                else
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Google");
+                    editor.putString("type_user", "Pet Owner");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Pet Owner");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Google");
+                    updateStatusDatabase();
+                }
             }
             catch (Exception e)
             {
@@ -388,24 +447,50 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
         {
             try
             {
-                editor.putString("authenticate_user", String.valueOf(true));
-                editor.putString("nome_user_menu", editTextNameUser.getText().toString());
-                editor.putString("type_user", "Pet Owner");
-                editor.putString("path_foto_user_menu", getPhotoPreferences);
-                editor.putString("email_user", editTextEmailUser.getText().toString());
-                editor.putString("password_criptografado_base64", getPasswordEncrypted);
-                editor.commit();
-                backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
-                backupSharedPreferences.setTypeUser("Pet Owner");
-                backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
-                backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
-                backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                if (accountGoogle.equals("Não"))
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Email");
+                    editor.putString("type_user", "Pet Owner");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Pet Owner");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Email");
 
-                String getDateCurrent = DatesCustomized.getData();
-                backupSharedPreferences.saveDatabase(DatesCustomized.dateCustom(getDateCurrent));
+                    backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
-                startActivity(new Intent(activity, OwnerMainActivity.class));
-                finish();
+                    startActivity(new Intent(activity, OwnerMainActivity.class));
+                    finish();
+                }
+                else
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Google");
+                    editor.putString("type_user", "Pet Owner");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Pet Owner");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Google");
+
+                    backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
+
+                    startActivity(new Intent(activity, OwnerMainActivity.class));
+                    finish();
+                }
             }
             catch (Exception e)
             {
@@ -420,14 +505,12 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
 
         try
         {
-            dialog.cancel();
-            userRef = firebaseRef.child("registered_users")
-                    .child(Objects.requireNonNull(idDatabase));
+            dialogLogin.cancel();
+            userRef = firebaseRef.child("registered_users").child(Objects.requireNonNull(idDatabase));
 
             userRef.child("saveLogin").setValue(true);
 
-            String getDateCurrent = DatesCustomized.getData();
-            backupSharedPreferences.saveDatabase(DatesCustomized.dateCustom(getDateCurrent));
+            backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
             startActivity(new Intent(activity, OwnerMainActivity.class));
             finish();
@@ -435,6 +518,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
         catch (Exception e)
         {
             MessagesToast.createMessageError(getString(R.string.exception_update_status_dados_login) + e, activity);
+            Log.d("erroStatus", "Erro: "+e);
         }
     }
 
@@ -444,8 +528,8 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
         alert.setCancelable(false);
         alert.setView(R.layout.loading);
 
-        dialog = alert.create();
-        dialog.show();
+        dialogLogin = alert.create();
+        dialogLogin.show();
     }
 
     public void saveImageFirebaseStorage()
@@ -490,17 +574,15 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
 
                                 if (accountGoogle.equals("Não"))
                                 {
-                                    dialog.cancel();
+                                    dialogLogin.cancel();
                                     UserFirebase.updateNameUser(userClass.getName());
                                     updatePhotoUser(uri);
                                     saveDatabaseAccountEmail();
                                 }
                                 else
                                 {
-                                    dialog.cancel();
-                                    userClass.saveDatabase("registered_users");
-                                    startActivity(new Intent(activity, OwnerMainActivity.class));
-                                    finish();
+                                    dialogLogin.cancel();
+                                    createAlertDialogSaveLogin();
                                 }
                             }
                         });
@@ -541,7 +623,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
                 }
                 else
                 {
-                    dialog.cancel();
+                    dialogLogin.cancel();
                     try
                     {
                         throw Objects.requireNonNull(task.getException());
@@ -576,7 +658,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
         userClass.setIdUser(userClass.getEmail());
         try
         {
-            dialog.cancel();
+            dialogLogin.cancel();
             userClass.saveDatabase("registered_users");
             createAlertDialogSaveLogin();
         }

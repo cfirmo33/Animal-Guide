@@ -151,4 +151,7 @@
     <string name="dialog_text_exit">Saindo</string>
     <!-- Sring Message Relogin -->
     <string name="dialog_text_relogin">Entrando</string>
+    <!-- Sring Message Dialog Remover Account -->
+    <string name="title_dialog_remove_account">Remover conta</string>
+    <string name="text_aviso_dialog_remove_account">Você precisara inserir seu email\nde usuário e senha na próxima vez\nque entrar.</string>
 </resources>

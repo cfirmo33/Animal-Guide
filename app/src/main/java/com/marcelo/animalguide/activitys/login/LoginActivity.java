@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     private static final int GOOGLE_SIGN = 300;
     private Activity activity = this;
     private String exception, nameGoogle, emailGoogle, getTypeAccount, typeAccount;
-    private Boolean check, saveLogin;
+    private Boolean check;
 
     private EditText editTextEmail, editTextPassword;
     private AlertDialog dialogLoading;
@@ -67,12 +67,10 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
     private FirebaseAuth auth = ServicesFirebase.getFirebaseAuth();
     private FirebaseUser userFirebase = auth.getCurrentUser();
-    private DatabaseReference loginRef;
     private GoogleApiClient googleApiClient;
     private GoogleSignInResult result;
     private SharedPreferences sharedPreferences;
     private static final String ARQUIVO_PREFERENCIA = "SaveDados";
-    private boolean authUser;
 
     @Override
     protected void onStart()
@@ -121,11 +119,11 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
         if (sharedPreferences.contains("authenticate_user"))
         {
-            authUser = Boolean.parseBoolean(sharedPreferences.getString("authenticate_user", ""));
+            boolean authUser = Boolean.parseBoolean(sharedPreferences.getString("authenticate_user", ""));
 
-            if (authUser)
+            if (userFirebase != null)
             {
-                if (userFirebase != null)
+                if (authUser)
                 {
                     openActivitySplash();
 
@@ -169,47 +167,16 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                             MessagesToast.createMessageError(getString(R.string.exception_accounts_user_database) + databaseError, activity);
                         }
                     });
+
                 }
                 else
                 {
-                    checkDatabase();
+                    Intent intent = new Intent(activity, AccountsActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                    finish();
                 }
             }
-            else
-            {
-                startActivity(new Intent(activity, AccountsActivity.class));
-                finish();
-            }
-        }
-    }
-
-    private void checkDatabase()
-    {
-        sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
-
-        if (sharedPreferences.contains("email_user"))
-        {
-            String idDatabase = EncryptionSHA1.encryptionString(sharedPreferences.getString("email_user", ""));
-
-            loginRef = ServicesFirebase.getFirebaseDatabase().child("registered_users").child(Objects.requireNonNull(idDatabase));
-
-            loginRef.addValueEventListener(new ValueEventListener()
-            {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot)
-                {
-                    UserClass userClass = dataSnapshot.getValue(UserClass.class);
-
-                    saveLogin = Objects.requireNonNull(userClass).getSaveLogin();
-
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError)
-                {
-                    MessagesToast.createMessageError(getString(R.string.exception_check_database_save_login) + databaseError, activity);
-                }
-            });
         }
     }
 
@@ -298,12 +265,12 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
     private void authenticateUser()
     {
+        createDialogLoading();
         auth.signInWithEmailAndPassword(editTextEmail.getText().toString(), editTextPassword.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>()
         {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task)
             {
-                createDialogLoading();
                 if (task.isSuccessful())
                 {
                     disableObjects();
@@ -336,6 +303,18 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         });
     }
 
+    private void updateAuthPreferences()
+    {
+        sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
+        @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        if (sharedPreferences.contains("authenticate_user"))
+        {
+            editor.putString("authenticate_user", String.valueOf(true));
+            editor.apply();
+        }
+    }
+
     private void checkAccountFirebase(String emailUser, final String provider)
     {
         try
@@ -353,8 +332,8 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
                     if (provider.equals("Email"))
                     {
-                        dialogLoading.cancel();
                         getTypeAccount = Objects.requireNonNull(userClass).getTypeUser();
+                        updateAuthPreferences();
 
                         switch (getTypeAccount)
                         {
@@ -410,6 +389,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                             intent.putExtra("getEmail", emailGoogle);
                             intent.putExtra("getProvedor", provider);
                             startActivity(intent);
+                            finish();
                         }
                     }
                 }
@@ -420,7 +400,6 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                     MessagesToast.createMessageError(getString(R.string.exception_get_type_account), activity);
                 }
             });
-
         }
         catch (Exception e)
         {

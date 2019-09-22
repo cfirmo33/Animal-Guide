@@ -116,4 +116,6 @@
     <string name="exception_relogin" translatable="false">An error occured while trying to re-authenticate your account.</string>
     <string name="dialog_text_exit" translatable="false">Going out</string>
     <string name="dialog_text_relogin" translatable="false">Entering</string>
+    <string name="title_dialog_remove_account" translatable="false">Remove Account</string>
+    <string name="text_aviso_dialog_remove_account" translatable="false">You will need to enter your username and password the next time you sign in.</string>
 </resources>

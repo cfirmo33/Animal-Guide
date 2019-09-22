@@ -1,25 +1,26 @@
 package com.marcelo.animalguide.activitys.main_activitys;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.fragments.fragment_mapa.GoogleMapsFragment;
-import com.marcelo.animalguide.fragments.fragment_menu.MenuNavigationFragment;
-import com.marcelo.animalguide.fragments.fragment_notifications.NotificationFragment;
-import com.marcelo.animalguide.fragments.fragment_search.SearchFragment;
-import com.marcelo.animalguide.fragments.fragments_feed.FeedOwnerFragment;
+import com.marcelo.animalguide.activitys.google_maps_activity.GoogleMapsOwnerActivity;
+import com.marcelo.animalguide.activitys.menus_activity.MenuNavigationOwnerActivity;
+import com.marcelo.animalguide.activitys.notifications_activity.NotificationsOwnerActivity;
+import com.marcelo.animalguide.activitys.searchs_activity.SearchOwnerActivity;
 
 public class OwnerMainActivity extends AppCompatActivity
 {
+    private Activity activity = this;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -38,47 +39,45 @@ public class OwnerMainActivity extends AppCompatActivity
         bottomNavigationViewEx.setTextVisibility(false);
         bottomNavigationViewEx.setIconSize(30);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        loadingFragments(bottomNavigationViewEx);
-        fragmentTransaction.replace(R.id.frameLayoutOwner, new FeedOwnerFragment()).commit();
+        loadingNavigations(bottomNavigationViewEx);
 
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(0);
         menuItem.setChecked(true);
     }
 
-    private void loadingFragments(BottomNavigationViewEx viewEx)
+    private void loadingNavigations(BottomNavigationViewEx viewEx)
     {
         viewEx.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener()
         {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item)
             {
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
                 switch (item.getItemId())
                 {
                     case R.id.ic_home:
-                        fragmentTransaction.replace(R.id.frameLayoutOwner, new FeedOwnerFragment()).commit();
+                        startActivity(new Intent(activity, OwnerMainActivity.class));
+                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                         return true;
 
                     case R.id.ic_search:
-                        fragmentTransaction.replace(R.id.frameLayoutOwner, new SearchFragment()).commit();
+                        startActivity(new Intent(activity, SearchOwnerActivity.class));
+                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                         return true;
 
                     case R.id.ic_notification:
-                        fragmentTransaction.replace(R.id.frameLayoutOwner, new NotificationFragment()).commit();
+                        startActivity(new Intent(activity, NotificationsOwnerActivity.class));
+                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                         return true;
 
                     case R.id.ic_mapa:
-                        fragmentTransaction.replace(R.id.frameLayoutOwner, new GoogleMapsFragment()).commit();
+                        startActivity(new Intent(activity, GoogleMapsOwnerActivity.class));
+                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                         return true;
 
                     case R.id.ic_menu:
-                        fragmentTransaction.replace(R.id.frameLayoutOwner, new MenuNavigationFragment()).commit();
+                        startActivity(new Intent(activity, MenuNavigationOwnerActivity.class));
+                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                         return true;
                 }
 

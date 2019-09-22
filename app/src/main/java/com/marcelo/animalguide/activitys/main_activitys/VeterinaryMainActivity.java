@@ -1,25 +1,26 @@
 package com.marcelo.animalguide.activitys.main_activitys;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.fragments.fragment_mapa.GoogleMapsFragment;
-import com.marcelo.animalguide.fragments.fragment_menu.MenuNavigationFragment;
-import com.marcelo.animalguide.fragments.fragment_notifications.NotificationFragment;
-import com.marcelo.animalguide.fragments.fragment_search.SearchFragment;
-import com.marcelo.animalguide.fragments.fragments_feed.FeedVeterinaryFragment;
+import com.marcelo.animalguide.activitys.google_maps_activity.GoogleMapsVeterinaryActivity;
+import com.marcelo.animalguide.activitys.menus_activity.MenuNavigationVeterinaryActivity;
+import com.marcelo.animalguide.activitys.notifications_activity.NotificationsVeterinaryActivity;
+import com.marcelo.animalguide.activitys.searchs_activity.SearchVeterinaryActivity;
 
 public class VeterinaryMainActivity extends AppCompatActivity
 {
+    private Activity activity = this;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -38,47 +39,45 @@ public class VeterinaryMainActivity extends AppCompatActivity
         bottomNavigationViewEx.setTextVisibility(false);
         bottomNavigationViewEx.setIconSize(30);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        loadingFragments(bottomNavigationViewEx);
-        fragmentTransaction.replace(R.id.frameLayoutVeterinary, new FeedVeterinaryFragment()).commit();
+        loadingNavigations(bottomNavigationViewEx);
 
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(0);
         menuItem.setChecked(true);
     }
 
-    private void loadingFragments(BottomNavigationViewEx viewEx)
+    private void loadingNavigations(BottomNavigationViewEx viewEx)
     {
         viewEx.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener()
         {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item)
             {
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
                 switch (item.getItemId())
                 {
                     case R.id.ic_home:
-                        fragmentTransaction.replace(R.id.frameLayoutVeterinary, new FeedVeterinaryFragment()).commit();
+                        startActivity(new Intent(activity, VeterinaryMainActivity.class));
+                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                         return true;
 
                     case R.id.ic_search:
-                        fragmentTransaction.replace(R.id.frameLayoutVeterinary, new SearchFragment()).commit();
+                        startActivity(new Intent(activity, SearchVeterinaryActivity.class));
+                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                         return true;
 
                     case R.id.ic_notification:
-                        fragmentTransaction.replace(R.id.frameLayoutVeterinary, new NotificationFragment()).commit();
+                        startActivity(new Intent(activity, NotificationsVeterinaryActivity.class));
+                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                         return true;
 
                     case R.id.ic_mapa:
-                        fragmentTransaction.replace(R.id.frameLayoutVeterinary, new GoogleMapsFragment()).commit();
+                        startActivity(new Intent(activity, GoogleMapsVeterinaryActivity.class));
+                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                         return true;
 
                     case R.id.ic_menu:
-                        fragmentTransaction.replace(R.id.frameLayoutVeterinary, new MenuNavigationFragment()).commit();
+                        startActivity(new Intent(activity, MenuNavigationVeterinaryActivity.class));
+                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                         return true;
                 }
 

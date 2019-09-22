@@ -58,7 +58,6 @@ import java.util.List;
 import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
-import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
 
@@ -275,9 +274,8 @@ public class RegisterStudentActivity extends AppCompatActivity implements EasyPe
             {
                 if (accountGoogle.equals("Sim"))
                 {
-                    userClass.saveDatabase("registered_users");
-                    startActivity(new Intent(activity, StudentMainActivity.class));
-                    finish();
+                    createDialogLoading();
+                    createAlertDialogSaveLogin();
                 }
                 else
                 {
@@ -293,30 +291,65 @@ public class RegisterStudentActivity extends AppCompatActivity implements EasyPe
 
     private void createAlertDialogSaveLogin()
     {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(getString(R.string.text_title_save_password_login));
-        builder.setMessage(getString(R.string.text_aviso_save_dados_login));
-        builder.setCancelable(false);
-        builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
+        if (accountGoogle.equals("Não"))
         {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(getString(R.string.text_title_save_password_login));
+            builder.setMessage(getString(R.string.text_aviso_save_dados_login));
+            builder.setCancelable(false);
+            builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
             {
-                checkPreference = true;
-                saveSharedPreferenceDados();
-            }
-        });
-        builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
-        {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    checkPreference = true;
+                    saveSharedPreferenceDados();
+                }
+            });
+            builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
             {
-                saveSharedPreferenceDados();
-            }
-        });
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    saveSharedPreferenceDados();
+                }
+            });
 
-        dialogSave = builder.create();
-        dialogSave.show();
+            dialogSave = builder.create();
+            dialogSave.show();
+        }
+
+        else if (accountGoogle.equals("Sim"))
+        {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(getString(R.string.text_title_save_password_login));
+            builder.setMessage(getString(R.string.text_aviso_save_dados_login));
+            builder.setCancelable(false);
+            builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
+            {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    userClass.saveDatabase("registered_users");
+
+                    checkPreference = true;
+                    saveSharedPreferenceDados();
+                }
+            });
+            builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
+            {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    userClass.saveDatabase("registered_users");
+
+                    saveSharedPreferenceDados();
+                }
+            });
+
+            dialogSave = builder.create();
+            dialogSave.show();
+        }
     }
 
     private void createAlertDialogPermissionsApp()
@@ -366,18 +399,44 @@ public class RegisterStudentActivity extends AppCompatActivity implements EasyPe
         {
             try
             {
-                editor.putString("nome_user_menu", editTextNameUser.getText().toString());
-                editor.putString("type_user", "Student");
-                editor.putString("path_foto_user_menu", getPhotoPreferences);
-                editor.putString("email_user", editTextEmailUser.getText().toString());
-                editor.putString("password_criptografado_base64", getPasswordEncrypted);
-                editor.commit();
-                backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
-                backupSharedPreferences.setTypeUser("Student");
-                backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
-                backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
-                backupSharedPreferences.setPathFoto(getPhotoPreferences);
-                updateStatusDatabase();
+                if (accountGoogle.equals("Não"))
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Email");
+                    editor.putString("type_user", "Student");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Student");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Email");
+                    updateStatusDatabase();
+                }
+                else
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Google");
+                    editor.putString("type_user", "Student");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Student");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Google");
+                    updateStatusDatabase();
+                }
             }
             catch (Exception e)
             {
@@ -388,23 +447,50 @@ public class RegisterStudentActivity extends AppCompatActivity implements EasyPe
         {
             try
             {
-                editor.putString("nome_user_menu", editTextNameUser.getText().toString());
-                editor.putString("type_user", "Student");
-                editor.putString("path_foto_user_menu", getPhotoPreferences);
-                editor.putString("email_user", editTextEmailUser.getText().toString());
-                editor.putString("password_criptografado_base64", getPasswordEncrypted);
-                editor.commit();
-                backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
-                backupSharedPreferences.setTypeUser("Student");
-                backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
-                backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
-                backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                if (accountGoogle.equals("Não"))
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Email");
+                    editor.putString("type_user", "Student");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Student");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Email");
 
-                String getDateCurrent = DatesCustomized.getData();
-                backupSharedPreferences.saveDatabase(DatesCustomized.dateCustom(getDateCurrent));
+                    backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
-                startActivity(new Intent(activity, StudentMainActivity.class));
-                finish();
+                    startActivity(new Intent(activity, StudentMainActivity.class));
+                    finish();
+                }
+                else
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Google");
+                    editor.putString("type_user", "Student");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Student");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Google");
+
+                    backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
+
+                    startActivity(new Intent(activity, StudentMainActivity.class));
+                    finish();
+                }
             }
             catch (Exception e)
             {
@@ -592,7 +678,6 @@ public class RegisterStudentActivity extends AppCompatActivity implements EasyPe
         editTextPasswordUser.setEnabled(false);
     }
 
-    @AfterPermissionGranted(1)
     public void openCameraStudent(View view)
     {
         if (EasyPermissions.hasPermissions(activity, permissionsRequired))

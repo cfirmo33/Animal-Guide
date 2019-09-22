@@ -58,7 +58,6 @@ import java.util.List;
 import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
-import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
 
@@ -81,11 +80,10 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
 
     private Activity activity = this;
     private Bitmap imagem;
-    private String message, idUser, exception, getNome, getEmail, getProvedor,
-            typeUser, accountGoogle = "Não", getPasswordEncrypted,getPhotoPreferences;
+    private String message, idUser, exception, getNome, getEmail, getProvedor, typeUser, accountGoogle = "Não", getPasswordEncrypted, getPhotoPreferences;
     private Boolean check, checkPreference = false;
     private static final int SELECAO_CAMERA = 100, SELECAO_GALERIA = 200;
-    private static final String ARQUIVO_PREFENCIA = "SaveDados";
+    private static final String ARQUIVO_PREFERENCIA = "SaveDados";
     private String[] permissionsRequired = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
 
     @Override
@@ -276,9 +274,8 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
             {
                 if (accountGoogle.equals("Sim"))
                 {
-                    userClass.saveDatabase("registered_users");
-                    startActivity(new Intent(activity, VeterinaryMainActivity.class));
-                    finish();
+                    createDialogLoading();
+                    createAlertDialogSaveLogin();
                 }
                 else if (accountGoogle.equals("Não"))
                 {
@@ -304,30 +301,64 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
 
     private void createAlertDialogSaveLogin()
     {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(getString(R.string.text_title_save_password_login));
-        builder.setMessage(getString(R.string.text_aviso_save_dados_login));
-        builder.setCancelable(false);
-        builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
+        if (accountGoogle.equals("Não"))
         {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(getString(R.string.text_title_save_password_login));
+            builder.setMessage(getString(R.string.text_aviso_save_dados_login));
+            builder.setCancelable(false);
+            builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
             {
-                checkPreference = true;
-                saveSharedPrefencesDados();
-            }
-        });
-        builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
-        {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    checkPreference = true;
+                    saveSharedPreferenceDados();
+                }
+            });
+            builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
             {
-                saveSharedPrefencesDados();
-            }
-        });
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    saveSharedPreferenceDados();
+                }
+            });
 
-        dialogSave = builder.create();
-        dialogSave.show();
+            dialogSave = builder.create();
+            dialogSave.show();
+        }
+        else if (accountGoogle.equals("Sim"))
+        {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(getString(R.string.text_title_save_password_login));
+            builder.setMessage(getString(R.string.text_aviso_save_dados_login));
+            builder.setCancelable(false);
+            builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
+            {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    userClass.saveDatabase("registered_users");
+
+                    checkPreference = true;
+                    saveSharedPreferenceDados();
+                }
+            });
+            builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
+            {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    userClass.saveDatabase("registered_users");
+
+                    saveSharedPreferenceDados();
+                }
+            });
+
+            dialogSave = builder.create();
+            dialogSave.show();
+        }
     }
 
     private void createAlertDialogPermissionsApp()
@@ -368,27 +399,53 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
     }
 
     @SuppressLint("ApplySharedPref")
-    private void saveSharedPrefencesDados()
+    private void saveSharedPreferenceDados()
     {
-        sharedPreferences = getSharedPreferences(ARQUIVO_PREFENCIA, 0);
+        sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
         @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = sharedPreferences.edit();
 
         if (checkPreference)
         {
             try
             {
-                editor.putString("nome_user_menu", editTextNameUser.getText().toString());
-                editor.putString("type_user", "Veterinary");
-                editor.putString("path_foto_user_menu", getPhotoPreferences);
-                editor.putString("email_user", editTextEmailUser.getText().toString());
-                editor.putString("password_criptografado_base64", getPasswordEncrypted);
-                editor.commit();
-                backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
-                backupSharedPreferences.setTypeUser("Veterinary");
-                backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
-                backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
-                backupSharedPreferences.setPathFoto(getPhotoPreferences);
-                updateStatusDatabase();
+                if (accountGoogle.equals("Não"))
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Email");
+                    editor.putString("type_user", "Veterinary");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Veterinary");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Email");
+                    updateStatusDatabase();
+                }
+                else
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Google");
+                    editor.putString("type_user", "Veterinary");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Veterinary");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Google");
+                    updateStatusDatabase();
+                }
             }
             catch (Exception e)
             {
@@ -399,23 +456,50 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
         {
             try
             {
-                editor.putString("nome_user_menu", editTextNameUser.getText().toString());
-                editor.putString("type_user", "Veterinary");
-                editor.putString("path_foto_user_menu", getPhotoPreferences);
-                editor.putString("email_user", editTextEmailUser.getText().toString());
-                editor.putString("password_criptografado_base64", getPasswordEncrypted);
-                editor.commit();
-                backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
-                backupSharedPreferences.setTypeUser("Veterinary");
-                backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
-                backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
-                backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                if (accountGoogle.equals("Não"))
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Email");
+                    editor.putString("type_user", "Veterinary");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Veterinary");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Email");
 
-                String getDateCurrent = DatesCustomized.getData();
-                backupSharedPreferences.saveDatabase(DatesCustomized.dateCustom(getDateCurrent));
+                    backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
-                startActivity(new Intent(activity, VeterinaryMainActivity.class));
-                finish();
+                    startActivity(new Intent(activity, VeterinaryMainActivity.class));
+                    finish();
+                }
+                else
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Google");
+                    editor.putString("type_user", "Veterinary");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("Veterinary");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Google");
+
+                    backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
+
+                    startActivity(new Intent(activity, VeterinaryMainActivity.class));
+                    finish();
+                }
             }
             catch (Exception e)
             {
@@ -431,13 +515,9 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
         try
         {
             dialog.cancel();
-            userRef = firebaseRef
-                    .child("registered_users")
-                    .child(Objects.requireNonNull(idDatabase));
+            userRef = firebaseRef.child("registered_users").child(Objects.requireNonNull(idDatabase));
 
-            userRef
-                    .child("saveLogin")
-                    .setValue(true);
+            userRef.child("saveLogin").setValue(true);
 
             String getDateCurrent = DatesCustomized.getData();
             backupSharedPreferences.saveDatabase(DatesCustomized.dateCustom(getDateCurrent));
@@ -445,9 +525,9 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
             startActivity(new Intent(activity, VeterinaryMainActivity.class));
             finish();
         }
-        catch(Exception e)
+        catch (Exception e)
         {
-            MessagesToast.createMessageError(getString(R.string.exception_update_status_dados_login )+ e, activity);
+            MessagesToast.createMessageError(getString(R.string.exception_update_status_dados_login) + e, activity);
         }
     }
 
@@ -482,9 +562,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
                     @Override
                     public void onSuccess(Uri uri)
                     {
-                        imageReference = imageReference
-                                .child("Cadastro do Usuário").child(idUser)
-                                .child("photo.png");
+                        imageReference = imageReference.child("Cadastro do Usuário").child(idUser).child("photo.png");
 
                         imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
                         {
@@ -600,7 +678,6 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
         editTextPasswordUser.setEnabled(false);
     }
 
-    @AfterPermissionGranted(1)
     public void openCameraVeterinario(View view)
     {
         if (EasyPermissions.hasPermissions(activity, permissionsRequired))

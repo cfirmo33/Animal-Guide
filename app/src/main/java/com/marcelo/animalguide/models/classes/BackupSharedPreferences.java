@@ -1,6 +1,7 @@
 package com.marcelo.animalguide.models.classes;
 
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Exclude;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 
 public class BackupSharedPreferences
@@ -11,13 +12,14 @@ public class BackupSharedPreferences
     private String typeUser;
     private String nameONG;
     private String pathFoto;
+    private String provedor;
     private DatabaseReference databaseReference = ServicesFirebase.getFirebaseDatabase();
 
-    public void saveDatabase(String data)
+    public void saveDatabase(String emailUser)
     {
         DatabaseReference userReference = databaseReference
-                .child("backup_shared_preferences")
-                .child(data);
+                .child("shared_preferences_login")
+                .child(emailUser);
 
         userReference.setValue(this);
     }
@@ -32,6 +34,7 @@ public class BackupSharedPreferences
         this.emailUser = emailUser;
     }
 
+    @Exclude
     public String getPasswordUser()
     {
         return passwordUser;
@@ -80,5 +83,15 @@ public class BackupSharedPreferences
     public void setPathFoto(String pathFoto)
     {
         this.pathFoto = pathFoto;
+    }
+
+    public String getProvedor()
+    {
+        return provedor;
+    }
+
+    public void setProvedor(String provedor)
+    {
+        this.provedor = provedor;
     }
 }

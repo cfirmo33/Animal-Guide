@@ -58,7 +58,6 @@ import java.util.List;
 import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
-import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
 
@@ -81,16 +80,11 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
 
     private Activity activity = this;
     private Bitmap imagem;
-    private String message, idUser, exception, getNome, getEmail, getProvedor, typeUser,
-            accountGoogle = "Não", getPasswordEncrypted, getPhotoPreferences;
+    private String message, idUser, exception, getNome, getEmail, getProvedor, typeUser, accountGoogle = "Não", getPasswordEncrypted, getPhotoPreferences;
     private Boolean check, checkPreference = false;
     private static final int SELECAO_CAMERA = 100, SELECAO_GALERIA = 200;
     private static final String ARQUIVO_PREFERENCIA = "SaveDados";
-    private String[] permissionsRequired = new String[]
-    {
-        Manifest.permission.READ_EXTERNAL_STORAGE,
-        Manifest.permission.CAMERA
-    };
+    private String[] permissionsRequired = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
 
     @Override
     protected void onStart()
@@ -241,6 +235,7 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
                 editTextNameONG.setError(getString(R.string.exception_password_register_ong));
                 MessagesToast.createMessageWarning(getString(R.string.message_toast_exception_register_owner), this);
             }
+
             else
             {
                 check = checkConection();
@@ -292,7 +287,7 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
             {
                 if (accountGoogle.equals("Sim"))
                 {
-                    userClass.saveDatabase("registered_users");
+                    createDialogLoading();
                     createAlertDialogSaveLogin();
                 }
                 else if (accountGoogle.equals("Não"))
@@ -319,30 +314,65 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
 
     private void createAlertDialogSaveLogin()
     {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(getString(R.string.text_title_save_password_login));
-        builder.setMessage(getString(R.string.text_aviso_save_dados_login));
-        builder.setCancelable(false);
-        builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
+        if (accountGoogle.equals("Não"))
         {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(getString(R.string.text_title_save_password_login));
+            builder.setMessage(getString(R.string.text_aviso_save_dados_login));
+            builder.setCancelable(false);
+            builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
             {
-                checkPreference = true;
-                saveSharedPrefencesDados();
-            }
-        });
-        builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
-        {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    checkPreference = true;
+                    saveSharedPreferenceDados();
+                }
+            });
+            builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
             {
-                saveSharedPrefencesDados();
-            }
-        });
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    saveSharedPreferenceDados();
+                }
+            });
 
-        dialogSave = builder.create();
-        dialogSave.show();
+            dialogSave = builder.create();
+            dialogSave.show();
+        }
+
+        else if (accountGoogle.equals("Sim"))
+        {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(getString(R.string.text_title_save_password_login));
+            builder.setMessage(getString(R.string.text_aviso_save_dados_login));
+            builder.setCancelable(false);
+            builder.setPositiveButton(getString(R.string.btn_save_password), new DialogInterface.OnClickListener()
+            {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    userClass.saveDatabase("registered_users");
+
+                    checkPreference = true;
+                    saveSharedPreferenceDados();
+                }
+            });
+            builder.setNegativeButton(getString(R.string.btn_not_save_password), new DialogInterface.OnClickListener()
+            {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    userClass.saveDatabase("registered_users");
+
+                    saveSharedPreferenceDados();
+                }
+            });
+
+            dialogSave = builder.create();
+            dialogSave.show();
+        }
     }
 
     private void createAlertDialogPermissionsApp()
@@ -383,7 +413,7 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
     }
 
     @SuppressLint("ApplySharedPref")
-    private void saveSharedPrefencesDados()
+    private void saveSharedPreferenceDados()
     {
         sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
         @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -392,20 +422,44 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
         {
             try
             {
-                editor.putString("nome_user_menu", editTextNameUser.getText().toString());
-                editor.putString("type_user", "ONG");
-                editor.putString("name_ong_user", editTextNameONG.getText().toString());
-                editor.putString("path_foto_user_menu", getPhotoPreferences);
-                editor.putString("email_user", editTextEmailUser.getText().toString());
-                editor.putString("password_criptografado_base64", getPasswordEncrypted);
-                editor.commit();
-                backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
-                backupSharedPreferences.setTypeUser("ONG");
-                backupSharedPreferences.setNameONG(editTextNameONG.getText().toString());
-                backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
-                backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
-                backupSharedPreferences.setPathFoto(getPhotoPreferences);
-                updateStatusDatabase();
+                if (accountGoogle.equals("Não"))
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Email");
+                    editor.putString("type_user", "ONG");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("ONG");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Email");
+                    updateStatusDatabase();
+                }
+                else
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Google");
+                    editor.putString("type_user", "ONG");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("ONG");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Google");
+                    updateStatusDatabase();
+                }
             }
             catch (Exception e)
             {
@@ -416,25 +470,50 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
         {
             try
             {
-                editor.putString("nome_user_menu", editTextNameUser.getText().toString());
-                editor.putString("type_user", "ONG");
-                editor.putString("name_ong_user", editTextNameONG.getText().toString());
-                editor.putString("path_foto_user_menu", getPhotoPreferences);
-                editor.putString("email_user", editTextEmailUser.getText().toString());
-                editor.putString("password_criptografado_base64", getPasswordEncrypted);
-                editor.commit();
-                backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
-                backupSharedPreferences.setTypeUser("ONG");
-                backupSharedPreferences.setNameONG(editTextNameONG.getText().toString());
-                backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
-                backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
-                backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                if (accountGoogle.equals("Não"))
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Email");
+                    editor.putString("type_user", "ONG");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("ONG");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Email");
 
-                String getDateCurrent = DatesCustomized.getData();
-                backupSharedPreferences.saveDatabase(DatesCustomized.dateCustom(getDateCurrent));
+                    backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
-                startActivity(new Intent(activity, ONGMainActivity.class));
-                finish();
+                    startActivity(new Intent(activity, ONGMainActivity.class));
+                    finish();
+                }
+                else
+                {
+                    editor.putString("authenticate_user", String.valueOf(true));
+                    editor.putString("nome_user_menu", editTextNameUser.getText().toString());
+                    editor.putString("provedor_user", "Google");
+                    editor.putString("type_user", "ONG");
+                    editor.putString("path_foto_user_menu", getPhotoPreferences);
+                    editor.putString("email_user", editTextEmailUser.getText().toString());
+                    editor.putString("password_criptografado_base64", getPasswordEncrypted);
+                    editor.commit();
+                    backupSharedPreferences.setNameUser(editTextNameUser.getText().toString());
+                    backupSharedPreferences.setTypeUser("ONG");
+                    backupSharedPreferences.setEmailUser(editTextEmailUser.getText().toString());
+                    backupSharedPreferences.setPasswordUser(getPasswordEncrypted);
+                    backupSharedPreferences.setPathFoto(getPhotoPreferences);
+                    backupSharedPreferences.setProvedor("Google");
+
+                    backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
+
+                    startActivity(new Intent(activity, ONGMainActivity.class));
+                    finish();
+                }
             }
             catch (Exception e)
             {
@@ -614,7 +693,6 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
         editTextNameONG.setEnabled(false);
     }
 
-    @AfterPermissionGranted(1)
     public void openCameraONG(View view)
     {
         if (EasyPermissions.hasPermissions(activity, permissionsRequired))
@@ -658,8 +736,7 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
         }
         else
         {
-            EasyPermissions.requestPermissions(activity, getString(R.string.message_alert_register_owner),
-                    1, permissionsRequired);
+            EasyPermissions.requestPermissions(activity, getString(R.string.message_alert_register_owner), 1, permissionsRequired);
         }
     }
 
@@ -723,7 +800,7 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
     {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        EasyPermissions.onRequestPermissionsResult(requestCode,permissions,grantResults, activity);
+        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
     }
 
     @Override
@@ -737,7 +814,7 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
     {
         if (EasyPermissions.somePermissionPermanentlyDenied(this, perms))
         {
-           createAlertDialogPermissionsApp();
+            createAlertDialogPermissionsApp();
         }
     }
 }

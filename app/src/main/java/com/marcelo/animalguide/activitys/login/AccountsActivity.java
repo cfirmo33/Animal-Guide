@@ -19,6 +19,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -27,9 +29,13 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.storage.StorageReference;
 import com.marcelo.animalguide.R;
+import com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity;
 import com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity;
+import com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity;
+import com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity;
 import com.marcelo.animalguide.encryption.Base64Custom;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
@@ -53,7 +59,7 @@ public class AccountsActivity extends AppCompatActivity
     private CircleImageView imageAccountUser;
     private EditText editTextEmailAccount;
     private TextView textTypeAccount;
-    private AlertDialog dialogRelogin;
+    private AlertDialog dialogRelogin, dialogRemove;
 
     private boolean check;
 
@@ -146,12 +152,14 @@ public class AccountsActivity extends AppCompatActivity
 
     public void changeAccount(View view)
     {
+        auth.signOut();
         startActivity(new Intent(activity, LoginActivity.class));
         finish();
     }
 
     public void registerAccount(View view)
     {
+        auth.signOut();
         startActivity(new Intent(activity, ChooseActivity.class));
         finish();
     }
@@ -198,25 +206,111 @@ public class AccountsActivity extends AppCompatActivity
 
             sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
 
-            if (sharedPreferences.contains("email_user") && sharedPreferences.contains("password_criptografado_base64"))
+            if (sharedPreferences.contains("email_user") && sharedPreferences.contains("provedor_user"))
             {
                 try
                 {
-                    AuthCredential credential = EmailAuthProvider.getCredential(sharedPreferences.getString("email_user", ""), Base64Custom.decryption(sharedPreferences.getString("password_criptografado_base64", "")));
-
-                    userFirebase.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>()
+                    GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(getApplicationContext());
+                    if (acct != null)
                     {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task)
+
+                        AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
+                        userFirebase.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>()
                         {
-                            updateAuthPreferences();
-                            Intent intent = new Intent(getApplicationContext(), OwnerMainActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                            dialogRelogin.cancel();
-                            startActivity(intent);
-                            finish();
-                        }
-                    });
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task)
+                            {
+                                if (task.isSuccessful())
+                                {
+                                    updateAuthPreferences();
+
+                                    String typeUser = sharedPreferences.getString("type_user", "");
+
+                                    if (typeUser.equals("Pet Owner"))
+                                    {
+                                        Intent intent = new Intent(getApplicationContext(), OwnerMainActivity.class);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        dialogRelogin.cancel();
+                                        startActivity(intent);
+                                        finish();
+                                    }
+                                    if (typeUser.equals("Veterinary"))
+                                    {
+                                        Intent intent = new Intent(getApplicationContext(), VeterinaryMainActivity.class);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        dialogRelogin.cancel();
+                                        startActivity(intent);
+                                        finish();
+                                    }
+                                    if (typeUser.equals("Student"))
+                                    {
+                                        Intent intent = new Intent(getApplicationContext(), StudentMainActivity.class);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        dialogRelogin.cancel();
+                                        startActivity(intent);
+                                        finish();
+                                    }
+                                    if (typeUser.equals("ONG"))
+                                    {
+                                        Intent intent = new Intent(getApplicationContext(), ONGMainActivity.class);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        dialogRelogin.cancel();
+                                        startActivity(intent);
+                                        finish();
+                                    }
+                                }
+                            }
+                        });
+                    }
+                    else
+                    {
+                        AuthCredential credential = EmailAuthProvider.getCredential(sharedPreferences.getString("email_user", ""),
+                                Base64Custom.decryption(sharedPreferences.getString("password_criptografado_base64", "")));
+
+                        userFirebase.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>()
+                        {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task)
+                            {
+                                updateAuthPreferences();
+
+                                String typeUser = sharedPreferences.getString("type_user", "");
+
+                                if (typeUser.equals("Pet Owner"))
+                                {
+                                    Intent intent = new Intent(getApplicationContext(), OwnerMainActivity.class);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    dialogRelogin.cancel();
+                                    startActivity(intent);
+                                    finish();
+                                }
+                                if (typeUser.equals("Veterinary"))
+                                {
+                                    Intent intent = new Intent(getApplicationContext(), VeterinaryMainActivity.class);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    dialogRelogin.cancel();
+                                    startActivity(intent);
+                                    finish();
+                                }
+                                if (typeUser.equals("Student"))
+                                {
+                                    Intent intent = new Intent(getApplicationContext(), StudentMainActivity.class);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    dialogRelogin.cancel();
+                                    startActivity(intent);
+                                    finish();
+                                }
+                                if (typeUser.equals("ONG"))
+                                {
+                                    Intent intent = new Intent(getApplicationContext(), ONGMainActivity.class);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    dialogRelogin.cancel();
+                                    startActivity(intent);
+                                    finish();
+                                }
+                            }
+                        });
+                    }
                 }
                 catch (Exception e)
                 {
@@ -233,6 +327,39 @@ public class AccountsActivity extends AppCompatActivity
 
     public void removeAccount(View view)
     {
+        final androidx.appcompat.app.AlertDialog.Builder alertDialogBuilder = new androidx.appcompat.app.AlertDialog.Builder(Objects.requireNonNull(activity));
+        alertDialogBuilder.setCancelable(false);
+        @SuppressLint("InflateParams") View alertView = getLayoutInflater().inflate(R.layout.dialog_remove_account, null);
 
+        TextView textRemover = alertView.findViewById(R.id.textViewRemoveAccount);
+        TextView textCancelar = alertView.findViewById(R.id.textViewCancelRemoveAccount);
+
+        textRemover.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                auth.signOut();
+                dialogRemove.cancel();
+                Intent intent = new Intent(activity, LoginActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        textCancelar.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                dialogRemove.cancel();
+            }
+        });
+
+        alertDialogBuilder.setView(alertView);
+        dialogRemove = alertDialogBuilder.create();
+        dialogRemove.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialogRemove.show();
     }
 }
