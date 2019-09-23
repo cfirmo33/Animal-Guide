@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +22,8 @@ import com.marcelo.animalguide.activitys.searchs_activity.SearchOwnerActivity;
 public class OwnerMainActivity extends AppCompatActivity
 {
     private Activity activity = this;
+    private TextView textViewBoxPost;
+    private ImageView imagePhotoPost, imageVideoPosts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -28,6 +32,7 @@ public class OwnerMainActivity extends AppCompatActivity
         setContentView(R.layout.activity_owner_main);
 
         settingsNavigationBottom();
+        settingsBoxPosts();
     }
 
     private void settingsNavigationBottom()
@@ -84,5 +89,12 @@ public class OwnerMainActivity extends AppCompatActivity
                 return false;
             }
         });
+    }
+
+    private void settingsBoxPosts()
+    {
+        textViewBoxPost = findViewById(R.id.textViewBoxPosts);
+        imagePhotoPost = findViewById(R.id.imageViewCameraPosts);
+        imageVideoPosts = findViewById(R.id.imageViewVideoPosts);
     }
 }

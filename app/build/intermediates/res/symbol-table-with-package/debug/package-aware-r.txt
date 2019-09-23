@@ -1544,6 +1544,7 @@ drawable adt_ic_warning
 drawable adt_toast_background
 drawable avd_hide_password
 drawable avd_show_password
+drawable borders
 drawable btn_google_dark_disabled
 drawable btn_google_dark_focus
 drawable btn_google_dark_normal
@@ -1638,6 +1639,7 @@ drawable ic_send_30dp
 drawable ic_settings_24dp
 drawable ic_take_photos_owner
 drawable ic_videos_24dp
+drawable ic_videos_posts_24dp
 drawable ic_visibility_black_24dp
 drawable ic_visibility_off_black_24dp
 drawable icon_app
@@ -1732,6 +1734,10 @@ id blocking
 id body_text
 id bottom
 id box_count
+id box_postagem_ong
+id box_postagem_owner
+id box_postagem_student
+id box_postagem_veterinary
 id browser_actions_header_text
 id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
@@ -1816,6 +1822,7 @@ id disableHome
 id display_always
 id divider
 id divider2
+id divider_two
 id do_delete
 id editTextAdapterEmailAccountsUser
 id editTextEmailAccountsUser
@@ -1885,6 +1892,8 @@ id imageUserStudent
 id imageUserVeterinary
 id imageViewAccountsUser
 id imageViewBlogsMenu
+id imageViewBoxUser
+id imageViewCameraPosts
 id imageViewCameraToolbar
 id imageViewChat
 id imageViewCheckInternet
@@ -1897,6 +1906,7 @@ id imageViewPetsMenu
 id imageViewSettingsMenu
 id imageViewSobreMenu
 id imageViewSplashScreen
+id imageViewVideoPosts
 id imageViewVideosMenu
 id include
 id info
@@ -1940,6 +1950,7 @@ id linearLayoutObjects
 id linearLayoutPetsMenu
 id linearLayoutPhotoAccount
 id linearLayoutPhotoUser
+id linearLayoutPosts
 id linearLayoutRegister
 id linearLayoutSettingsMenu
 id linearLayoutSobreMenu
@@ -2083,13 +2094,13 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textView2
 id textView3
 id textView4
 id textViewAtivar
 id textViewAviso
 id textViewAvisoCheckInternet
 id textViewAvisoDialogRemoveAccount
+id textViewBoxPosts
 id textViewCancelRemoveAccount
 id textViewCheckEmail
 id textViewCreateAccount
@@ -2236,6 +2247,7 @@ layout adt_layout_hint
 layout adt_layout_toast
 layout auth_method_picker_layout
 layout bottom_navigation
+layout box_posts_feed
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout com_facebook_activity_layout
@@ -2558,6 +2570,7 @@ string text_alert_shared_preferences_password
 string text_aviso_check_internet
 string text_aviso_dialog_remove_account
 string text_aviso_save_dados_login
+string text_box_posts_feed
 string text_button_account_changed
 string text_button_check_internet
 string text_button_enter_account

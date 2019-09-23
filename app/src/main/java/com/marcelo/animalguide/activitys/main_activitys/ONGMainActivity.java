@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -39,7 +40,8 @@ public class ONGMainActivity extends AppCompatActivity
     private SharedPreferences sharedPreferences;
     private static final String ARQUIVO_PREFERENCIA = "SaveDados";
 
-    private TextView textViewToolbar;
+    private TextView textViewBoxPost, textViewToolbar;
+    private ImageView imagePhotoPost, imageVideoPosts;
 
     @Override
     protected void onStart()
@@ -106,6 +108,7 @@ public class ONGMainActivity extends AppCompatActivity
 
         initializedComponents();
         settingsNavigationBottom();
+        settingsBoxPosts();
     }
 
     private void initializedComponents()
@@ -167,5 +170,12 @@ public class ONGMainActivity extends AppCompatActivity
                 return false;
             }
         });
+    }
+
+    private void settingsBoxPosts()
+    {
+        textViewBoxPost = findViewById(R.id.textViewBoxPosts);
+        imagePhotoPost = findViewById(R.id.imageViewCameraPosts);
+        imageVideoPosts = findViewById(R.id.imageViewVideoPosts);
     }
 }

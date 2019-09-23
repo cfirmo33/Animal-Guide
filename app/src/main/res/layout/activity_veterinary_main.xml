@@ -24,6 +24,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarVeterinary" />
 
+    <include
+        android:id="@+id/box_postagem_veterinary"
+        layout="@layout/box_posts_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigation_bottom_veterinary" />
+
     <ImageView
         android:id="@+id/imageViewCameraToolbar"
         android:layout_width="0dp"

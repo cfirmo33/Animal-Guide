@@ -147,11 +147,13 @@
     <string name="exception_relogin">Ocorreu um erro ao tentar reautenticar sua conta:</string>
     <!-- Strings Exception Check SaveLogin Database -->
     <string name="exception_check_database_save_login">Ocorreu um erro ao tentar recuperar os dados da sua Conta:</string>
-    <!-- Sring  Message Exit -->
+    <!-- String  Message Exit -->
     <string name="dialog_text_exit">Saindo</string>
-    <!-- Sring Message Relogin -->
+    <!-- String Message Relogin -->
     <string name="dialog_text_relogin">Entrando</string>
-    <!-- Sring Message Dialog Remover Account -->
+    <!-- String Message Dialog Remover Account -->
     <string name="title_dialog_remove_account">Remover conta</string>
     <string name="text_aviso_dialog_remove_account">Você precisara inserir seu email\nde usuário e senha na próxima vez\nque entrar.</string>
+    <!-- String Box Posts Feed -->
+    <string name="text_box_posts_feed">Faça uma Publicação…</string>
 </resources>

@@ -118,4 +118,5 @@
     <string name="dialog_text_relogin" translatable="false">Entering</string>
     <string name="title_dialog_remove_account" translatable="false">Remove Account</string>
     <string name="text_aviso_dialog_remove_account" translatable="false">You will need to enter your username and password the next time you sign in.</string>
+    <string name="text_box_posts_feed" translatable="false">Make a Publication…</string>
 </resources>
