@@ -21,6 +21,7 @@
     <li>Login utilizando:</li>
     <li>Email e Senha</li>
     <li>Conta do Google</li>
+    <li>Reautenticar-se no sistema</li>
     </ul>
     <p>Também é possível realizar a alteração da senha, caso tenha esquecido a que foi inserida ao se cadastrar na plataforma. E também avisar quando o dispositivo estiver sem acesso a Internet.</p>
     <p>Para executar o código no próprio computador será necessário criar os arquivos JSON
