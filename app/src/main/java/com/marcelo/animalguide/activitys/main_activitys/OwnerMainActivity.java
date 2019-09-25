@@ -51,13 +51,6 @@ public class OwnerMainActivity extends AppCompatActivity
         menuItem.setChecked(true);
     }
 
-    private void settingsBoxPosts()
-    {
-        textViewBoxPost = findViewById(R.id.textViewBoxPosts);
-        imagePhotoPost = findViewById(R.id.imageViewCameraPosts);
-        imageVideoPosts = findViewById(R.id.imageViewVideoPosts);
-    }
-
     private void loadingNavigations(BottomNavigationViewEx viewEx)
     {
         viewEx.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener()
@@ -96,5 +89,12 @@ public class OwnerMainActivity extends AppCompatActivity
                 return false;
             }
         });
+    }
+
+    private void settingsBoxPosts()
+    {
+        textViewBoxPost = findViewById(R.id.textViewBoxPosts);
+        imagePhotoPost = findViewById(R.id.imageViewCameraPosts);
+        imageVideoPosts = findViewById(R.id.imageViewVideoPosts);
     }
 }

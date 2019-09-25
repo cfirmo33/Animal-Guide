@@ -533,6 +533,9 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
 
     public void saveImageFirebaseStorage()
     {
+        circleImageViewVeterinario.setDrawingCacheEnabled(true);
+        circleImageViewVeterinario.buildDrawingCache();
+
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         imagem.compress(Bitmap.CompressFormat.PNG, 80, baos);
         byte[] dadosImagem = baos.toByteArray();

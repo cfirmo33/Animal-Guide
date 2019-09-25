@@ -534,6 +534,9 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
 
     public void saveImageFirebaseStorage()
     {
+        circleImageViewUser.setDrawingCacheEnabled(true);
+        circleImageViewUser.buildDrawingCache();
+
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         imagem.compress(Bitmap.CompressFormat.PNG, 80, baos);
         byte[] dadosImagem = baos.toByteArray();

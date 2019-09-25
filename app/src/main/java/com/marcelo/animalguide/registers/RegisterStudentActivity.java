@@ -534,6 +534,9 @@ public class RegisterStudentActivity extends AppCompatActivity implements EasyPe
 
     public void saveImageFirebaseStorage()
     {
+        circleImageViewStudent.setDrawingCacheEnabled(true);
+        circleImageViewStudent.buildDrawingCache();
+
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         imagem.compress(Bitmap.CompressFormat.PNG, 80, baos);
         byte[] dadosImagem = baos.toByteArray();

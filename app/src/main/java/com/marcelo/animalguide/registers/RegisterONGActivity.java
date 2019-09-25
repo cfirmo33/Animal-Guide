@@ -546,6 +546,9 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
 
     public void saveImageFirebaseStorage()
     {
+        circleImageViewONG.setDrawingCacheEnabled(true);
+        circleImageViewONG.buildDrawingCache();
+
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         imagem.compress(Bitmap.CompressFormat.PNG, 80, baos);
         byte[] dadosImagem = baos.toByteArray();

@@ -224,7 +224,9 @@ public class MenuNavigationOwnerActivity extends AppCompatActivity
             @Override
             public void onSuccess(Uri uri)
             {
-                Picasso.get().load(uri).into(imageUserMenu);
+                Picasso.get()
+                        .load(uri)
+                        .into(imageUserMenu);
             }
         });
     }
