@@ -66,6 +66,10 @@
     <string name="btn_open_camera_dialog">Abrir Câmera</string>
     <string name="btn_cancel_dialog">Cancelar</string>
     <string name="sucess_insert_photo_camera">Imagem inserida com Sucesso!</string>
+    <!-- AlertDialog Login Offline Strings -->
+    <string name="text_ok_alert_login_offline" translatable="false">OK</string>
+    <string name="title_dialog_login_offline">Falha ao entrar</string>
+    <string name="message_dialog_login_offline">Não foi possivel fazer Login. Verifique sua conexão com a Internet.</string>
     <!-- String Exceptions to Register U0ser ONG -->
     <string name="exception_password_register_ong">Insira o nome da ONG</string>
     <!-- String Dialog Login Google -->
@@ -154,6 +158,21 @@
     <!-- String Message Dialog Remover Account -->
     <string name="title_dialog_remove_account">Remover conta</string>
     <string name="text_aviso_dialog_remove_account">Você precisara inserir seu email\nde usuário e senha na próxima vez\nque entrar.</string>
-    <!-- String Box Posts Feed -->
+    <!-- String Postagens Feed -->
     <string name="text_box_posts_feed">Faça uma Publicação…</string>
+    <string name="text_public_privacidade_postagens">Público</string>
+    <string name="mensagem_edit_postagens">No que você está pensando?</string>
+    <string name="text_add_itens_postagem">Adicionar à sua publicação</string>
+    <string name="text_publicar_postagem">Publicar</string>
+    <!-- String Dialog Privacidade Postagens -->
+    <string name="title_dialog_privacidade_posts">Quem pode ver suas publicações</string>
+    <string name="message_public_postagem">Qualquer usuário pode visualizar</string>
+    <string name="text_privacidade_friends_postagens">Amigos</string>
+    <string name="message_friends_postagem">Seus amigos no Animal Guide</string>
+    <!-- String Activity Gallery Postagens -->
+    <string name="text_publish_foto_postagem">Publicar</string>
+    <string name="exception_spinner_galeria">Erro ao configurar Spinner da Galeria</string>
+    <string name="message_alert_permissions_negada_gallery_postagens">Para poder inserir Imagens ou Vídeos em sua publicação, conceda acesso as permissões exigidas pelo aplicativo.</string>
+    <!-- String Menu Toolbar Chat -->
+    <string name="title_menu_chat" translatable="false">Chat</string>
 </resources>

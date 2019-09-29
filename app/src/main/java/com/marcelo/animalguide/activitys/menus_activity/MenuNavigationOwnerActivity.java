@@ -29,12 +29,9 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.StorageReference;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.activitys.google_maps_activity.GoogleMapsOwnerActivity;
 import com.marcelo.animalguide.activitys.login.AccountsActivity;
 import com.marcelo.animalguide.activitys.login.LoginActivity;
-import com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity;
-import com.marcelo.animalguide.activitys.notifications_activity.NotificationsOwnerActivity;
-import com.marcelo.animalguide.activitys.searchs_activity.SearchOwnerActivity;
+import com.marcelo.animalguide.activitys.main_activitys.FeedActivity;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
 import com.marcelo.animalguide.models.classes.UserClass;
@@ -124,31 +121,15 @@ public class MenuNavigationOwnerActivity extends AppCompatActivity
                 switch (item.getItemId())
                 {
                     case R.id.ic_home:
-                        startActivity(new Intent(activity, OwnerMainActivity.class));
-                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
-                        finish();
-                        return true;
-
-                    case R.id.ic_search:
-                        startActivity(new Intent(activity, SearchOwnerActivity.class));
-                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
-                        finish();
-                        return true;
-
-                    case R.id.ic_notification:
-                        startActivity(new Intent(activity, NotificationsOwnerActivity.class));
-                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
-                        finish();
-                        return true;
-
-                    case R.id.ic_mapa:
-                        startActivity(new Intent(activity, GoogleMapsOwnerActivity.class));
-                        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
-                        finish();
-                        return true;
 
                     case R.id.ic_menu:
-                        startActivity(new Intent(activity, MenuNavigationOwnerActivity.class));
+
+                    case R.id.ic_mapa:
+
+                    case R.id.ic_notification:
+
+                    case R.id.ic_search:
+                        startActivity(new Intent(activity, FeedActivity.class));
                         overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                         finish();
                         return true;
@@ -179,7 +160,10 @@ public class MenuNavigationOwnerActivity extends AppCompatActivity
     {
         String id = EncryptionSHA1.encryptionString(userFirebase.getEmail());
 
-        DatabaseReference accountsRef = ServicesFirebase.getFirebaseDatabase().child("registered_users").child(Objects.requireNonNull(id));
+        DatabaseReference accountsRef = ServicesFirebase
+                .getFirebaseDatabase()
+                .child("registered_users")
+                .child(Objects.requireNonNull(id));
 
         accountsRef.addValueEventListener(new ValueEventListener()
         {

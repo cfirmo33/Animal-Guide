@@ -42,7 +42,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity;
 import com.marcelo.animalguide.encryption.Base64Custom;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
@@ -489,7 +488,7 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
 
                     backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
-                    startActivity(new Intent(activity, ONGMainActivity.class));
+                   // startActivity(new Intent(activity, ONGMainActivity.class));
                     finish();
                 }
                 else
@@ -511,7 +510,7 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
 
                     backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
-                    startActivity(new Intent(activity, ONGMainActivity.class));
+                    //startActivity(new Intent(activity, ONGMainActivity.class));
                     finish();
                 }
             }
@@ -535,7 +534,7 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
             String getDateCurrent = DatesCustomized.getData();
             backupSharedPreferences.saveDatabase(DatesCustomized.dateCustom(getDateCurrent));
 
-            startActivity(new Intent(activity, ONGMainActivity.class));
+            //startActivity(new Intent(activity, ONGMainActivity.class));
             finish();
         }
         catch (Exception e)
@@ -599,7 +598,7 @@ public class RegisterONGActivity extends AppCompatActivity implements EasyPermis
                                 {
                                     dialog.cancel();
                                     userClass.saveDatabase("registered_users");
-                                    startActivity(new Intent(activity, ONGMainActivity.class));
+                                    //startActivity(new Intent(activity, ONGMainActivity.class));
                                     finish();
                                 }
                             }

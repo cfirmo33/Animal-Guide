@@ -119,4 +119,17 @@
     <string name="title_dialog_remove_account" translatable="false">Remove Account</string>
     <string name="text_aviso_dialog_remove_account" translatable="false">You will need to enter your username and password the next time you sign in.</string>
     <string name="text_box_posts_feed" translatable="false">Make a Publication…</string>
+    <string name="title_dialog_login_offline" translatable="false">Failed to sign in</string>
+    <string name="message_dialog_login_offline" translatable="false">Unable to Login. Check your internet connection.</string>
+    <string name="text_public_privacidade_postagens" translatable="false">Public</string>
+    <string name="mensagem_edit_postagens" translatable="false">What is on your mind?</string>
+    <string name="text_add_itens_postagem" translatable="false">Add to your post</string>
+    <string name="text_publicar_postagem" translatable="false">Publish</string>
+    <string name="title_dialog_privacidade_posts" translatable="false">Who can see your posts</string>
+    <string name="message_public_postagem" translatable="false">Any user can view</string>
+    <string name="text_privacidade_friends_postagens" translatable="false">Friends</string>
+    <string name="message_friends_postagem" translatable="false">Your friends on Animal Guide</string>
+    <string name="text_publish_foto_postagem" translatable="false">Publish</string>
+    <string name="exception_spinner_galeria">Error setting up Gallery Spinner</string>
+    <string name="message_alert_permissions_negada_gallery_postagens">Before you can embed Images or Videos in your post, grant access to the permissions required by the app.</string>
 </resources>

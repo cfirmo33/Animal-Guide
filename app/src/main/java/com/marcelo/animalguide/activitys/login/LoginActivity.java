@@ -40,11 +40,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.activitys.conexion.CheckInternetActivity;
-import com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity;
-import com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity;
-import com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity;
-import com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity;
+import com.marcelo.animalguide.activitys.main_activitys.FeedActivity;
 import com.marcelo.animalguide.activitys.password.ForgotPasswordActivity;
 import com.marcelo.animalguide.activitys.splash_screen.SplashScreenActivity;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
@@ -102,6 +98,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         else
         {
             getStatusInternet = false;
+            loginOffline();
         }
 
         return getStatusInternet;
@@ -111,6 +108,52 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     {
         startActivity(new Intent(activity, SplashScreenActivity.class));
         finish();
+    }
+
+    private void loginOffline()
+    {
+        sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
+
+        if (sharedPreferences.contains("authenticate_user"))
+        {
+            boolean authUser = Boolean.parseBoolean(sharedPreferences.getString("authenticate_user", ""));
+
+            if (authUser)
+            {
+                if (sharedPreferences.contains("type_user") && sharedPreferences.contains("authenticate_user"))
+                {
+                    String getTypeUser = sharedPreferences.getString("type_user", "");
+
+                    switch (getTypeUser)
+                    {
+                        case "Pet Owner":
+                        case "Student":
+                        case "Veterinary":
+                        case "ONG":
+                            startActivity(new Intent(activity, FeedActivity.class));
+                            overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
+                            finish();
+                            break;
+                    }
+                }
+            }
+            else
+            {
+                createDialogLoginOffline();
+            }
+        }
+    }
+
+    private void createDialogLoginOffline()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(getString(R.string.title_dialog_login_offline));
+        builder.setMessage(getString(R.string.message_dialog_login_offline));
+        builder.setCancelable(false);
+        builder.setPositiveButton(getString(R.string.text_ok_alert_login_offline), null);
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     private void checkAuthentication()
@@ -143,19 +186,11 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                             switch (typeAccount)
                             {
                                 case "Pet Owner":
-                                    startActivity(new Intent(activity, OwnerMainActivity.class));
-                                    finish();
-                                    break;
                                 case "Student":
-                                    startActivity(new Intent(activity, StudentMainActivity.class));
-                                    finish();
-                                    break;
                                 case "Veterinary":
-                                    startActivity(new Intent(activity, VeterinaryMainActivity.class));
-                                    finish();
-                                    break;
                                 case "ONG":
-                                    startActivity(new Intent(activity, ONGMainActivity.class));
+                                    startActivity(new Intent(activity, FeedActivity.class));
+                                    overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                                     finish();
                                     break;
                             }
@@ -186,16 +221,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         editTextPassword = findViewById(R.id.editTextPasswordLogin);
         constraintLayout = findViewById(R.id.constraintLayoutLogin);
 
-        check = checkConection();
-
-        if (!check)
-        {
-            startActivity(new Intent(activity, CheckInternetActivity.class));
-        }
-        else
-        {
-            initializeGoogleSign();
-        }
+        initializeGoogleSign();
     }
 
     private void initializeGoogleSign()
@@ -338,19 +364,11 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                         switch (getTypeAccount)
                         {
                             case "Pet Owner":
-                                startActivity(new Intent(activity, OwnerMainActivity.class));
-                                finish();
-                                break;
                             case "Student":
-                                startActivity(new Intent(activity, StudentMainActivity.class));
-                                finish();
-                                break;
                             case "Veterinary":
-                                startActivity(new Intent(activity, VeterinaryMainActivity.class));
-                                finish();
-                                break;
                             case "ONG":
-                                startActivity(new Intent(activity, ONGMainActivity.class));
+                                startActivity(new Intent(activity, FeedActivity.class));
+                                overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                                 finish();
                                 break;
                         }
@@ -365,19 +383,11 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                             switch (getTypeAccount)
                             {
                                 case "Pet Owner":
-                                    startActivity(new Intent(activity, OwnerMainActivity.class));
-                                    finish();
-                                    break;
                                 case "Student":
-                                    startActivity(new Intent(activity, StudentMainActivity.class));
-                                    finish();
-                                    break;
                                 case "Veterinary":
-                                    startActivity(new Intent(activity, VeterinaryMainActivity.class));
-                                    finish();
-                                    break;
                                 case "ONG":
-                                    startActivity(new Intent(activity, ONGMainActivity.class));
+                                    startActivity(new Intent(activity, FeedActivity.class));
+                                    overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
                                     finish();
                                     break;
                             }

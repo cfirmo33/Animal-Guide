@@ -32,10 +32,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.storage.StorageReference;
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.activitys.main_activitys.ONGMainActivity;
-import com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity;
-import com.marcelo.animalguide.activitys.main_activitys.StudentMainActivity;
-import com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity;
+import com.marcelo.animalguide.activitys.main_activitys.FeedActivity;
 import com.marcelo.animalguide.encryption.Base64Custom;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
@@ -213,7 +210,6 @@ public class AccountsActivity extends AppCompatActivity
                     GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(getApplicationContext());
                     if (acct != null)
                     {
-
                         AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
                         userFirebase.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>()
                         {
@@ -228,7 +224,7 @@ public class AccountsActivity extends AppCompatActivity
 
                                     if (typeUser.equals("Pet Owner"))
                                     {
-                                        Intent intent = new Intent(getApplicationContext(), OwnerMainActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(), FeedActivity.class);
                                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                                         dialogRelogin.cancel();
                                         startActivity(intent);
@@ -236,7 +232,7 @@ public class AccountsActivity extends AppCompatActivity
                                     }
                                     if (typeUser.equals("Veterinary"))
                                     {
-                                        Intent intent = new Intent(getApplicationContext(), VeterinaryMainActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(), FeedActivity.class);
                                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                                         dialogRelogin.cancel();
                                         startActivity(intent);
@@ -244,7 +240,7 @@ public class AccountsActivity extends AppCompatActivity
                                     }
                                     if (typeUser.equals("Student"))
                                     {
-                                        Intent intent = new Intent(getApplicationContext(), StudentMainActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(), FeedActivity.class);
                                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                                         dialogRelogin.cancel();
                                         startActivity(intent);
@@ -252,7 +248,7 @@ public class AccountsActivity extends AppCompatActivity
                                     }
                                     if (typeUser.equals("ONG"))
                                     {
-                                        Intent intent = new Intent(getApplicationContext(), ONGMainActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(), FeedActivity.class);
                                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                                         dialogRelogin.cancel();
                                         startActivity(intent);
@@ -278,7 +274,7 @@ public class AccountsActivity extends AppCompatActivity
 
                                 if (typeUser.equals("Pet Owner"))
                                 {
-                                    Intent intent = new Intent(getApplicationContext(), OwnerMainActivity.class);
+                                    Intent intent = new Intent(getApplicationContext(), FeedActivity.class);
                                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     dialogRelogin.cancel();
                                     startActivity(intent);
@@ -286,7 +282,7 @@ public class AccountsActivity extends AppCompatActivity
                                 }
                                 if (typeUser.equals("Veterinary"))
                                 {
-                                    Intent intent = new Intent(getApplicationContext(), VeterinaryMainActivity.class);
+                                    Intent intent = new Intent(getApplicationContext(), FeedActivity.class);
                                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     dialogRelogin.cancel();
                                     startActivity(intent);
@@ -294,7 +290,7 @@ public class AccountsActivity extends AppCompatActivity
                                 }
                                 if (typeUser.equals("Student"))
                                 {
-                                    Intent intent = new Intent(getApplicationContext(), StudentMainActivity.class);
+                                    Intent intent = new Intent(getApplicationContext(), FeedActivity.class);
                                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     dialogRelogin.cancel();
                                     startActivity(intent);
@@ -302,7 +298,7 @@ public class AccountsActivity extends AppCompatActivity
                                 }
                                 if (typeUser.equals("ONG"))
                                 {
-                                    Intent intent = new Intent(getApplicationContext(), ONGMainActivity.class);
+                                    Intent intent = new Intent(getApplicationContext(), FeedActivity.class);
                                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     dialogRelogin.cancel();
                                     startActivity(intent);

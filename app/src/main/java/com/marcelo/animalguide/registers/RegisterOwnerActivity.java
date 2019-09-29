@@ -43,7 +43,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.activitys.main_activitys.OwnerMainActivity;
+import com.marcelo.animalguide.activitys.main_activitys.FeedActivity;
 import com.marcelo.animalguide.encryption.Base64Custom;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
@@ -69,6 +69,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
     private CircleImageView circleImageViewUser;
     private Button btnRegisterOwner;
     private AlertDialog dialogLogin, dialogPhotos, dialogSave, dialogPermissions;
+    private Toolbar toolbar;
 
     private UserClass userClass = new UserClass();
     private BackupSharedPreferences backupSharedPreferences = new BackupSharedPreferences();
@@ -84,7 +85,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
     private Boolean check, checkPreference = false, logado;
     private static final int SELECAO_CAMERA = 100, SELECAO_GALERIA = 200;
     private static final String ARQUIVO_PREFERENCIA = "SaveDados";
-    private String[] permissionsRequired = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
+    private final String[] permissionsRequired = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
 
     @Override
     protected void onStart()
@@ -113,7 +114,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
         circleImageViewUser = findViewById(R.id.imageUserOwner);
         btnRegisterOwner = findViewById(R.id.buttonRegisterOwner);
 
-        Toolbar toolbar = findViewById(R.id.toolbarMain);
+        toolbar = findViewById(R.id.toolbarMain);
         toolbar.setTitle(getString(R.string.title_toolbar_owner));
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -466,7 +467,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
 
                     backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
-                    startActivity(new Intent(activity, OwnerMainActivity.class));
+                    startActivity(new Intent(activity, FeedActivity.class));
                     finish();
                 }
                 else
@@ -488,7 +489,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
 
                     backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
-                    startActivity(new Intent(activity, OwnerMainActivity.class));
+                    startActivity(new Intent(activity, FeedActivity.class));
                     finish();
                 }
             }
@@ -512,7 +513,7 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
 
             backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
-            startActivity(new Intent(activity, OwnerMainActivity.class));
+            startActivity(new Intent(activity, FeedActivity.class));
             finish();
         }
         catch (Exception e)
@@ -802,4 +803,6 @@ public class RegisterOwnerActivity extends AppCompatActivity implements EasyPerm
             createAlertDialogPermissionsApp();
         }
     }
+
+
 }

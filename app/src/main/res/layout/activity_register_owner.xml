@@ -15,7 +15,7 @@
 
         <include
             android:id="@+id/include"
-            layout="@layout/toolbar"
+            layout="@layout/toolbar_main"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"

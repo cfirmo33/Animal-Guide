@@ -42,7 +42,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.marcelo.animalguide.R;
-import com.marcelo.animalguide.activitys.main_activitys.VeterinaryMainActivity;
 import com.marcelo.animalguide.encryption.Base64Custom;
 import com.marcelo.animalguide.encryption.EncryptionSHA1;
 import com.marcelo.animalguide.firebase.ServicesFirebase;
@@ -475,7 +474,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
 
                     backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
-                    startActivity(new Intent(activity, VeterinaryMainActivity.class));
+                    //startActivity(new Intent(activity, VeterinaryMainActivity.class));
                     finish();
                 }
                 else
@@ -497,7 +496,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
 
                     backupSharedPreferences.saveDatabase(EncryptionSHA1.encryptionString(editTextEmailUser.getText().toString()));
 
-                    startActivity(new Intent(activity, VeterinaryMainActivity.class));
+                    //startActivity(new Intent(activity, VeterinaryMainActivity.class));
                     finish();
                 }
             }
@@ -522,7 +521,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
             String getDateCurrent = DatesCustomized.getData();
             backupSharedPreferences.saveDatabase(DatesCustomized.dateCustom(getDateCurrent));
 
-            startActivity(new Intent(activity, VeterinaryMainActivity.class));
+            //startActivity(new Intent(activity, VeterinaryMainActivity.class));
             finish();
         }
         catch (Exception e)
@@ -585,7 +584,7 @@ public class RegisterVeterinaryActivity extends AppCompatActivity implements Eas
                                 {
                                     dialog.cancel();
                                     userClass.saveDatabase("registered_users");
-                                    startActivity(new Intent(activity, VeterinaryMainActivity.class));
+                                   // startActivity(new Intent(activity, VeterinaryMainActivity.class));
                                     finish();
                                 }
                             }
